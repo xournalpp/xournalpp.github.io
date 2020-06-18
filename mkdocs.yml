@@ -1,0 +1,7 @@
+site_name: Xournal++
+repo_url: https://github.com/xournalpp/xournalpp.github.io/
+remote_branch: master
+nav:
+  - Home: index.md
+  - Install: installation.md
+  - Guide: guide.md
