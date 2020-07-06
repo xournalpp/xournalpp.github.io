@@ -9,14 +9,6 @@ after Ubuntu 16.04.
 
 On Linux, Xournal++ can also be installed via [snapcraft](https://snapcraft.io/xournalpp).
 
-**A note for Ubuntu/Debian users**: The official binaries that we provide are
-only compatible with the _specific version of Debian or Ubuntu_ indicated by the
-file name. For example, if you are on Ubuntu 20.04, the binary whose name
-contains `Ubuntu-xenial` is _only_ compatible with Ubuntu 18.04. If your system
-is not one of the specific Debian or Ubuntu versions that are supported by the
-official binaries, we recommend you use either the PPA, the Flatpak, or the
-AppImage.
-
 There is also an _unstable_, [automated nightly
 release](https://github.com/xournalpp/xournalpp/releases/tag/nightly) that
 includes the very latest features and bug fixes.
@@ -25,7 +17,19 @@ With the help of the community, Xournal++ is also available on official reposito
 of some popular Linux distros and platforms.
 
 ## Ubuntu and derivatives
+### Stable
+The latest `.deb` files are avialable on [Release Site](https://github.com/xournalpp/xournalpp/releases).
 
+**Disclaimer**
+
+The official binaries that we provide are
+only compatible with the _specific version of Debian or Ubuntu_ indicated by the
+file name. For example, if you are on Ubuntu 20.04, the binary whose name
+contains `Ubuntu-xenial` is _only_ compatible with Ubuntu 18.04. If your system
+is not one of the specific Debian or Ubuntu versions that are supported by the
+official binaries, we recommend you use either the PPA, the Flatpak, or the
+AppImage.
+### Unstable PPA
 An _unstable_, nightly release is available for Ubuntu-based distributions via the following PPA:
 
 ```bash
