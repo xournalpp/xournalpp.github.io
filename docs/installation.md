@@ -24,7 +24,7 @@ includes the very latest features and bug fixes.
 With the help of the community, Xournal++ is also available on official repositories
 of some popular Linux distros and platforms.
 
-### Ubuntu and derivatives
+## Ubuntu and derivatives
 
 An _unstable_, nightly release is available for Ubuntu-based distributions via the following PPA:
 
@@ -41,7 +41,7 @@ try our best not to break things, though).
 We eventually also planning on setting up a PPA for stable releases
 ([#1013](https://github.com/xournalpp/xournalpp/issues/1013)).
 
-### Fedora
+## Fedora
 
 The [released version of
 xournalpp](https://src.fedoraproject.org/rpms/xournalpp) is available in the
@@ -59,7 +59,7 @@ pkcon install xournalpp
 The bleeding edge packages synced to xournalpp git master on a daily basis are available from [COPR luya/xournalpp](https://copr.fedorainfracloud.org/coprs/luya/xournalpp/).
 [![Copr build status](https://copr.fedorainfracloud.org/coprs/luya/xournalpp/package/xournalpp/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/luya/xournalpp/package/xournalpp/)
 
-### openSUSE
+## openSUSE
 
 On openSUSE Tumbleweed, the released version of Xournal++ is available from the
 main repository:
@@ -75,7 +75,7 @@ For all versions of openSUSE, bleeding edge packages synced to xournalpp git
 master on a weekly basis are available from
 [home:badshah400:Staging](https://software.opensuse.org//download.html?project=home%3Abadshah400%3AStaging&package=xournalpp).
 
-### Arch Linux
+## Arch Linux
 
 The latest stable release is available [in the [extra]
 repository](https://www.archlinux.org/packages/?q=xournalpp).
@@ -83,7 +83,7 @@ repository](https://www.archlinux.org/packages/?q=xournalpp).
 To build the latest state of the master branch yourself, use [this AUR
 package](https://aur.archlinux.org/packages/xournalpp-git/).
 
-### Solus
+## Solus
 
 The latest stable release is available in the main repository:
 
@@ -91,7 +91,7 @@ The latest stable release is available in the main repository:
 sudo eopkg it xournalpp
 ```
 
-### Flatpak
+## Flatpak
 
 The Xournal++ team officially supports a [FlatHub
 release](https://flathub.org/apps/details/com.github.xournalpp.xournalpp), which
@@ -113,7 +113,7 @@ The Flatpak manifest can be found at the [Xournal++ Flatpak packaging
 repository](https://github.com/flathub/com.github.xournalpp.xournalpp), and all
 Flatpak-related packaging issues should be reported there.
 
-### Windows
+## Windows
 
 Official Windows releases are provided on the [Releases
 page](https://github.com/xournalpp/xournalpp/releases).
@@ -127,7 +127,7 @@ page](https://github.com/xournalpp/xournalpp/releases).
   input will be working, until you restart Windows. See
   [#659](https://github.com/xournalpp/xournalpp/issues/659).
 
-### Mac OS X
+## Mac OS X
 
 Mac OS X releases are provided on the [Releases
 page](https://github.com/xournalpp/xournalpp/releases).
