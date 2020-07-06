@@ -1,11 +1,7 @@
 # Installation Guide
 
 The official releases of Xournal++ can be found on the
-[Releases](https://github.com/xournalpp/xournalpp/releases) page. We provide
-binaries for Debian (Buster), Ubuntu (16.04), MacOS (10.13 and newer), and
-Windows. For other Linux distributions (or older/newer ones), we also provide an
-AppImage that is binary compatible with any distribution released around or
-after Ubuntu 16.04.
+[Releases](https://github.com/xournalpp/xournalpp/releases) page.
 
 On Linux, Xournal++ can also be installed via [snapcraft](https://snapcraft.io/xournalpp).
 
