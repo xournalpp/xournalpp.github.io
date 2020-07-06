@@ -16,7 +16,7 @@ includes the very latest features and bug fixes.
 With the help of the community, Xournal++ is also available on official repositories
 of some popular Linux distros and platforms.
 
-## Ubuntu and derivatives
+## Debian-based systems
 ### Stable
 The latest `.deb` files are avialable on [Release Site](https://github.com/xournalpp/xournalpp/releases).
 
