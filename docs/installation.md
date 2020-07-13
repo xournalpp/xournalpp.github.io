@@ -14,11 +14,13 @@ Depending on your operation system you mainly have the following options to inst
 
 ## Linux 
 ### Options for all/most distros
-The following options are available on _most major Linux distros_:  
+The following options are available on _most major Linux distros_. 
+
 * Install the Snap Package (currently version 1.0.16) from the [official SnapCraft release](https://snapcraft.io/xournalpp)
-* Install the FlatPak (currently version 1.0.18) from the [official FlaHub release](https://flathub.org/apps/details/com.github.xournalpp.xournalpp) 
+* Install the FlatPak (currently version 1.0.18) from the [official FlatHub release](https://flathub.org/apps/details/com.github.xournalpp.xournalpp)
 * Install the AppImage (latest stable release, currently 1.0.18) from the [releases page](https://github.com/xournalpp/xournalpp/releases)
-* Bulid the latest development version (currently version 1.1.0+dev) from source as described on [this wiki page](https://github.com/xournalpp/xournalpp/blob/master/readme/LinuxBuild.md)
+* Bulid the latest development version (currently version 1.1.0+dev) from source as described on 
+[this wiki page](https://github.com/xournalpp/xournalpp/blob/master/readme/LinuxBuild.md)
 
 ### Options for specific distros (potentially preferable)
 On _specific Linux distros_ you have the following extra options: 
