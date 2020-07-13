@@ -1,6 +1,6 @@
 # Installation Guide
 
-On this page we summarize the main installation options. For more details see [the main page of the repository](https://github.com/xournalpp/xournalpp). 
+On this page we summarize the main installation options. For more details see [the main page of the repository](https://github.com/xournalpp/xournalpp#Installing). 
 
 Depending on your operation system you mainly have the following options to install Xournal++ on your device.
 
