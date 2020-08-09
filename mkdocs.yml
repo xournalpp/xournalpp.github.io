@@ -11,3 +11,13 @@ nav:
       - Plugins: guide/plugins.md
       - Tips: guide/tips.md
   - "Report a bug": https://github.com/xournalpp/xournalpp/issues 
+
+#Theme config
+theme: 
+  name: material
+  favicon: img/favicon.ico
+  logo: img/favicon.ico
+  palette:
+    scheme: default
+    primary: blue
+    accent: blue
