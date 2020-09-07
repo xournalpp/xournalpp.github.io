@@ -19,5 +19,5 @@ theme:
   logo: img/favicon.ico
   palette:
     scheme: default
-    primary: blue
-    accent: blue
+    primary: indigo
+    accent: deep orange
