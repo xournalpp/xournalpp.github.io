@@ -3,6 +3,7 @@ repo_url: https://github.com/xournalpp/xournalpp.github.io/
 remote_branch: master
 edit_uri: edit/site/docs
 nav:
+  - Home: index.md
   - Install: installation.md
   - Guide:
       - Overview: guide/overview.md
@@ -21,3 +22,8 @@ theme:
     scheme: default
     primary: indigo
     accent: deep orange
+
+#code highlighting
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
