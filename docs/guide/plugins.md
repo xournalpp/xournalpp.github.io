@@ -16,7 +16,7 @@ Plugins must be activated or deactivated in the Plugin manager (from the menubar
 Currently all plugins reside in the same folder. By default this folder is
 
 - `/usr/local/share/xournalpp/plugins/` under Linux. 
-- `...` under Windows.
+- `C:\Program Files\Xournal++\plugins\` under Windows.
 
 Each plugin has its files stored in a subfolder of the plugin folder and contains at least a `plugin.ini` file and a Lua code file.
 
