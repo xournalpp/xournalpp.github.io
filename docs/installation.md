@@ -75,7 +75,7 @@ Install the latest stable release via
 
 #### Arch
 
-Install the latest stable release from the _extra_ repository via
+Install the latest stable release from the _community_ repository via
   
     pacman -S xournalpp 
   
