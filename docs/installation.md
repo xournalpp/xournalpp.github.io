@@ -6,15 +6,15 @@ Depending on your operation system you mainly have the following options to inst
 
 ## Windows
 
-* Install the latest stable release (currently version 1.0.19) from the [releases page](https://github.com/xournalpp/xournalpp/releases)
+* Install the latest stable release (currently version {{ version.latest_stable }}) from the [releases page](https://github.com/xournalpp/xournalpp/releases)
 * Install the latest unstable release (automated nightly build) from the [releases page](https://github.com/xournalpp/xournalpp/releases/tag/nightly)
-* Bulid the latest development version (currently version 1.1.0+dev) from source as described on [this wiki page](https://github.com/xournalpp/xournalpp/blob/master/readme/WindowsBuild.md)
+* Bulid the latest development version (currently version {{ version.latest_unstable }}) from source as described on [this wiki page](https://github.com/xournalpp/xournalpp/blob/master/readme/WindowsBuild.md)
 
 ## MacOS
 
-* Install the latest stable release (currently version 1.0.19) from the [releases page](https://github.com/xournalpp/xournalpp/releases)
+* Install the latest stable release (currently version {{ version.latest_stable }}) from the [releases page](https://github.com/xournalpp/xournalpp/releases)
 * Install the latest unstable release (automated nightly build) from the [releases page](https://github.com/xournalpp/xournalpp/releases/tag/nightly)
-* Bulid the latest development version (currently version 1.1.0+dev) from source as described on [this wiki page](https://github.com/xournalpp/xournalpp/blob/master/readme/MacBuild.md)
+* Bulid the latest development version (currently version {{ version.latest_unstable }}) from source as described on [this wiki page](https://github.com/xournalpp/xournalpp/blob/master/readme/MacBuild.md)
 
 ## Linux
 
@@ -22,10 +22,10 @@ Depending on your operation system you mainly have the following options to inst
 
 The following options are available on _most major Linux distros.
 
-* Install the FlatPak (currently version 1.0.19) from the [official FlatHub release](https://flathub.org/apps/details/com.github.xournalpp.xournalpp)
-* Install the AppImage (latest stable release, currently 1.0.19) from the [releases page](https://github.com/xournalpp/xournalpp/releases)
-* Install the Snap Package (currently version 1.0.16) from the [SnapCraft release](https://snapcraft.io/xournalpp). This package is unofficial and unmaintained!
-* Bulid the latest development version (currently version 1.1.0+dev) from source as described on [this wiki page](https://github.com/xournalpp/xournalpp/blob/master/readme/LinuxBuild.md)
+* Install the FlatPak (currently version {{ version.latest_stable }}) from the [official FlatHub release](https://flathub.org/apps/details/com.github.xournalpp.xournalpp)
+* Install the AppImage (latest stable release, currently {{ version.latest_stable }}) from the [releases page](https://github.com/xournalpp/xournalpp/releases)
+* Install the Snap Package (currently version {{ version.latest_stable }}) from the [SnapCraft release](https://snapcraft.io/xournalpp). This package is unofficial.
+* Bulid the latest development version (currently version {{ version.latest_unstable }}) from source as described on [this wiki page](https://github.com/xournalpp/xournalpp/blob/master/readme/LinuxBuild.md)
 
 ### Options for specific distros (potentially preferable)
 
@@ -47,12 +47,12 @@ On _specific Linux distros_ you have the following extra options:
         sudo apt update
         sudo apt install xournalpp
 
-* Install the latest stable release (currently version 1.0.19) from the [releases page](https://github.com/xournalpp/xournalpp/releases)
+* Install the latest stable release (currently version {{ version.latest_stable }}) from the [releases page](https://github.com/xournalpp/xournalpp/releases)
 * Install the latest unstable release (automated nightly build) from the [releases page](https://github.com/xournalpp/xournalpp/releases/tag/nightly)
 
 #### Debian Buster
 
-* Install the latest stable release (version 1.0.18) from the [releases page](https://github.com/xournalpp/xournalpp/releases/tag/1.0.18)
+* Install the latest stable release (version {{ version.latest_stable }}) from the [releases page](https://github.com/xournalpp/xournalpp/releases/tag/1.0.18)
 * Install the latest unstable release (automated nightly build) from the [releases page](https://github.com/xournalpp/xournalpp/releases/tag/nightly)
 
 #### Fedora
