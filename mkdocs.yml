@@ -23,6 +23,16 @@ theme:
     primary: indigo
     accent: deep orange
 
+#Enable macros
+plugins:
+  - search
+  - macros    
+
+extra:
+  version:
+    latest_stable: "1.0.20"
+    latest_unstable: "1.1.0+dev"
+
 #code highlighting
 markdown_extensions:
   - pymdownx.highlight

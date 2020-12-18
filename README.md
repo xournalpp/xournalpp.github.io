@@ -15,9 +15,11 @@ GitHub and click the edit button; this will allow you to submit a pull request
 it after reviewing it and giving some feedback.
 
 If you're editing multiple pages, it might be more useful to preview the site
-locally. To do this, make sure to install [MkDocs][mkdocs] and clone this
-repository. Then, you can run `mkdocs serve` to start up a webserver that hosts
-your local version of the website, which you can access from
+locally. To do this, make sure to install [MkDocs][mkdocs],
+the [material theme](https://squidfunk.github.io/mkdocs-material/getting-started/)
+and [macros plugin](https://mkdocs-macros-plugin.readthedocs.io/en/latest/#mkdocs-macros),
+and clone this repository. Then, you can run `mkdocs serve` to start up a webserver
+that hosts your local version of the website, which you can access from
 `https://localhost:8080`.
 
 [mkdocs]: https://mkdocs.org
