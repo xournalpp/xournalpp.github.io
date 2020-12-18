@@ -1,7 +1,8 @@
 site_name: Xournal++
-repo_url: https://github.com/xournalpp/xournalpp.github.io/
+repo_url: https://github.com/xournalpp/xournalpp/
+repo_name: xournalpp/xournalpp
 remote_branch: master
-edit_uri: edit/site/docs
+edit_uri: https://github.com/xournalpp/xournalpp.github.io/edit/site/docs
 nav:
   - Home: index.md
   - Install: installation.md
@@ -18,12 +19,18 @@ theme:
   name: material
   favicon: img/favicon.ico
   logo: img/favicon.ico
+  icon:
+    repo: fontawesome/brands/github
   palette:
     scheme: default
     primary: indigo
     accent: deep orange
+  features:
+    - navigation.tabs
 
 #code highlighting
 markdown_extensions:
   - pymdownx.highlight
   - pymdownx.superfences
+  - toc:
+      permalink: true
