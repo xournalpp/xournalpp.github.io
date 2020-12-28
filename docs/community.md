@@ -27,9 +27,9 @@ Please check beforehand if the same bug has already been reported or the same en
 This will make it easier for us to keep everything under control. Duplicates will usually be closed rapidly, but it always takes time to find them, which the develeopers
 would prefer to invest in coding and improving the documentation. Issues that are resolved will be closed as well. Open questions are better discussed on Github discussions.
 
-## Gitter channel
+## Gitter and Matrix channels
 
-If you want to discuss some topic related to Xournal++ in chat mode, you may find someone to talk with in the [Gitter channel](https://gitter.im/xournalpp/xournalpp).
+If you want to discuss some topic related to Xournal++ in chat mode, you may find someone to talk with in the [Gitter channel](https://gitter.im/xournalpp/xournalpp) or in the [Matrix channel](https://matrix.to/#/#xournalpp-xournalpp:matrix.org).
 
 ## The Crowdin project
 
@@ -41,5 +41,4 @@ ask the project maintainers on Gitter or create a new issue and they will unlock
 
 If you want to contribute to the codebase of Xournal++ you may create a [pull request on Github](https://github.com/xournalpp/xournalpp/pulls). Once the pull request is
 ready for review, one of the developer team will review it, suggest changes if necessary or accept/decline the pull request. If you plan some feature, that has not been
-requested in the issue tracker yet, better open an issue there first, so you know whether your work will be appreciated. Pull requests can be linked to specific issues,
-that will get automatically closed when the pull request is merged.
+requested in the issue tracker yet, better open an issue there first, so you know whether your work will be appreciated.

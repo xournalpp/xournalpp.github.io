@@ -11,8 +11,8 @@ nav:
       - Configuration: guide/config.md
       - Tools & Editing: guide/tools.md
       - Plugins: guide/plugins.md
-      - Getting help: guide/help.md
       - Tips: guide/tips.md
+  - Community: community.md
   - "Report a bug": https://github.com/xournalpp/xournalpp/issues 
 
 #Theme config
