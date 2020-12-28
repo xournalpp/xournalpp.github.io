@@ -12,7 +12,9 @@ nav:
       - Tools & Editing: guide/tools.md
       - Plugins: guide/plugins.md
       - Tips: guide/tips.md
-  - Community: community.md
+  - Community: 
+      - Getting help & helping out: community/help.md
+      - Xournal++ & other software: community/other-software.md
   - "Report a bug": https://github.com/xournalpp/xournalpp/issues 
 
 #Theme config
