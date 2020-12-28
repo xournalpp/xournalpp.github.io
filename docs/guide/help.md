@@ -4,7 +4,7 @@
 
 This website is intended to describe Xournal++ and its features reasonably well and complete, so that the average user can find out how Xournal++ works. We are working on
 completing its content. The website will replace the (rather incomplete) [User manual](https://github.com/xournalpp/xournalpp/wiki/User-Manual) on the Github repository.
-More technical questions (like how to build Xournal++ from source, or how to check out a pull request) that are relvant for technically more advanced users will still be
+More technical questions (like how to build Xournal++ from source, or how to check out a pull request) that are relevant for technically more advanced users will still be
 presented in the [Github wiki](https://github.com/xournalpp/xournalpp/wiki).
 
 ## Github discussions
@@ -23,7 +23,7 @@ We hope to grow our community knowledge base here.
 ## Github issue tracker
 
 Use the [issue tracker](https://github.com/xournalpp/xournalpp/issues) on the Github repository to report bugs and propose enhancements/new features.
-Please check beforehand if the same bug has already been reported or the same enhancement has already been suggested. If so, use the existing ticket to express yourself.
+Please check beforehand if the same bug has already been reported or the same enhancement has already been suggested. If so, use the existing ticket to add additional information or suggest improvements.
 This will make it easier for us to keep everything under control. Duplicates will usually be closed rapidly, but it always takes time to find them, which the develeopers
 would prefer to invest in coding and improving the documentation. Issues that are resolved will be closed as well. Open questions are better discussed on Github discussions.
 
@@ -34,8 +34,8 @@ If you want to discuss some topic related to Xournal++ in chat mode, you may fin
 ## The Crowdin project
 
 Our translations are managed in the [Crowdin project](https://crowdin.com/project/xournalpp). If you would like to contribute, create an account and start contributing.
-While some languages like English, German and Italian are basically complete, other languages require more care. If you are interested in translating a new language,
-contact us on Gitter or create a new issue and we will unlock the language on Crowdin.
+While some languages like English, German and Italian are basically complete, most other languages still need more work. If you are interested in translating a new language,
+ask the project maintainers on Gitter or create a new issue and they will unlock the language on Crowdin.
 
 ## Github pull requests
 
