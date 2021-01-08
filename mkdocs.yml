@@ -9,8 +9,14 @@ nav:
   - Guide:
       - Overview: guide/overview.md
       - Configuration: guide/config.md
-      - Tools & Editing: guide/tools.md
-      - Plugins: guide/plugins.md
+      - Tools and Editing:
+         - Pen and Highlighter tools: guide/tools/pen.md
+         - Eraser tool: guide/tools/eraser.md
+         - Selection and Snapping tools: guide/tools/selecsnap.md
+         - LaTeX tool: guide/tools/latex.md
+      - Plugins: 
+         - Bulding plugins: guide/plugins/plugins.md
+         - Notable plugins: guide/plugins/notable.md
       - Tips: guide/tips.md
   - Community: community.md
   - "Report a bug": https://github.com/xournalpp/xournalpp/issues 
@@ -28,6 +34,7 @@ theme:
     accent: deep orange
   features:
     - navigation.tabs
+    - toc.integrate
 
 #Enable macros
 plugins:
