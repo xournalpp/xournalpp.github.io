@@ -50,7 +50,7 @@ To generate a custom LaTeX template, make a copy of the default template, save i
 \newcommandx{\graph}[3][1=,2=]{
     \begin{tikzpicture}
     \begin{axis}[xlabel=$x$,ylabel=$y$, axis lines=center,samples=100, #2]
-    \addplot[#1]{#3};
+    \addplot[#1]{ #3 };
     \end{axis}
     \end{tikzpicture}
 }
