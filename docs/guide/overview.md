@@ -1,17 +1,19 @@
 # User Guide
 ## Typical Workflow
-- With Xournal++ you can start with a blank sheet of paper and add notes to it by typing, using your mouse and a stylus
-  - You can also add new pages, shapes and highlight existing text
-  - Once you are done you can save your notes to come back to them later and/or export them as PDF's
-- Need to write over a PDF document? You can do that!
-  - All you have to do is open the PDF document with Xournal++
+- Start with a blank sheet of paper and add notes to it by typing with the keyboard, or drawing with a mouse or stylus
+- Add new pages, draw shapes and highlight text
+- Save notes to work on later or export them as PDF's
+- Open PDF documents and write over them
 
-TODO
 ## Guide Overview
-- Installation
+- [Installation](../installation.md)
 - Tools and Editing
-- Configuration
-- Tips
+    - [Pen and Highlighter](tools/pen.md)
+    - [Eraser](tools/eraser.md)
+    - [Selection](tools/selecsnap.md)
+    - [LaTeX](tools/latex.md)
+- [Configuration](config.md)
+- [Tips](tips.md)
 - Selection & Snapping
 - Pages & Layers
 - Layout, Zoom & Navigation
