@@ -1,6 +1,6 @@
 # Xournal++
 
-**Note: this website is a new and a work-in-progress. In the meantime, please
+**Note: this website is new and a work-in-progress. In the meantime, please
 use the [GitHub page](https://github.com/xournalpp/xournalpp) for more
 information.**
 
