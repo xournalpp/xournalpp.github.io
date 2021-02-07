@@ -5,7 +5,11 @@ remote_branch: master
 edit_uri: https://github.com/xournalpp/xournalpp.github.io/edit/site/docs
 nav:
   - Home: index.md
-  - Install: installation.md
+  - Installation:
+      - OS selection: installation/general.md
+      - Windows: installation/windows.md
+      - MacOS: installation/macos.md
+      - Linux: installation/linux.md
   - Guide:
       - Overview: guide/overview.md
       - Configuration: guide/config.md
@@ -38,12 +42,27 @@ theme:
     - navigation.tabs
     - toc.integrate
 
+# Custom styles
+extra_css:
+  - css/buttons.css
+
 #Enable macros
 plugins:
   - search
   - macros    
 
 extra:
+  downloads:
+    default: "https://github.com/xournalpp/xournalpp/releases"
+    nightly: "https://github.com/xournalpp/xournalpp/releases/tag/nightly"
+    windows:
+      stable: "https://github.com/xournalpp/xournalpp/releases/download/1.0.20/xournalpp-1.0.20-windows.zip"
+    macos:
+      stable: "https://github.com/xournalpp/xournalpp/releases/download/1.0.20/xournalpp-1.0.20-macos.zip"
+    linux:
+      flatpak: "https://flathub.org/apps/details/com.github.xournalpp.xournalpp"
+      appimage: "https://github.com/xournalpp/xournalpp/releases/download/1.0.20/xournalpp-1.0.20-x86_64.AppImage"
+      snap: "https://snapcraft.io/xournalpp"
   version:
     latest_stable: "1.0.20"
     latest_unstable: "1.1.0+dev"

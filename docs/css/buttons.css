@@ -1,0 +1,49 @@
+a.xournalppButton {
+    background-color: var(--md-primary-fg-color);
+    color: var(--md-primary-bg-color);
+    padding: 10px;
+    cursor: pointer;
+    margin: 8px;
+    font-size: 20px;
+}
+
+a.xournalppButton:hover {
+    color: var(--md-primary-bg-color--light) ;
+}
+
+a.bigXournalppButton {
+    background-color: var(--md-primary-fg-color);
+    color: var(--md-primary-bg-color);
+    padding: 10px;
+    cursor: pointer;
+    margin: 8px;
+    font-size: 24px;
+}
+
+a.bigXournalppButton:hover {
+    color: var(--md-primary-bg-color--light);
+}
+
+#osContainer {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    margin-top: 20px;
+}
+
+#macosDownloadsContainer, #windowsDownloadsContainer {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    margin-top: 20px;
+}
+
+#linuxDownloadsContainer {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    margin-top: 20px;
+}
