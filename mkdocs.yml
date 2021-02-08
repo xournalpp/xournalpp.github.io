@@ -6,7 +6,7 @@ edit_uri: https://github.com/xournalpp/xournalpp.github.io/edit/site/docs
 nav:
   - Home: index.md
   - Installation:
-      - OS selection: installation/general.md
+      - OS selection: installation/index.md
       - Windows: installation/windows.md
       - MacOS: installation/macos.md
       - Linux: installation/linux.md
@@ -54,6 +54,7 @@ plugins:
 extra:
   downloads:
     default: "https://github.com/xournalpp/xournalpp/releases"
+    allVersions: "https://github.com/xournalpp/xournalpp/tags"
     nightly: "https://github.com/xournalpp/xournalpp/releases/tag/nightly"
     windows:
       stable: "https://github.com/xournalpp/xournalpp/releases/download/1.0.20/xournalpp-1.0.20-windows.zip"
