@@ -13,7 +13,7 @@ The following options are available on most major Linux distros.
 <a class="xournalppButton" href="{{downloads.linux.flatpak}}">FlatPak</a>
 <a class="xournalppButton " href="{{downloads.linux.snap}}">Snap Package</a>
 <a class="xournalppButton" href="{{downloads.allVersions}}">Other versions</a>
-<a class="xournalppButton" style="grid-column: 1 / 3;" href="{{downloads.nightly}}">Nightly (including nightly AppImage)</a>
+<a class="xournalppButton" style="grid-column: 1 / 3;" href="{{downloads.nightly}}">Nightly (latest unstable, including nightly AppImage)</a>
 <a class="xournalppButton" style="grid-column: 3 / 5;" href="#options-for-specific-distros-potentially-preferable">Or use distro specific method</a>
 </ul>
 
@@ -37,13 +37,20 @@ On _specific Linux distros_ you have the following extra options:
         sudo apt update
         sudo apt install xournalpp
 
-* Install the latest stable release (currently version {{ version.latest_stable }}) from the [releases page](https://github.com/xournalpp/xournalpp/releases)
-* Install the latest unstable release (automated nightly build) from the [releases page]({{downloads.nightly}})
+* Or:
+<ul id="ubuntuContainer" class="downloadsContainer">
+<a class="xournalppButton" href="{{downloads.linux.ubuntuStable}}">Download stable</a>
+<a class="xournalppButton" href="{{downloads.nightly}}">Download nightly (latest unstable) version</a>
+<a class="xournalppButton" href="{{downloads.allVersions}}">Other versions</a>
+</ul>
 
 ### Debian Buster
 
-* Install the latest stable release (version {{ version.latest_stable }}) from the [releases page](https://github.com/xournalpp/xournalpp/releases/tag/1.0.20-hotfix)
-* Install the latest unstable release (automated nightly build) from the [releases page]({{downloads.nightly}})
+<ul id="ubuntuContainer" class="downloadsContainer">
+<a class="xournalppButton" href="{{downloads.linux.debianStable}}">Download stable</a>
+<a class="xournalppButton" href="{{downloads.nightly}}">Download nightly (latest unstable) version</a>
+<a class="xournalppButton" href="{{downloads.allVersions}}">Other versions</a>
+</ul>
 
 ### Fedora
 

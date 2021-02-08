@@ -8,7 +8,7 @@ Xournal++ is a free and open source program and can be easily compiled from sour
 
 <ul id="windowsDownloadsContainer" class="downloadsContainer">
 <a class="xournalppButton downloadButton" href="{{downloads.windows.stable}}">Stable (Recommended)</a>
-<a class="xournalppButton" href="{{downloads.nightly}}">Nightly</a>
+<a class="xournalppButton" href="{{downloads.nightly}}">Nightly (latest unstable)</a>
 <a class="xournalppButton" href="{{downloads.allVersions}}">Other versions</a>
 </ul>
 

@@ -1,7 +1,7 @@
 # Xournal++
 
 <div style="display: flex; justify-content: left;">
-<a class="xournalppButton" style="margin: 8px;" href="installation/general">Download</a>
+<a class="xournalppButton" style="margin: 8px;" href="installation">Download</a>
 <a class="xournalppButton" style="margin: 8px;" href="https://github.com/xournalpp/xournalpp/">Github Page</a>
 <a class="xournalppButton" style="margin: 8px;" href="https://gitlab.com/TheOneWithTheBraid/xournalpp_mobile">Xournal++ mobile</a>
 <!-- TODO: Add some more quick buttons -->
@@ -19,7 +19,7 @@ feature-rich version of the wonderful
 [Xournal](http://sourceforge.net/projects/xournal/) program.
 
 To install Xournal++, please follow to the [installation
-page](installation/general).
+page](installation).
 
 ## Some highlighted features
 

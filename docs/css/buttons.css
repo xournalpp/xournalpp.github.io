@@ -32,14 +32,11 @@ a.downloadButton:after {
     grid-gap: 8px;
 }
 
-#osContainer {
-    grid-template-columns: repeat(3, 1fr);
-}
 #osContainer > a {
     font-size: 24px;
 }
 
-#macosDownloadsContainer, #windowsDownloadsContainer {
+#debianContainer, #ubuntuContainer, #osContainer, #macosDownloadsContainer, #windowsDownloadsContainer {
     grid-template-columns: repeat(3, 1fr);
 }
 

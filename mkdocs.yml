@@ -64,6 +64,8 @@ extra:
       flatpak: "https://flathub.org/apps/details/com.github.xournalpp.xournalpp"
       appimage: "https://github.com/xournalpp/xournalpp/releases/download/1.0.20/xournalpp-1.0.20-x86_64.AppImage"
       snap: "https://snapcraft.io/xournalpp"
+      debianStable: "https://github.com/xournalpp/xournalpp/releases/tag/1.0.20-hotfix"
+      ubuntuStable: "https://github.com/xournalpp/xournalpp/releases/tag/1.0.20"
   version:
     latest_stable: "1.0.20"
     latest_unstable: "1.1.0+dev"
