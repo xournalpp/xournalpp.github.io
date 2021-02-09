@@ -10,11 +10,11 @@ The following options are available on most major Linux distros.
 
 <ul id="linuxDownloadsContainer" class="downloadsContainer">
 <a class="xournalppButton downloadButton" href="{{downloads.linux.appimage}}">AppImage</a>
-<a class="xournalppButton" href="{{downloads.linux.flatpak}}">FlatPak</a>
-<a class="xournalppButton " href="{{downloads.linux.snap}}">Snap Package</a>
-<a class="xournalppButton" href="{{downloads.allVersions}}">Other versions</a>
-<a class="xournalppButton" style="grid-column: 1 / 3;" href="{{downloads.nightly}}">Nightly (latest unstable, including nightly AppImage)</a>
-<a class="xournalppButton" style="grid-column: 3 / 5;" href="#options-for-specific-distros-potentially-preferable">Or use distro specific method</a>
+<a class="xournalppButton linkButton" href="{{downloads.linux.flatpak}}">FlatPak</a>
+<a class="xournalppButton linkButton" href="{{downloads.linux.snap}}">Snap Package</a>
+<a class="xournalppButton linkButton" href="{{downloads.allVersions}}">Other versions</a>
+<a class="xournalppButton linkButton" href="{{downloads.nightly}}">Nightly (latest unstable, including nightly AppImage)</a>
+<a class="xournalppButton linkButton" href="#options-for-specific-distros-potentially-preferable">Or use distro specific method</a>
 </ul>
 
 ## Options for specific distros (potentially preferable)
@@ -39,17 +39,17 @@ On _specific Linux distros_ you have the following extra options:
 
 * Or:
 <ul id="ubuntuContainer" class="downloadsContainer">
-<a class="xournalppButton" href="{{downloads.linux.ubuntuStable}}">Download stable</a>
-<a class="xournalppButton" href="{{downloads.nightly}}">Download nightly (latest unstable) version</a>
-<a class="xournalppButton" href="{{downloads.allVersions}}">Other versions</a>
+<a class="xournalppButton linkButton" href="{{downloads.linux.ubuntuStable}}">Download stable</a>
+<a class="xournalppButton linkButton" href="{{downloads.nightly}}">Download nightly (latest unstable) version</a>
+<a class="xournalppButton linkButton" href="{{downloads.allVersions}}">Other versions</a>
 </ul>
 
 ### Debian Buster
 
-<ul id="ubuntuContainer" class="downloadsContainer">
-<a class="xournalppButton" href="{{downloads.linux.debianStable}}">Download stable</a>
-<a class="xournalppButton" href="{{downloads.nightly}}">Download nightly (latest unstable) version</a>
-<a class="xournalppButton" href="{{downloads.allVersions}}">Other versions</a>
+<ul id="debianContainer" class="downloadsContainer">
+<a class="xournalppButton linkButton" href="{{downloads.linux.debianStable}}">Download stable</a>
+<a class="xournalppButton linkButton" href="{{downloads.nightly}}">Download nightly (latest unstable) version</a>
+<a class="xournalppButton linkButton" href="{{downloads.allVersions}}">Other versions</a>
 </ul>
 
 ### Fedora
