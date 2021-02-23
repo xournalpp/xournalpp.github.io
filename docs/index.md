@@ -1,9 +1,9 @@
 # Xournal++
 
-<div style="display: flex; justify-content: left;">
-<a class="xournalppButton downloadButton" style="margin: 8px;" href="installation">Download</a>
-<a class="xournalppButton linkButton" style="margin: 8px;" href="https://github.com/xournalpp/xournalpp/">Github Page</a>
-<a class="xournalppButton linkButton" style="margin: 8px;" href="https://gitlab.com/TheOneWithTheBraid/xournalpp_mobile">Xournal++ mobile</a>
+<div class="flexedButtonsContainer">
+<li><a class="xournalppButton downloadButton" style="margin: 8px;" href="installation">Download</a></li>
+<li><a class="xournalppButton linkButton" style="margin: 8px;" href="https://github.com/xournalpp/xournalpp/">Github Page</a></li>
+<li><a class="xournalppButton linkButton" style="margin: 8px;" href="https://gitlab.com/TheOneWithTheBraid/xournalpp_mobile">Xournal++ mobile</a></li>
 <!-- TODO: Add some more quick buttons -->
 </div>
 

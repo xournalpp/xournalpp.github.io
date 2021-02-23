@@ -7,9 +7,9 @@ Xournal++ is a free and open source program and can be easily compiled from sour
 ## Downloading the program
 
 <ul id="macosDownloadsContainer" class="downloadsContainer">
-<a class="xournalppButton downloadButton" href="{{downloads.macos.stable}}">Stable (Recommended)</a>
-<a class="xournalppButton linkButton" href="{{downloads.nightly}}">Nightly (latest unstable)</a>
-<a class="xournalppButton linkButton" href="{{downloads.allVersions}}">Other versions</a>
+<li><a class="xournalppButton downloadButton" href="{{downloads.macos.stable}}">Stable (Recommended)</a></li>
+<li><a class="xournalppButton linkButton" href="{{downloads.nightly}}">Nightly (latest unstable)</a></li>
+<li><a class="xournalppButton linkButton" href="{{downloads.allVersions}}">Other versions</a></li>
 </ul>
 
 In case of downloading a different version than the stable one, remember to download the `macos` version.

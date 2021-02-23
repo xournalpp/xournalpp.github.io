@@ -9,25 +9,34 @@ a.xournalppButton {
     padding: 8px;
     cursor: pointer;
     font-size: 20px;
+    width: 100%;
+    height: 100%;
 }
 
 a.xournalppButton:hover {
     color: var(--md-primary-bg-color--light);
 }
 
+a.linkButton, a.downloadButton {
+    padding-left: 35px;
+}
+
 a.linkButton:before {
     display: block;
+    position: absolute;
+    left: 5px;
     content: "";
     width: 24px;
     height: 24px;
     background: url(/icons/octicons/link-external.svg);
     background-size: cover;
-    margin-right: 10px;
     background-repeat: no-repeat;
 }
 
 a.downloadButton:before {
     display: block;
+    position: absolute;
+    left: 5px;
     content: "";
     width: 24px;
     height: 24px;
@@ -37,12 +46,27 @@ a.downloadButton:before {
     background-repeat: no-repeat;
 }
 
+.flexedButtonsContainer {
+    display: flex;
+    justify-content: left;
+}
+
+.flexedButtonsContainer > li {
+    margin-right: 10px;
+    list-style-type: none;
+}
+
 .downloadsContainer {
     display: grid;
     justify-content: center;
     text-align: center;
     margin-top: 20px;
     grid-gap: 8px;
+}
+
+.downloadsContainer > li {
+    list-style-type: none;
+    margin: 0 !important;
 }
 
 #osContainer > a {
@@ -54,5 +78,5 @@ a.downloadButton:before {
 }
 
 #linuxDownloadsContainer, #debianContainer, #ubuntuContainer  {
-    grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
