@@ -1,5 +1,14 @@
 # Xournal++
 
+<div class="flexedButtonsContainer">
+<li><a class="xournalppButton downloadButton" style="margin: 8px;" href="installation">Download</a></li>
+<li><a class="xournalppButton linkButton" style="margin: 8px;" href="https://github.com/xournalpp/xournalpp/">Github Page</a></li>
+<li><a class="xournalppButton linkButton" style="margin: 8px;" href="https://gitlab.com/TheOneWithTheBraid/xournalpp_mobile">Xournal++ mobile</a></li>
+<!-- TODO: Add some more quick buttons -->
+</div>
+
+## General info
+
 **Note: this website is new and a work-in-progress. In the meantime, please
 use the [GitHub page](https://github.com/xournalpp/xournalpp) for more
 information.**
@@ -9,7 +18,7 @@ target of flexibility, functionality, and speed. It is a modern rewrite and more
 feature-rich version of the wonderful
 [Xournal](http://sourceforge.net/projects/xournal/) program.
 
-To install Xournal++, please follow the instructions on the [installation
+To install Xournal++, please follow to the [installation
 page](installation).
 
 ## Some highlighted features
