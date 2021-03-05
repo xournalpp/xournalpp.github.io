@@ -58,7 +58,7 @@ a.downloadButton:before {
 }
 
 .downloadsContainer {
-    display: grid;
+    display: grid !important;
     justify-content: center;
     text-align: center;
     margin-top: 20px;
