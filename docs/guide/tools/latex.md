@@ -74,6 +74,7 @@ Then a LaTeX-formula like `\graph{x^2}` will plot the normal parabola and `\grap
 In the LaTeX formula you can then use the `lstlistings` enivronment as in the following example
 
 ```tex
+$
 \begin{lstlisting}
 #include<stdio.h>
 #include<iostream>
@@ -84,5 +85,7 @@ int main(void)
     return 0;
 }
 \end{lstlisting}
+$
 ```
 
+Note that the starting and trailing $-signs are needed to exit and reenter math mode.
