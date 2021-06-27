@@ -15,7 +15,8 @@ Plugins must be activated or deactivated in the Plugin manager (from the menubar
 Currently all plugins reside in the same folder. By default this folder is
 
 - `/usr/share/xournalpp/plugins/` under Linux.
-- `C:\Program Files\Xournal++\plugins\` under Windows.
+- `C:\Program Files\Xournal++\share\xournalpp\plugins\` under MS Windows.
+- `Contents/Resources/plugins` inside the `Xournal++.app` bundle under MacOS.
 
 Each plugin has its files stored in a subfolder of the plugin folder and contains at least a `plugin.ini` file and a Lua code file.
 
@@ -195,10 +196,4 @@ end
 
 More complex Plugins will require Lua modules for certain operations. For instance if your Plugin needs a more sophisticated GUI, you may want to use the `lgi`-module via ```require("lgi")```.
 
-For security reasons the Lua package path currently only contains the folder of the plugin. So you must add the path where the Lua modules you use are installed. This can be done by executing:
-
-```lua
-package.path = package.path .. "YOUR PATH(S)"
-```
-
-in the `initUI`-function.
+The Lua package path by default contains the root folder of the plugin and the system Lua package path. In case you need other folders in the package path, use the package.path key to add them.

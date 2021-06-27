@@ -45,7 +45,6 @@ The following lists highlight the differences between the latest development ver
 
 - Input via Xinput (which gives better strokes on some devices)
 - One page mode (useful in presentations)
-- Mirror images of strokes via the selection tool
 - A complete [documentation](http://xournal.sourceforge.net/manual.html) and a [well documented file format](http://xournal.sourceforge.net/manual.html#file-format)
 - Inlusion in the official Debian repository
 
@@ -75,3 +74,8 @@ Mr Writer has its own file format, called `.moj` which Xournal++ is capable of o
 ## Joplin
 
 If you are looking for a text based note taking app with great organizational tools, you may want to try out [Joplin](https://joplinapp.org/). While Xournal++ excells in handwriting and PDF annotation, Joplin can organise your notes into notebooks in a nice tree structure and synchronize them via Cloud services like Nextcloud, Dropbox, OneDrive and WebDAV. You can attach all kind of files to a Joplin file, including Xournal++ `.xopp`-files. Xournal++ and Joplin complement each other pretty well, if you take handwritten notes in class (or elsewhere) and want to keep them nicely organized and synchronized.
+
+
+## OBS Studio
+
+For creating video recordings or live streams of lectures that you present using Xournal++ we recommend to use [OBS Studio](https://obsproject.com/). This free and open source tool is available on all major platforms.

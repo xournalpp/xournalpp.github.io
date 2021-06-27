@@ -19,7 +19,7 @@ nav:
          - Selection and Snapping tools: guide/tools/selecsnap.md
          - LaTeX tool: guide/tools/latex.md
       - Plugins: 
-         - Bulding plugins: guide/plugins/plugins.md
+         - Building plugins: guide/plugins/plugins.md
          - Notable plugins: guide/plugins/notable.md
       - Tips: guide/tips.md
   - Community: 
