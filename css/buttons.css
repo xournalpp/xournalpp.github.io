@@ -1,0 +1,83 @@
+a.xournalppButton {
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: var(--md-primary-fg-color);
+    color: var(--md-primary-bg-color);
+    padding: 7px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+}
+
+a.xournalppButton:hover {
+    color: var(--md-primary-bg-color--light);
+}
+
+a.linkButton, a.downloadButton {
+    padding-left: 35px;
+}
+
+a.linkButton:before {
+    display: block;
+    position: absolute;
+    left: 5px;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: url(/icons/octicons/link-external.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+a.downloadButton:before {
+    display: block;
+    position: absolute;
+    left: 5px;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: url(/icons/octicons/desktop-download.svg);
+    background-size: cover;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+}
+
+.flexedButtonsContainer {
+    display: flex;
+    justify-content: left;
+}
+
+.flexedButtonsContainer > li {
+    margin-right: 10px;
+    list-style-type: none;
+}
+
+.downloadsContainer {
+    display: grid !important;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    grid-gap: 8px;
+}
+
+.downloadsContainer > li {
+    list-style-type: none;
+    margin: 0 !important;
+}
+
+#osContainer > a {
+    font-size: 24px;
+}
+
+#osContainer, #macosDownloadsContainer, #windowsDownloadsContainer {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+#linuxDownloadsContainer, #debianContainer, #ubuntuContainer  {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
