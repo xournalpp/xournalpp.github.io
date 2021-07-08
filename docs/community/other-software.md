@@ -6,7 +6,7 @@ nicely with Xournal++.
 ## Xournal
 
 Xournal++ started as a C++ rewrite of Xournal by [Denis Aroux](http://people.math.harvard.edu/~auroux/), which is programmed in C and hosted on sourceforge.
-Xournal++ is actively developed, while Xournal has stopped developing new features after mid 2016. Denis Aroux notes on the [Xournal website]((http://xournal.sourceforge.net/)):
+Xournal++ is actively developed, while Xournal has stopped developing new features after mid 2016. Denis Aroux notes on the [Xournal website](http://xournal.sourceforge.net/):
 
 > You may also want to try out Xournal++ (which started out as a rewrite of Xournal in C++, but now has evolved well beyond the original, while retaining a decent amount of compatibility).
 
