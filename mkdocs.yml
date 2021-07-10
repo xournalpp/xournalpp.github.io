@@ -12,6 +12,7 @@ nav:
       - Linux: installation/linux.md
   - Guide:
       - Overview: guide/overview.md
+      - Whirlwind Tour: guide/whirlwind-tour.md
       - Configuration: guide/config.md
       - Tools and Editing:
          - Pen and Highlighter tools: guide/tools/pen.md
