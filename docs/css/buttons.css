@@ -81,3 +81,7 @@ a.downloadButton:before {
 #linuxDownloadsContainer, #debianContainer, #ubuntuContainer  {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
+
+.tool-label > img {
+    vertical-align: middle;
+}
