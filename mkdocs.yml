@@ -21,6 +21,7 @@ nav:
       - Plugins: 
          - Building plugins: guide/plugins/plugins.md
          - Notable plugins: guide/plugins/notable.md
+      - File locations: guide/file-locations.md
       - Tips: guide/tips.md
   - Community: 
       - Getting help & helping out: community/help.md
