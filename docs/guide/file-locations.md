@@ -49,7 +49,7 @@ The config folder contains configuration files like
 
 ## Cache folder
 
-The cache folder contains the `errorlogs` subfolder, which logs crashes from Xournal++.
+The cache folder contains the `errorlogs` subfolder, which stores crash logs.
 
 ## Temporary folder
 
