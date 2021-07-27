@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+SCRIPT_TITLE=xopp-to-pdf
+# depends=(xournalpp)
+# optdepends=(libnotify)
+
+#######
+
+if ! which xournalpp; then
+  notify-send "${SCRIPT_TITLE}" 'The dependency "xournalpp" is missing!' --icon=dialog-information;
+  exit 1;
+fi
+
+# read newline-delimited paths of selected files (on local filesystem)
+echo "$NAUTILUS_SCRIPT_SELECTED_FILE_PATHS" | while read file; do
+  # If $NAUTILUS_SCRIPT_SELECTED_FILE_PATHS contains a tailing newline,
+  # $file may be the empty string
+  if [ "${file}" = '' ]; then
+    continue;
+  fi
+
+  out="${file}".pdf;
+
+  if [ -f "${out}" ]; then
+    notify-send "${SCRIPT_TITLE}" "The file ${out} does already exist! Skipping conversion of $(basename "${file}")" --icon=dialog-information;
+  else
+    xournalpp --create-pdf="${out}" "${file}" || notify-send "${SCRIPT_TITLE}" "Conversion of ${file} failed!" --icon=dialog-information;
+  fi
+done
+
+notify-send "${SCRIPT_TITLE}" 'Done!' --icon=dialog-information;
