@@ -6,8 +6,25 @@ SCRIPT_TITLE=xopp-to-pdf
 
 #######
 
-if ! which xournalpp; then
-  notify-send "${SCRIPT_TITLE}" 'The dependency "xournalpp" is missing!' --icon=dialog-information;
+function command_exists(){
+  command -v "$1" > /dev/null
+}
+
+function notify() {
+    # $1: Message summary
+    # $2: Message body
+    # $3-n: notify-send options
+
+    if command_exists notify-send; then
+        notify-send "$@";
+    else
+      # Write message to stderr
+      printf '%s: %s\n' "$1" "$2" 1>&2;
+    fi
+}
+
+if ! command_exists xournalpp; then
+  notify "${SCRIPT_TITLE}" 'The dependency "xournalpp" is missing!' --icon=dialog-information;
   exit 1;
 fi
 
@@ -22,10 +39,10 @@ echo "$NAUTILUS_SCRIPT_SELECTED_FILE_PATHS" | while read file; do
   out="${file}".pdf;
 
   if [ -f "${out}" ]; then
-    notify-send "${SCRIPT_TITLE}" "The file ${out} does already exist! Skipping conversion of $(basename "${file}")" --icon=dialog-information;
+    notify "${SCRIPT_TITLE}" "The file ${out} does already exist! Skipping conversion of $(basename "${file}")" --icon=dialog-information;
   else
-    xournalpp --create-pdf="${out}" "${file}" || notify-send "${SCRIPT_TITLE}" "Conversion of ${file} failed!" --icon=dialog-information;
+    xournalpp --create-pdf="${out}" "${file}" || notify "${SCRIPT_TITLE}" "Conversion of ${file} failed!" --icon=dialog-information;
   fi
 done
 
-notify-send "${SCRIPT_TITLE}" 'Done!' --icon=dialog-information;
+notify "${SCRIPT_TITLE}" 'Done!' --icon=dialog-information;
