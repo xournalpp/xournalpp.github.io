@@ -13,7 +13,7 @@
 use the [GitHub page](https://github.com/xournalpp/xournalpp) for more
 information.**
 
-Xournal++ is an cross-platform, open source, hand note-taking software with the
+Xournal++ is a cross-platform, open source, hand note-taking software with the
 target of flexibility, functionality, and speed. It is a modern rewrite and more
 feature-rich version of the wonderful
 [Xournal](http://sourceforge.net/projects/xournal/) program.
