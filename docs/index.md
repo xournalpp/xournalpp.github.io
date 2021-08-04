@@ -32,7 +32,7 @@ hide:
 	        		<p class = "bullet-point">|</p><p>Robust and customizable pen, highlighters, and eraser tool, allowing you to write how you want to write</p>
 	        	</div>
 		    </div>
-		    <img src = "/img/placeholder-image-2.png">
+		    <img src = "/img/Handwritten.png">
 		</div>
 		<div class = "feature feature-left">
 		    <div class = "feature-text">
