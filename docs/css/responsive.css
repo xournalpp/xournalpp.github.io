@@ -2,12 +2,21 @@
 	.home {
 		max-width: 1600px;
 	}
+	
+	.Xournal {
+		margin-bottom: 150px;
+	}
+	
 	.Xournal h1 {
 		font-size: 80px;
 	}
 	
 	.Xournal p {
 		font-size: 40px;
+	}
+	
+	.Xournal a {
+		font-size: 25px;
 	}
 	
 	.feature-text h1 {
@@ -182,12 +191,16 @@
 		font-size: 18px;
 	}
 	
+	.Xournal a{
+		font-size: 18px;
+	}
+	
 	.feature-text h1 {
 		font-size: 32px;
 	}
 	
 	.feature-description p {
-		font-size: 16px;
+		font-size: 18px;
 	}
 	
 	.downloads h1 {
@@ -212,13 +225,17 @@
 		font-size: 28px;
 	}
 	
+	.Xournal {
+		margin-bottom: 30px;
+	}
+	
 	.Xournal p {
 		font-size: 16px;
 		margin-bottom: 25px;
 	}
 	
-	.Xournal {
-		margin-bottom: 30px;
+	.Xournal a{
+		font-size: 16px;
 	}
 	
 	.feature {

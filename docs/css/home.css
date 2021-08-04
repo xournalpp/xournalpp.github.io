@@ -2,7 +2,8 @@
 .md-typeset h2,
 .md-typeset p,
 .md-typeset ul,
-.md-typeset li {
+.md-typeset li,
+.md-typeset a {
 	margin: 0;
 	padding: 0;
 }
@@ -20,6 +21,10 @@
 		-webkit-transform: none;
 		transform: none;   
 	}
+}
+
+.home a {
+	text-decoration: none;
 }
 
 .home {
@@ -43,12 +48,7 @@
 }
 
 .Xournal {
-	margin-bottom: 150px;
-}
-
-.feature {
-	margin-bottom: 150px;
-	display: inline-flex;
+	margin-bottom: 100px;
 }
 
 .Xournal h1 {
@@ -61,6 +61,31 @@
 	font-weight: medium;
 	font-size: 30px;
 	margin-bottom: 50px;
+}
+
+.download-hyperlink {
+	margin-top: 40px;
+	text-align: center;
+}
+
+
+.Xournal a {
+	display: inline-block;
+	font-weight: medium;
+	font-size: 20px;
+	text-align: center;
+	border: solid 1px black;
+	padding: 10px 10px;
+	transition: all 0.2s;
+}
+
+.Xournal a:hover {
+	background-color: black;
+}
+
+.feature {
+	margin-bottom: 150px;
+	display: inline-flex;
 }
 
 .feature-left {
@@ -144,7 +169,7 @@
 	display: inline-flex;
 }
 
-.OS-container .button, .Xournal-mobile .button {
+.OS-container .download-button, .Xournal-mobile .download-button {
 	display: inline-block;
 	font-size: 24px;
 	font-weight: medium;
@@ -154,7 +179,7 @@
 	transition: all 0.2s;
 }
 
-.button:hover{
+.download-button:hover{
 	background-color: black;
 }
 
