@@ -10,7 +10,7 @@ hide:
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width">
 
 <div class = "home">
 	<div class = "Xournal" id = "Xournal">
@@ -38,7 +38,7 @@ hide:
 		    <div class = "feature-text">
 		        <h1>Keep your work organized</h1>
 		        <div class = "feature-description">
-		        	<p class = "bullet-point">|</p><p>The page previews and PDF bookmarks allow for effortless navigation of your notes</p>
+		        	<p class = "bullet-point">|</p><p>The page previews and PDF bookmarks allow for easy navigation of your notes</p>
 		        </div>
 		        <div class = "feature-description last-description">
 	        		<p class = "bullet-point">|</p><p>Use layers to make complex notes that are still easy to work with</p>
@@ -81,7 +81,7 @@ hide:
 		</div>
 		<div class = "feature feature-left last-feature">
 		    <div class = "feature-text">
-		        <h1>Write scientific formula effortlessly</h1>
+		        <h1>Work with scientific formulas</h1>
 		        <div class = "feature-description last-description">
 	        		<p class = "bullet-point">|</p><p>The built-in LaTex editor allows for hassle-free writing of scientific formulas</p>
 	        	</div>
