@@ -1,53 +1,106 @@
-# Xournal++
+---
+hide:
+- navigation
+- toc
 
-<div class="flexedButtonsContainer">
-<li><a class="xournalppButton downloadButton" style="margin: 8px;" href="installation">Download</a></li>
-<li><a class="xournalppButton linkButton" style="margin: 8px;" href="https://github.com/xournalpp/xournalpp/">Github Page</a></li>
-<li><a class="xournalppButton linkButton" style="margin: 8px;" href="https://gitlab.com/TheOneWithTheBraid/xournalpp_mobile">Xournal++ mobile</a></li>
-<!-- TODO: Add some more quick buttons -->
+---
+
+<link rel = "stylesheet" href = "css/home.css">
+<link rel = "stylesheet" href = "css/responsive.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+<div class = "home">
+	<div class = "Xournal" id = "#Xournal">
+		<h1>Take all the notes you want with ease, from solving a physics problem to making travel diaries.</h1>
+		<p>Xournal++ is an open-source and cross-platform note-taking software that is fast, flexible, and functional. A modern rewrite and a more feature-rich version of the wonderful Xournal program.</p>
+		<img src = "img/Xournal++ Headline Example.png">
+	</div>
+	<div class = "feature-list">
+		<div class = "feature feature-right">
+		    <div class = "feature-text">
+		        <h1>Handwrite your notes</h1>
+		        <div class = "feature-description">
+		        	<p class = "bullet-point">|</p><p>Support for pressure-sensitive stylus and drawing tablets (Wacom, Huion, XP-Pen, etc.)</p>
+		        </div>
+		        <div class = "feature-description last-description">
+	        		<p class = "bullet-point">|</p><p>Robust and customizable pen, highlighters, and eraser tool, allowing you to write how you want to write</p>
+	        	</div>
+		    </div>
+		    <img src = "/img/placeholder-image-2.png">
+		</div>
+		<div class = "feature feature-left">
+		    <div class = "feature-text">
+		        <h1>Keep your work organized</h1>
+		        <div class = "feature-description">
+		        	<p class = "bullet-point">|</p><p>The page previews and PDF bookmarks allow for effortless navigation of your notes</p>
+		        </div>
+		        <div class = "feature-description last-description">
+	        		<p class = "bullet-point">|</p><p>Use layers to make complex notes that are still easy to work with</p>
+	        	</div>
+		    </div>
+		    <img src = "/img/placeholder-image-2.png">
+		</div>
+		<div class = "feature feature-right">
+		    <div class = "feature-text">
+		        <h1>Record your notes</h1>
+		        <div class = "feature-description last-description">
+	        		<p class = "bullet-point">|</p><p>Record all of your note-taking and the accompanying audio explanation with the built-in audio recorder to share with all of your peers</p>
+	        	</div>
+		    </div>
+		    <img src = "/img/placeholder-image-2.png">
+		</div>
+		<div class = "feature feature-left">
+		    <div class = "feature-text">
+		        <h1>Expedite and facilitate your note-taking</h1>
+		        <div class = "feature-description">
+		        	<p class = "bullet-point">|</p><p>Add images and create various shapes, from squares to splines to axis</p>
+		        </div>
+		        <div class = "feature-description last-description">
+	        		<p class = "bullet-point">|</p><p>Snap objects to rectangular grid or degrees of rotation</p>
+	        	</div>
+		    </div>
+		    <img src = "/img/placeholder-image-2.png">
+		</div>
+		<div class = "feature feature-right">
+		    <div class = "feature-text">
+		        <h1>Extensible to your needs</h1>
+		        <div class = "feature-description">
+	        		<p class = "bullet-point">|</p><p>Use a plugin or create your own via the Lua programming language</p>
+	        	</div>
+		        <div class = "feature-description last-description">
+	        		<p class = "bullet-point">|</p><p>Customize the toolbar to create a new layout tailor-made for you</p>
+	        	</div>
+		    </div>
+		    <img src = "/img/placeholder-image-2.png">
+		</div>
+		<div class = "feature feature-left">
+		    <div class = "feature-text">
+		        <h1>Write scientific formula effortlessly</h1>
+		        <div class = "feature-description last-description">
+	        		<p class = "bullet-point">|</p><p>The built-in LaTex editor allows for hassle-free writing of scientific formulas</p>
+	        	</div>
+		    </div>
+		    <img src = "/img/placeholder-image-2.png">
+		</div>
+	</div>
+	<div class = "downloads">
+		<h1>Downloads</h1>
+		<div class = "choosing-OS">
+			<p>Choose your operating system</p>
+			<div class = "OS-container">
+				<ul>
+					<li><a href = "http://127.0.0.1:8000/installation/macos/" class = "button">MacOS</a></li>
+					<li><a href = "http://127.0.0.1:8000/installation/linux/" class = "button">Linux</a></li>
+					<li><a href = "http://127.0.0.1:8000/installation/windows/" class = "button">Windows</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class = "Xournal-mobile">
+			<p>Xournal++ now available for mobile in Beta!</p>
+			<a href = "https://gitlab.com/TheOneWithTheBraid/xournalpp_mobile" class = "button">Xournal++ Mobile</a>
+		</div>
+	</div>
 </div>
-
-## General info
-
-**Note: this website is new and a work-in-progress. In the meantime, please
-use the [GitHub page](https://github.com/xournalpp/xournalpp) for more
-information.**
-
-Xournal++ is a cross-platform, open source, hand note-taking software with the
-target of flexibility, functionality, and speed. It is a modern rewrite and more
-feature-rich version of the wonderful
-[Xournal](http://sourceforge.net/projects/xournal/) program.
-
-To install Xournal++, please follow to the [installation
-page](installation).
-
-## Some highlighted features
-
-Here are some of what we think are the "killer features" of Xournal++. You can
-find a more complete list of features in the [User Guide](guide).
-
-* Supports a wide variety of devices and user workflows
-    * Pressure-sensitive styluses and digital pen tablets (e.g. Wacom, Huion, XP
-      Pen, etc. tablets)
-    * Plugins support via the [Lua programming language](https://lua.org)
-    * Customizeable toolbar, with multiple configurations, e.g. to optimize toolbar
-      for portrait / landscape
-* Notetaking features
-    * "Paper" backgrounds for notetaking, scratch paper, or whiteboarding
-    * Different pen types (e.g. eraser, highlighter) and stroke styles (e.g.
-      solid, dotted)
-    * Different shapes, such as lines, arrow, circle, rectangle, splines
-    * Shape resizing and rotation
-    * LaTeX support (requires a working LaTeX install)
-    * Multiple "layers" for easier control over overlapping notes and strokes
-    * Sidebar with page previews and PDF Bookmarks
-    * Audio recording and playback alongside with handwritten notes
-    * Rotation and grid snapping
-* File formats
-    * Annotate on top of PDFs
-    * Export to a variety of formats including SVG, PNG, and PDF
-* Other convenience features
-    * Bug reporting, autosave, and auto backup tools
-    * Page template definitions
-    * Multi language support (over 20 languages supported, with more added by the
-      community!)

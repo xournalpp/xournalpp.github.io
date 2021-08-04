@@ -1,0 +1,255 @@
+@media (min-width: 1921px){
+	.home {
+		max-width: 1600px;
+	}
+	.Xournal h1 {
+		font-size: 80px;
+	}
+	
+	.Xournal p {
+		font-size: 40px;
+	}
+	
+	.feature-text h1 {
+		font-size: 56px;
+		margin-bottom: 30px;
+	}
+	
+	.feature-description p {
+		font-size: 28px;
+		margin-bottom: 20px;
+	}
+	
+	.downloads h1 {
+		font-size: 72px;
+	}
+	
+	.downloads p {
+		font-size: 36px;
+	}
+	
+	.OS-container .button, .Xournal-mobile .button {
+		font-size: 30px;
+		line-height: 60px;
+		padding: 0px 30px;
+	}
+}
+
+@media (max-width: 1490px) {
+	.home {
+		padding: 0px 50px;
+		width: 100%;
+		max-width: none;
+	}
+}
+
+@media (max-width: 1367px){
+	
+	
+	.Xournal {
+		margin-bottom: 75px;
+	}
+	
+	.feature {
+		margin-bottom: 75px;
+		display: block;
+		direction: ltr;
+	}
+	
+	.feature-text, .feature img {
+		display: block;
+		width: 100%;
+	}
+	
+	.feature-text {
+		box-sizing: border-box;
+		margin-bottom: 20px;
+	}
+	
+	.feature-right .feature-text {
+		padding-right: 0px;
+	}
+	
+	.feature-left .feature-text {
+		padding-left: 0px;
+	}
+	
+	.feature-text h1 {
+		font-weight: bold;
+		font-size: 52px;
+		margin-bottom: 10px;
+	}
+	
+	.feature-description p {
+		display: inline-block;
+		font-weight: medium;
+		font-size: 26px;
+		margin-bottom: 5px;
+	}
+	
+}
+
+@media (max-width: 1219px){
+	.Xournal h1 {
+		font-size: 54px;
+		margin-bottom: 5px;
+	}
+	
+	.Xournal p {
+		font-size: 27px;
+		margin-bottom: 25px;
+	}
+	
+	.Xournal {
+		margin-bottom: 50px;
+	}
+	
+	.feature {
+		margin-bottom: 50px;
+	}
+	
+	.feature-text h1 {
+		font-size: 42px;
+		margin-bottom: 0px;
+	}
+	
+	.feature-description p {
+		font-size: 21px;
+	}
+	
+	.downloads h1 {
+		font-size: 54px;
+		margin-bottom: 0px;
+	}
+	
+	.downloads p {
+		font-size: 27px;
+	}
+	
+	.OS-container .button, .Xournal-mobile .button {
+		font-size: 24px;
+		line-height: 50px;
+		padding: 0px 25px;
+	}
+}
+
+@media (max-width: 1050px){
+	.home {
+		padding: 0px 10px;
+	}
+	
+	.Xournal h1 {
+		font-size: 42px;
+	}
+	
+	.Xournal p {
+		font-size: 21px;
+		margin-bottom: 25px;
+	}
+	
+	.feature-text h1 {
+		font-size: 36px;
+		margin-bottom: 0px;
+	}
+	
+	.feature-description p {
+		font-size: 18px;
+	}
+	
+	.downloads h1 {
+		font-size: 42px;
+		margin-bottom: 0px;
+	}
+	
+	.downloads p {
+		font-size: 21px;
+	}
+	
+	.OS-container .button, .Xournal-mobile .button {
+		font-size: 18px;
+		line-height: 40px;
+		padding: 0px 20px;
+	}
+}
+
+@media (max-width: 800px){
+	
+	.Xournal h1 {
+		font-size: 36px;
+	}
+	
+	.Xournal p {
+		font-size: 18px;
+	}
+	
+	.feature-text h1 {
+		font-size: 32px;
+	}
+	
+	.feature-description p {
+		font-size: 16px;
+	}
+	
+	.downloads h1 {
+		font-size: 36px;
+		margin-bottom: 0px;
+	}
+	
+	.downloads p {
+		font-size: 18px;
+	}
+	
+	.OS-container .button, .Xournal-mobile .button {
+		font-size: 18px;
+		line-height: 36px;
+		padding: 0px 24px;
+	}
+	
+}
+
+@media (max-width: 670px){
+	.Xournal h1 {
+		font-size: 28px;
+	}
+	
+	.Xournal p {
+		font-size: 16px;
+		margin-bottom: 25px;
+	}
+	
+	.Xournal {
+		margin-bottom: 30px;
+	}
+	
+	.feature {
+		margin-bottom: 30px;
+	}
+	
+	.feature-text {
+		margin-bottom: 10px;
+	}
+	
+	.feature-text h1 {
+		font-size: 24px;
+	}
+	
+	.feature-description p {
+		font-size: 12px;
+		margin-bottom: 0px;
+	}
+	
+	.downloads h1 {
+		font-size: 28px;
+		margin-bottom: 0px;
+	}
+	
+	.downloads p {
+		font-size: 14px;
+	}
+	
+	.OS-container .button, .Xournal-mobile .button {
+		font-size: 14px;
+		line-height: 30px;
+		padding: 0px 20px;
+	}
+}

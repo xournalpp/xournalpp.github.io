@@ -37,7 +37,7 @@ theme:
     repo: fontawesome/brands/github
   palette:
     scheme: default
-    primary: indigo
+    primary: black
     accent: deep orange
   features:
     - navigation.tabs
