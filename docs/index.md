@@ -17,8 +17,8 @@ hide:
 		<h1>Take all the notes you want with ease, from solving a physics problem to making travel diaries.</h1>
 		<p>Xournal++ is an open-source and cross-platform note-taking software that is fast, flexible, and functional. A modern rewrite and a more feature-rich version of the wonderful Xournal program.</p>
 		<img src = "img/Xournal++ Headline Example.png">
-		<div class = "download-hyperlink">
-			<a href = "#downloads">Get it now</a>
+		<div class = "download-hyperlink upper-button">
+			<a href = "http://127.0.0.1:8000/installation/">Download Xournal++</a>
 		</div>
 	</div>
 	<div class = "feature-list">
@@ -79,7 +79,7 @@ hide:
 		    </div>
 		    <img src = "/img/placeholder-image-2.png">
 		</div>
-		<div class = "feature feature-left">
+		<div class = "feature feature-left last-feature">
 		    <div class = "feature-text">
 		        <h1>Write scientific formula effortlessly</h1>
 		        <div class = "feature-description last-description">
@@ -89,21 +89,7 @@ hide:
 		    <img src = "/img/placeholder-image-2.png">
 		</div>
 	</div>
-	<div class = "downloads" id = "downloads">
-		<h1>Downloads</h1>
-		<div class = "choosing-OS">
-			<p>Choose your operating system</p>
-			<div class = "OS-container">
-				<ul>
-					<li><a href = "http://127.0.0.1:8000/installation/macos/" class = "download-button">MacOS</a></li>
-					<li><a href = "http://127.0.0.1:8000/installation/linux/" class = "download-button">Linux</a></li>
-					<li><a href = "http://127.0.0.1:8000/installation/windows/" class = "download-button">Windows</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class = "Xournal-mobile">
-			<p>Xournal++ now available for mobile in Beta!</p>
-			<a href = "https://gitlab.com/TheOneWithTheBraid/xournalpp_mobile" class = "download-button">Xournal++ Mobile</a>
-		</div>
+	<div class = "download-hyperlink bottom-button">
+		<a href = "http://127.0.0.1:8000/installation/">Get it now</a>
 	</div>
 </div>

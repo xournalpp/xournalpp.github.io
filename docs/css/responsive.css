@@ -15,10 +15,7 @@
 		font-size: 40px;
 	}
 	
-	.Xournal a {
-		font-size: 25px;
-	}
-	
+
 	.feature-text h1 {
 		font-size: 56px;
 		margin-bottom: 30px;
@@ -29,18 +26,10 @@
 		margin-bottom: 20px;
 	}
 	
-	.downloads h1 {
-		font-size: 72px;
-	}
-	
-	.downloads p {
-		font-size: 36px;
-	}
-	
-	.OS-container .button, .Xournal-mobile .button {
-		font-size: 30px;
-		line-height: 60px;
-		padding: 0px 30px;
+	.download-hyperlink a{
+		font-size: 40px;
+		border: solid 2px black;
+		padding: 10px 20px;
 	}
 }
 
@@ -96,9 +85,15 @@
 		margin-bottom: 5px;
 	}
 	
+	.bottom-button {
+		margin: 150px 0px;
+	}
+	
 }
 
 @media (max-width: 1219px){
+	
+	
 	.Xournal h1 {
 		font-size: 54px;
 		margin-bottom: 5px;
@@ -111,6 +106,11 @@
 	
 	.Xournal {
 		margin-bottom: 50px;
+	}
+	
+	.upper-button {
+		display: block;
+		margin-top: 50px;
 	}
 	
 	.feature {
@@ -126,20 +126,10 @@
 		font-size: 21px;
 	}
 	
-	.downloads h1 {
-		font-size: 54px;
-		margin-bottom: 0px;
+	.bottom-button {
+		margin: 100px 0px;
 	}
 	
-	.downloads p {
-		font-size: 27px;
-	}
-	
-	.OS-container .button, .Xournal-mobile .button {
-		font-size: 24px;
-		line-height: 50px;
-		padding: 0px 25px;
-	}
 }
 
 @media (max-width: 1050px){
@@ -165,33 +155,16 @@
 		font-size: 18px;
 	}
 	
-	.downloads h1 {
-		font-size: 42px;
-		margin-bottom: 0px;
-	}
-	
-	.downloads p {
-		font-size: 21px;
-	}
-	
-	.OS-container .button, .Xournal-mobile .button {
-		font-size: 18px;
-		line-height: 40px;
-		padding: 0px 20px;
-	}
 }
 
 @media (max-width: 800px){
+	
 	
 	.Xournal h1 {
 		font-size: 36px;
 	}
 	
 	.Xournal p {
-		font-size: 18px;
-	}
-	
-	.Xournal a{
 		font-size: 18px;
 	}
 	
@@ -202,22 +175,12 @@
 	.feature-description p {
 		font-size: 18px;
 	}
+
 	
-	.downloads h1 {
-		font-size: 36px;
-		margin-bottom: 0px;
+	.bottom-button {
+		margin: 50px 0px;
 	}
-	
-	.downloads p {
-		font-size: 18px;
-	}
-	
-	.OS-container .button, .Xournal-mobile .button {
-		font-size: 18px;
-		line-height: 36px;
-		padding: 0px 24px;
-	}
-	
+
 }
 
 @media (max-width: 670px){
@@ -255,18 +218,8 @@
 		margin-bottom: 0px;
 	}
 	
-	.downloads h1 {
-		font-size: 28px;
-		margin-bottom: 0px;
+	.download-hyperlink a{
+		font-size: 21px;
 	}
 	
-	.downloads p {
-		font-size: 14px;
-	}
-	
-	.OS-container .button, .Xournal-mobile .button {
-		font-size: 14px;
-		line-height: 30px;
-		padding: 0px 20px;
-	}
 }

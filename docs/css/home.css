@@ -43,6 +43,15 @@
 	list-style: none;
 }
 
+.download-hyperlink {
+	text-align: center;
+}
+
+.upper-button {
+	display: none;
+	margin-top: 100px;
+}
+
 .Xournal {
 	text-align: left;
 }
@@ -61,22 +70,6 @@
 	font-weight: medium;
 	font-size: 30px;
 	margin-bottom: 50px;
-}
-
-.download-hyperlink {
-	margin-top: 40px;
-	text-align: center;
-}
-
-
-.Xournal a {
-	display: inline-block;
-	font-weight: medium;
-	font-size: 20px;
-	text-align: center;
-	border: solid 1px black;
-	padding: 10px 10px;
-	transition: all 0.2s;
 }
 
 .Xournal a:hover {
@@ -140,48 +133,26 @@
 	margin-bottom: 20px;
 }
 
-.feature-text .last-description {
+.feature-text .last-description, .last-feature {
 	margin-bottom: 0px;
 }
 
-.downloads {
-	text-align: center;
-	margin-bottom: 100px;
+.bottom-button {
+	margin: 100px 0px;
 }
 
-.downloads h1 {
-	font-weight: bold;
-	font-size: 54px;
-	margin-bottom: 0px;
-}
-
-.downloads p {
-	font-size: 27px;
-	font-weight: 500;
-	margin-bottom: 15px;
-}
-
-.choosing-OS {
-	margin-bottom: 10px;
-}
-
-.OS-container li{
-	display: inline-flex;
-}
-
-.OS-container .download-button, .Xournal-mobile .download-button {
+.download-hyperlink a {
 	display: inline-block;
-	font-size: 24px;
 	font-weight: medium;
-	line-height: 48px;
-	padding: 0px 20px;
-	border: solid 1px black;
+	font-size: 30px;
+	text-align: center;
+	border: solid 2px black;
+	padding: 10px 20px;
 	transition: all 0.2s;
 }
 
-.download-button:hover{
+.download-hyperlink a:hover {
 	background-color: black;
 }
-
 
 
