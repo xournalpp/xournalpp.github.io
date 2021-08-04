@@ -59,22 +59,22 @@ hide:
 		    <div class = "feature-text">
 		        <h1>Expedite and facilitate your note-taking</h1>
 		        <div class = "feature-description">
-		        	<p class = "bullet-point">|</p><p>Add images and create various shapes, from squares to splines to axis</p>
+		        	<p class = "bullet-point">|</p><p>Add images and create various shapes, from circles to splines to axis</p>
 		        </div>
 		        <div class = "feature-description last-description">
 	        		<p class = "bullet-point">|</p><p>Snap objects to rectangular grid or degrees of rotation</p>
 	        	</div>
 		    </div>
-		    <img src = "/img/placeholder-image-2.png">
+		    <img src = "/img/Create Shape.png">
 		</div>
 		<div class = "feature feature-right">
 		    <div class = "feature-text">
 		        <h1>Extensible to your needs</h1>
 		        <div class = "feature-description">
-	        		<p class = "bullet-point">|</p><p>Use a plugin or create your own via the Lua programming language</p>
+	        		<p class = "bullet-point">|</p><p>Customize the toolbar to create a new layout tailor-made for you</p>
 	        	</div>
 		        <div class = "feature-description last-description">
-	        		<p class = "bullet-point">|</p><p>Customize the toolbar to create a new layout tailor-made for you</p>
+	        		<p class = "bullet-point">|</p><p>Use a plugin or create your own via the Lua programming language</p>
 	        	</div>
 		    </div>
 		    <img src = "/img/placeholder-image-2.png">
