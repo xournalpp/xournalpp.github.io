@@ -54,21 +54,19 @@
 
 .Xournal {
 	text-align: left;
-}
-
-.Xournal {
-	margin-bottom: 225px;
+	max-width: 1300px;
+	margin: 0px auto 225px auto;
 }
 
 .Xournal h1 {
 	font-weight: bold;
-	font-size: 68px;
+	font-size: 60px;
 	margin-bottom: 30px;
 }
 
 .Xournal p {
 	font-weight: medium;
-	font-size: 34px;
+	font-size: 30px;
 	margin-bottom: 50px;
 }
 
