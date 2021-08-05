@@ -7,7 +7,30 @@
 	.Xournal p {
 		font-size: 40px;
 	}
-
+	/* Change layout of features from here*/
+	.feature {
+		display: block;
+	}
+	
+	.feature-text, .feature img {
+		width: 100%;
+	}
+	
+	.feature-text {
+		box-sizing: border-box;
+		margin-bottom: 20px;
+	}
+	
+	.feature-right .feature-text {
+		padding-right: 0px;
+	}
+	
+	.feature-left .feature-text {
+		padding-left: 0px;
+	}
+	
+	/* to here*/
+	
 	.feature-text h1 {
 		font-size: 56px;
 		margin-bottom: 30px;
@@ -72,6 +95,8 @@
 		margin-top: 50px;
 	}
 	
+	/* Change layout of features from here*/
+	
 	.feature {
 		display: block;
 		margin-bottom: 50px;
@@ -93,6 +118,8 @@
 	.feature-left .feature-text {
 		padding-left: 0px;
 	}
+	
+	/* to here */
 	
 	.feature-text h1 {
 		font-size: 42px;
