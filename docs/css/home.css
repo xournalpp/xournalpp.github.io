@@ -71,6 +71,10 @@
 }
 
 .Xournal .Xournal-link {
+	color: #666;
+}
+
+.Xournal .Xournal-link:hover {
 	color: var(--md-accent-fg-color);
 }
 
