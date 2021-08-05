@@ -70,8 +70,8 @@
 	margin-bottom: 50px;
 }
 
-.Xournal a:hover {
-	background-color: black;
+.Xournal a {
+	color: var(--md-accent-fg-color);
 }
 
 .feature {
