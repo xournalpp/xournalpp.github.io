@@ -85,6 +85,12 @@
 		margin-bottom: 5px;
 	}
 	
+	.feature img {
+		max-width: 1000px;
+		margin: 0 auto;
+		
+	}
+	
 	.bottom-button {
 		margin: 150px 0px;
 	}
@@ -125,6 +131,7 @@
 	.feature-description p {
 		font-size: 21px;
 	}
+	
 	
 	.bottom-button {
 		margin: 100px 0px;
