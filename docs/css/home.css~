@@ -30,9 +30,9 @@
 .home {
 	box-sizing: border-box;
 	font-family: 'Montserrat';
-	margin: 0 auto;
-	max-width: 1600px;
 	width: 80%;
+	max-width: 1600px;
+	margin: 0 auto;
 }
 
 .home h1, .home p, .home a {
@@ -53,9 +53,9 @@
 }
 
 .Xournal {
-	margin: 0px auto 225px auto;
-	max-width: 1300px;
 	text-align: left;
+	max-width: 1300px;
+	margin: 0px auto 225px auto;
 }
 
 .Xournal h1 {
@@ -71,16 +71,12 @@
 }
 
 .Xournal .Xournal-link {
-	color: #666;
-}
-
-.Xournal .Xournal-link:hover {
 	color: var(--md-accent-fg-color);
 }
 
 .feature {
-	display: inline-flex;
 	margin-bottom: 225px;
+	display: inline-flex;
 }
 
 .feature-left {
@@ -88,15 +84,15 @@
 }
 
 .feature img {
-	align-self: flex-start;
 	width: 70%;
+	align-self: flex-start;
 }
 
 .feature-text {
-	box-sizing: border-box;
-	direction: ltr;
-	margin-bottom: 50px;
 	width: 30%;
+	box-sizing: border-box;
+	margin-bottom: 50px;
+	direction: ltr;
 }
 
 .feature-left .feature-text {
@@ -118,14 +114,14 @@
 }
 
 .home .feature-description {
-	display: inline-flex;
 	list-style: none;
+	display: inline-flex;
 }
 
 .feature-description .bullet-point {
 	color: var(--md-accent-fg-color);
-	font-weight: 600;
 	margin-right: 5px;
+	font-weight: 600;
 }
 
 .feature-description p {
@@ -144,12 +140,12 @@
 }
 
 .download-hyperlink a {
-	border: solid 2px black;
 	display: inline-block;
 	font-weight: medium;
 	font-size: 30px;
-	padding: 10px 20px;
 	text-align: center;
+	border: solid 2px black;
+	padding: 10px 20px;
 	transition: all 0.2s;
 }
 

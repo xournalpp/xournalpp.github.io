@@ -46,8 +46,8 @@
 	}
 	
 	.download-hyperlink a{
-		font-size: 40px;
 		border: solid 2px black;
+		font-size: 40px;
 		padding: 10px 20px;
 	}
 }
@@ -55,9 +55,9 @@
 @media (max-width: 1367px){
 	
 	.home {
+		max-width: none;
 		padding: 0px 10px;
 		width: 100%;
-		max-width: none;
 	}
 	
 	.Xournal {
