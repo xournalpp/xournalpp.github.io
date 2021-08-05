@@ -21,72 +21,100 @@ hide:
 			<a href = "http://127.0.0.1:8000/installation/">Download Xournal++</a>
 		</div>
 	</div>
+	
 	<div class = "feature-list">
 		<div class = "feature feature-right">
 		    <div class = "feature-text">
 		        <h1>Handwrite your notes</h1>
-		        <div class = "feature-description">
-		        	<p class = "bullet-point">|</p><p>Support for pressure-sensitive stylus and drawing tablets (Wacom, Huion, XP-Pen, etc.)</p>
+		        <div class = "feature-description-container">
+		        	<div class = "feature-description">
+		        		<p class = "bullet-point">|</p><p>Support for pressure-sensitive stylus and drawing tablets (Wacom, Huion, XP-Pen, etc.)</p>
+		        	</div>
 		        </div>
-		        <div class = "feature-description last-description">
-					<p class = "bullet-point">|</p><p>Robust and customizable pen, highlighters, and eraser tool, allowing you to write how you want to write</p>
+		        <div class = "feature-description-container">
+		        	<div class = "feature-description last-description">
+						<p class = "bullet-point">|</p><p>Robust and customizable pen, highlighters, and eraser tool, allowing you to write how you want to write</p>
+					</div>
 				</div>
 		    </div>
 		    <img src = "/img/Handwritten.png">
 		</div>
+		
 		<div class = "feature feature-left">
 		    <div class = "feature-text">
 		        <h1>Keep your work organized</h1>
-		        <div class = "feature-description">
-		        	<p class = "bullet-point">|</p><p>Use layers to make complex notes that are still pleasant to work with</p>
+		        <div class = "feature-description-container">
+		        	<div class = "feature-description">
+		        		<p class = "bullet-point">|</p><p>Use layers to make complex notes that are still pleasant to work with</p>
+		        	</div>
 		        </div>
-		        <div class = "feature-description last-description">
-					<p class = "bullet-point">|</p><p>The page previews and PDF bookmarks allow for easy navigation of your notes</p>
+		        <div class = "feature-description-container">
+		        	<div class = "feature-description last-description">
+						<p class = "bullet-point">|</p><p>The page previews and PDF bookmarks allow for easy navigation of your notes</p>
+	        		</div>
 	        	</div>
 		    </div>
 		    <img src = "/img/Layers.gif">
 		</div>
+		
 		<div class = "feature feature-right">
 		    <div class = "feature-text">
 		        <h1>Enhance and accelerate your note-taking</h1>
-		        <div class = "feature-description">
-					<p class = "bullet-point">|</p><p>Add images and create various shapes, from circles to splines to axis</p>
+		        <div class = "feature-description-container">
+		        	<div class = "feature-description">
+						<p class = "bullet-point">|</p><p>Add images and create various shapes, from circles to splines to axis</p>
+					</div>
 				</div>
-				<div class = "feature-description last-description">
-	        		<p class = "bullet-point">|</p><p>Snap objects to rectangular grid or degrees of rotation</p>
+				<div class = "feature-description-container">
+					<div class = "feature-description last-description">
+	        			<p class = "bullet-point">|</p><p>Snap objects to rectangular grid or degrees of rotation</p>
+	        		</div>
 	        	</div>
 		    </div>
 		    <img src = "/img/Create Shape.png">
 		</div>
+		
 		<div class = "feature feature-left">
 		    <div class = "feature-text">
 		        <h1>Get scientific</h1>
-		        <div class = "feature-description last-description">
-	        		<p class = "bullet-point">|</p><p>Create anything from electrical circuits to the structural formula of molecules with the built-in LaTeX editor</p>
+		        <div class = "feature-description-container">
+		        	<div class = "feature-description last-description">
+	        			<p class = "bullet-point">|</p><p>Create anything from electrical circuits to the structural formula of molecules with the built-in LaTeX editor</p>
+	        		</div>
 	        	</div>
 		    </div>
 		    <img src = "/img/Latex.png">
 		</div>
+		
 		<div class = "feature feature-right">
 		    <div class = "feature-text">
 		        <h1>Your notes, your way</h1>
-		        <div class = "feature-description">
-	        		<p class = "bullet-point">|</p><p>Customize the toolbar to create a new layout tailor-made for you</p>
+		        <div class = "feature-description-container">
+		        	<div class = "feature-description">
+	        			<p class = "bullet-point">|</p><p>Customize the toolbar to create a new layout tailor-made for you</p>
+	        		</div>
 	        	</div>
-		        <div class = "feature-description last-description">
-	        		<p class = "bullet-point">|</p><p>Use a plugin or create your own via the Lua programming language</p>
+	        	<div class = "feature-description-container">
+		        	<div class = "feature-description last-description">
+	        			<p class = "bullet-point">|</p><p>Use a plugin or create your own via the Lua programming language</p>
+	        		</div>
 	        	</div>
 		    </div>
 		    <img src = "/img/Customize Toolbars.gif">
 		</div>
+		
 		<div class = "feature feature-left last-feature">
 		    <div class = "feature-text">
 		        <h1>Explain every stroke</h1>
-		        <div class = "feature-description">
-	        		<p class = "bullet-point">|</p><p>Insert audio recording to any object in your note</p>
-	        	</div>
-	        	<div class = "feature-description last-description">
-					<p class = "bullet-point">|</p><p>Listen to the recorded audio with the 'play object' tool</p>
+		        <div class = "feature-description-container">
+		        	<div class = "feature-description">
+		        		<p class = "bullet-point">|</p><p>Insert audio recording to any object in your note</p>
+		        	</div>
+		        </div>
+		        <div class = "feature-description-container">
+	        		<div class = "feature-description last-description">
+						<p class = "bullet-point">|</p><p>Listen to the recorded audio with the 'play object' tool</p>
+	        		</div>
 	        	</div>
 		    </div>
 		    <img src = "/img/placeholder-image-2.png">
