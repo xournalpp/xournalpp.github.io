@@ -62,10 +62,10 @@ hide:
 		    <div class = "feature-text">
 		        <h1>Get scientific</h1>
 		        <div class = "feature-description last-description">
-	        		<p class = "bullet-point">|</p><p>Create anything from electrical circuits to structural formula of molecules with the built-in LaTeX editor</p>
+	        		<p class = "bullet-point">|</p><p>Create anything from electrical circuits to the structural formula of molecules with the built-in LaTeX editor</p>
 	        	</div>
 		    </div>
-		    <img src = "/img/placeholder-image-2.png">
+		    <img src = "/img/Latex.png">
 		</div>
 		<div class = "feature feature-right">
 		    <div class = "feature-text">
