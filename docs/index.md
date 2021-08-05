@@ -16,7 +16,7 @@ hide:
 	<div class = "Xournal" id = "Xournal">
 		<h1>Take all the notes you want with ease, from solving a physics problem to making travel diaries.</h1>
 		<p>Xournal++ is an open-source and cross-platform note-taking software that is fast, flexible, and functional. A modern rewrite and a more feature-rich version of the wonderful Xournal program.</p>
-		<img src = "img/Xournal++ Headline Example.png">
+		<img src = "img/Physics Problem.png">
 		<div class = "download-hyperlink upper-button">
 			<a href = "http://127.0.0.1:8000/installation/">Download Xournal++</a>
 		</div>
