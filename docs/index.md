@@ -38,10 +38,10 @@ hide:
 		    <div class = "feature-text">
 		        <h1>Keep your work organized</h1>
 		        <div class = "feature-description">
-		        	<p class = "bullet-point">|</p><p>Use layers to make complex notes that are still easy to work with</p>
+		        	<p class = "bullet-point">|</p><p>Use layers to make complex notes that are still pleasant to work with</p>
 		        </div>
 		        <div class = "feature-description last-description">
-	        		<p class = "bullet-point">|</p><p>The page previews and PDF bookmarks allow for easy navigation of your notes</p>
+					<p class = "bullet-point">|</p><p>The page previews and PDF bookmarks allow for easy navigation of your notes</p>
 	        	</div>
 		    </div>
 		    <img src = "/img/Layers.gif">
