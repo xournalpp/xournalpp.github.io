@@ -29,8 +29,8 @@ hide:
 		        	<p class = "bullet-point">|</p><p>Support for pressure-sensitive stylus and drawing tablets (Wacom, Huion, XP-Pen, etc.)</p>
 		        </div>
 		        <div class = "feature-description last-description">
-	        		<p class = "bullet-point">|</p><p>Robust and customizable pen, highlighters, and eraser tool, allowing you to write how you want to write</p>
-	        	</div>
+					<p class = "bullet-point">|</p><p>Robust and customizable pen, highlighters, and eraser tool, allowing you to write how you want to write</p>
+				</div>
 		    </div>
 		    <img src = "/img/Handwritten.png">
 		</div>
@@ -48,27 +48,24 @@ hide:
 		</div>
 		<div class = "feature feature-right">
 		    <div class = "feature-text">
-		        <h1>Explain every stroke</h1>
-		        <div class = "feature-description">
-	        		<p class = "bullet-point">|</p><p>Insert audio recording to any object in your note</p>
-	        	</div>
-	        	<div class = "feature-description last-description">
-					<p class = "bullet-point">|</p><p>Listen to the recorded audio with the 'play object' tool</p>
-	        	</div>
-		    </div>
-		    <img src = "/img/placeholder-image-2.png">
-		</div>
-		<div class = "feature feature-left">
-		    <div class = "feature-text">
 		        <h1>Accelerate and enhance your note-taking</h1>
 		        <div class = "feature-description">
-		        	<p class = "bullet-point">|</p><p>Add images and create various shapes, from circles to splines to axis</p>
-		        </div>
-		        <div class = "feature-description last-description">
+					<p class = "bullet-point">|</p><p>Add images and create various shapes, from circles to splines to axis</p>
+				</div>
+				<div class = "feature-description last-description">
 	        		<p class = "bullet-point">|</p><p>Snap objects to rectangular grid or degrees of rotation</p>
 	        	</div>
 		    </div>
 		    <img src = "/img/Create Shape.png">
+		</div>
+		<div class = "feature feature-left">
+		    <div class = "feature-text">
+		        <h1>Work with scientific formulas</h1>
+		        <div class = "feature-description last-description">
+	        		<p class = "bullet-point">|</p><p>The built-in LaTex editor allows for hassle-free writing of scientific formulas</p>
+	        	</div>
+		    </div>
+		    <img src = "/img/placeholder-image-2.png">
 		</div>
 		<div class = "feature feature-right">
 		    <div class = "feature-text">
@@ -80,13 +77,16 @@ hide:
 	        		<p class = "bullet-point">|</p><p>Use a plugin or create your own via the Lua programming language</p>
 	        	</div>
 		    </div>
-		    <img src = "/img/Customize Toolbars.png">
+		    <img src = "/img/Customize Toolbars.gif">
 		</div>
 		<div class = "feature feature-left last-feature">
 		    <div class = "feature-text">
-		        <h1>Work with scientific formulas</h1>
-		        <div class = "feature-description last-description">
-	        		<p class = "bullet-point">|</p><p>The built-in LaTex editor allows for hassle-free writing of scientific formulas</p>
+		        <h1>Explain every stroke</h1>
+		        <div class = "feature-description">
+	        		<p class = "bullet-point">|</p><p>Insert audio recording to any object in your note</p>
+	        	</div>
+	        	<div class = "feature-description last-description">
+					<p class = "bullet-point">|</p><p>Listen to the recorded audio with the 'play object' tool</p>
 	        	</div>
 		    </div>
 		    <img src = "/img/placeholder-image-2.png">
