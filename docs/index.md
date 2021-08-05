@@ -49,8 +49,11 @@ hide:
 		<div class = "feature feature-right">
 		    <div class = "feature-text">
 		        <h1>Explain every stroke</h1>
-		        <div class = "feature-description last-description">
+		        <div class = "feature-description">
 	        		<p class = "bullet-point">|</p><p>Insert audio recording to any object in your note</p>
+	        	</div>
+	        	<div class = "feature-description last-description">
+					<p class = "bullet-point">|</p><p>Listen to the recorded audio with the 'play object' tool</p>
 	        	</div>
 		    </div>
 		    <img src = "/img/placeholder-image-2.png">
