@@ -62,14 +62,15 @@
 	
 	.Xournal {
 		margin-bottom: 150px;
+		max-width: 975px;
 	}
 	
 	.Xournal h1 {
-		font-size: 60px;
+		font-size: 48px;
 	}
 	
 	.Xournal p {
-		font-size: 30px;
+		font-size: 24px;
 	}
 	
 	.bottom-button {
