@@ -44,7 +44,7 @@ hide:
 	        		<p class = "bullet-point">|</p><p>The page previews and PDF bookmarks allow for easy navigation of your notes</p>
 	        	</div>
 		    </div>
-		    <img src = "/img/placeholder-image-2.png">
+		    <img src = "/img/Layers.gif">
 		</div>
 		<div class = "feature feature-right">
 		    <div class = "feature-text">
