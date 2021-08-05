@@ -35,7 +35,7 @@
 	width: 80%;
 }
 
-.home h1, .home p, .home a {
+.home h1, .home h2, .home p, .home a {
 	color: #000; 
 }
 
@@ -111,7 +111,7 @@
 	display: inline-block;
 }
 
-.feature-text h1 {
+.feature-text h2 {
 	font-weight: bold;
 	font-size: 42px;
 	margin-bottom: 30px;

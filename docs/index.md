@@ -25,7 +25,7 @@ hide:
 	<div class = "feature-list">
 		<div class = "feature feature-right">
 		    <div class = "feature-text">
-		        <h1>Handwrite your notes</h1>
+		        <h2>Handwrite your notes</h2>
 		        <div class = "feature-description-container">
 		        	<div class = "feature-description">
 		        		<p class = "bullet-point">|</p><p>Support for pressure-sensitive stylus and drawing tablets (Wacom, Huion, XP-Pen, etc.)</p>
@@ -42,7 +42,7 @@ hide:
 		
 		<div class = "feature feature-left">
 		    <div class = "feature-text">
-		        <h1>Keep your work organized</h1>
+		        <h2>Keep your work organized</h2>
 		        <div class = "feature-description-container">
 		        	<div class = "feature-description">
 		        		<p class = "bullet-point">|</p><p>Use layers to make complex notes that are still pleasant to work with</p>
@@ -59,7 +59,7 @@ hide:
 		
 		<div class = "feature feature-right">
 		    <div class = "feature-text">
-		        <h1>Enhance and accelerate your note-taking</h1>
+		        <h2>Enhance and accelerate your note-taking</h2>
 		        <div class = "feature-description-container">
 		        	<div class = "feature-description">
 						<p class = "bullet-point">|</p><p>Add images and create various shapes, from circles to splines to axis</p>
@@ -88,7 +88,7 @@ hide:
 		
 		<div class = "feature feature-right">
 		    <div class = "feature-text">
-		        <h1>Your notes, your way</h1>
+		        <h2>Your notes, your way</h2>
 		        <div class = "feature-description-container">
 		        	<div class = "feature-description">
 	        			<p class = "bullet-point">|</p><p>Customize the toolbar to create a new layout tailor-made for you</p>
@@ -105,7 +105,7 @@ hide:
 		
 		<div class = "feature feature-left last-feature">
 		    <div class = "feature-text">
-		        <h1>Explain every stroke</h1>
+		        <h2>Explain every stroke</h2>
 		        <div class = "feature-description-container">
 		        	<div class = "feature-description">
 		        		<p class = "bullet-point">|</p><p>Insert audio recording to any object in your note</p>
