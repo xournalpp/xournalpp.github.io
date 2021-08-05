@@ -18,7 +18,7 @@ hide:
 		<p>Xournal++ is an open-source and cross-platform note-taking software that is fast, flexible, and functional. A modern rewrite and a more feature-rich version of the wonderful <span><a class = "Xournal-link" href = "https://sourceforge.net/projects/xournal/">Xournal</a></span> program.</p>
 		<img src = "img/Physics Problem.png">
 		<div class = "download-hyperlink upper-button">
-			<a href = "http://127.0.0.1:8000/installation/">Download Xournal++</a>
+			<a href = "/installation/">Download Xournal++</a>
 		</div>
 	</div>
 	
@@ -121,6 +121,6 @@ hide:
 		</div>
 	</div>
 	<div class = "download-hyperlink bottom-button">
-		<a href = "http://127.0.0.1:8000/installation/">Get it now</a>
+		<a href = "/installation/">Get it now</a>
 	</div>
 </div>
