@@ -48,9 +48,9 @@ hide:
 		</div>
 		<div class = "feature feature-right">
 		    <div class = "feature-text">
-		        <h1>Record your notes</h1>
+		        <h1>Explain every stroke</h1>
 		        <div class = "feature-description last-description">
-	        		<p class = "bullet-point">|</p><p>Record all of your note-taking and the accompanying audio explanation with the built-in audio recorder to share with all of your peers</p>
+	        		<p class = "bullet-point">|</p><p>Insert audio recording to any object in your note</p>
 	        	</div>
 		    </div>
 		    <img src = "/img/placeholder-image-2.png">
