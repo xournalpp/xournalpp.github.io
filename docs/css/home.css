@@ -70,7 +70,7 @@
 	margin-bottom: 50px;
 }
 
-.Xournal a {
+.Xournal .Xournal-link {
 	color: var(--md-accent-fg-color);
 }
 
