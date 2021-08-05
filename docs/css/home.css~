@@ -31,7 +31,7 @@
 	box-sizing: border-box;
 	font-family: 'Montserrat';
 	width: 80%;
-	max-width: 1600px;
+	max-width: 1300px;
 	margin: 0 auto;
 }
 
@@ -57,18 +57,18 @@
 }
 
 .Xournal {
-	margin-bottom: 200px;
+	margin-bottom: 100px;
 }
 
 .Xournal h1 {
 	font-weight: bold;
-	font-size: 68px;
+	font-size: 60px;
 	margin-bottom: 30px;
 }
 
 .Xournal p {
 	font-weight: medium;
-	font-size: 34px;
+	font-size: 30px;
 	margin-bottom: 50px;
 }
 
@@ -77,7 +77,7 @@
 }
 
 .feature {
-	margin-bottom: 200px;
+	margin-bottom: 150px;
 	display: inline-flex;
 }
 
@@ -85,28 +85,27 @@
 	direction: rtl;
 }
 
-.feature img {
-	width: 70%;
-	align-self: flex-start;
-}
-
-.feature-text {
-	width: 30%;
-	box-sizing: border-box;
-	margin-bottom: 50px;
-	direction: ltr;
+.feature-right .feature-text {
+	padding-right: 20px;
 }
 
 .feature-left .feature-text {
 	padding-left: 20px;
 }
 
-.feature-right .feature-text {
-	padding-right: 20px;
-}
-
 .feature-text, .feature img {
 	display: inline-block;
+}
+
+.feature img {
+	width: 70%;
+}
+
+.feature-text {
+	width: 30%; 
+	box-sizing: border-box;
+	margin-bottom: 50px;
+	direction: ltr;
 }
 
 .feature-text h1 {
@@ -114,6 +113,7 @@
 	font-size: 42px;
 	margin-bottom: 30px;
 }
+
 
 .home .feature-description {
 	list-style: none;
