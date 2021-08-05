@@ -43,52 +43,14 @@
 
 @media (max-width: 1367px){
 	
+	.home {
+		padding: 0px 10px;
+		width: 100%;
+		max-width: none;
+	}
 	
 	.Xournal {
-		margin-bottom: 75px;
-	}
-	
-	.feature {
-		margin-bottom: 75px;
-		display: block;
-		direction: ltr;
-	}
-	
-	.feature-text, .feature img {
-		display: block;
-		width: 100%;
-	}
-	
-	.feature-text {
-		box-sizing: border-box;
-		margin-bottom: 20px;
-	}
-	
-	.feature-right .feature-text {
-		padding-right: 0px;
-	}
-	
-	.feature-left .feature-text {
-		padding-left: 0px;
-	}
-	
-	.feature-text h1 {
-		font-weight: bold;
-		font-size: 52px;
-		margin-bottom: 10px;
-	}
-	
-	.feature-description p {
-		display: inline-block;
-		font-weight: medium;
-		font-size: 26px;
-		margin-bottom: 5px;
-	}
-	
-	.feature img {
-		max-width: 1000px;
-		margin: 0 auto;
-		
+		margin-bottom: 150px;
 	}
 	
 	.bottom-button {
