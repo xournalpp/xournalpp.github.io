@@ -1,5 +1,9 @@
 @media (min-width: 1921px){
 	
+	.Xournal {
+		max-width: none;
+	}
+	
 	.Xournal h1 {
 		font-size: 80px;
 	}
