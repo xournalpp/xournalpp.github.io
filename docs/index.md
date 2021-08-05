@@ -62,7 +62,7 @@ hide:
 		    <div class = "feature-text">
 		        <h1>Work with scientific formulas</h1>
 		        <div class = "feature-description last-description">
-	        		<p class = "bullet-point">|</p><p>The built-in LaTex editor allows for hassle-free writing of scientific formulas</p>
+	        		<p class = "bullet-point">|</p><p>The built-in LaTex editor allows for hassle-free writing of scientific and mathematical formulas</p>
 	        	</div>
 		    </div>
 		    <img src = "/img/placeholder-image-2.png">
