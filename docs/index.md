@@ -69,7 +69,7 @@ hide:
 		</div>
 		<div class = "feature feature-right">
 		    <div class = "feature-text">
-		        <h1>Extensible to your needs</h1>
+		        <h1>Your notes, your way</h1>
 		        <div class = "feature-description">
 	        		<p class = "bullet-point">|</p><p>Customize the toolbar to create a new layout tailor-made for you</p>
 	        	</div>
