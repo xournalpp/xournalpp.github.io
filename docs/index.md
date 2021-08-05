@@ -57,7 +57,7 @@ hide:
 		</div>
 		<div class = "feature feature-left">
 		    <div class = "feature-text">
-		        <h1>Expedite and facilitate your note-taking</h1>
+		        <h1>Accelerate and enhance your note-taking</h1>
 		        <div class = "feature-description">
 		        	<p class = "bullet-point">|</p><p>Add images and create various shapes, from circles to splines to axis</p>
 		        </div>
