@@ -60,9 +60,9 @@ hide:
 		</div>
 		<div class = "feature feature-left">
 		    <div class = "feature-text">
-		        <h1>Work with scientific formulas</h1>
+		        <h1>Get scientific</h1>
 		        <div class = "feature-description last-description">
-	        		<p class = "bullet-point">|</p><p>The built-in LaTex editor allows for hassle-free writing of scientific and mathematical formulas</p>
+	        		<p class = "bullet-point">|</p><p>Create anything from electrical circuits to structural formula of molecules with the built-in LaTeX editor</p>
 	        	</div>
 		    </div>
 		    <img src = "/img/placeholder-image-2.png">
