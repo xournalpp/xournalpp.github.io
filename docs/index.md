@@ -11,10 +11,14 @@ hide:
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width">
+<script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
 
 <div class = "home">
 	<div class = "Xournal" id = "Xournal">
-		<h1>Take all the notes you want with ease, from solving a physics problem to making travel diaries.</h1>
+		<div class = "title">
+			<h1>Take all the notes you want with ease.</h1>
+			<h2>From solving a physics problem to making travel diaries.</h2>
+		</div>
 		<p>Xournal++ is an open-source and cross-platform note-taking software that is fast, flexible, and functional. A modern rewrite and a more feature-rich version of the wonderful <span><a class = "Xournal-link" href = "https://sourceforge.net/projects/xournal/">Xournal</a></span> program.</p>
 		<img src = "img/Physics Problem.png">
 		<div class = "download-hyperlink upper-button">
@@ -36,6 +40,9 @@ hide:
 						<p class = "bullet-point">|</p><p>Robust and customizable pen, highlighters, and eraser tool, allowing you to write how you want to write</p>
 					</div>
 				</div>
+				<div class="feature-link">
+					<a href = "#">Learn more</a>
+				</div>
 		    </div>
 		    <img src = "/img/Handwritten.png">
 		</div>
@@ -53,6 +60,9 @@ hide:
 						<p class = "bullet-point">|</p><p>The page previews and PDF bookmarks allow for easy navigation of your notes</p>
 	        		</div>
 	        	</div>
+	        	<div class="feature-link">
+					<a href = "#">Learn more</a>
+				</div>
 		    </div>
 		    <img src = "/img/Layers.gif">
 		</div>
@@ -70,18 +80,24 @@ hide:
 	        			<p class = "bullet-point">|</p><p>Snap objects to rectangular grid or degrees of rotation</p>
 	        		</div>
 	        	</div>
+	        	<div class="feature-link">
+					<a href = "#">Learn more</a>
+				</div>
 		    </div>
 		    <img src = "/img/Create Shape.png">
 		</div>
 		
 		<div class = "feature feature-left">
 		    <div class = "feature-text">
-		        <h1>Get scientific</h1>
+		        <h2>Get scientific</h2>
 		        <div class = "feature-description-container">
 		        	<div class = "feature-description last-description">
 	        			<p class = "bullet-point">|</p><p>Create anything from electrical circuits to the structural formula of molecules with the built-in LaTeX editor</p>
 	        		</div>
 	        	</div>
+	        	<div class="feature-link">
+					<a href = "#">Learn more</a>
+				</div>
 		    </div>
 		    <img src = "/img/Latex.png">
 		</div>
@@ -99,6 +115,9 @@ hide:
 	        			<p class = "bullet-point">|</p><p>Use a plugin or create your own via the Lua programming language</p>
 	        		</div>
 	        	</div>
+	        	<div class="feature-link">
+					<a href = "#">Learn more</a>
+				</div>
 		    </div>
 		    <img src = "/img/Customize Toolbars.gif">
 		</div>
@@ -116,6 +135,9 @@ hide:
 						<p class = "bullet-point">|</p><p>Listen to the recorded audio with the 'play object' tool</p>
 	        		</div>
 	        	</div>
+	        	<div class="feature-link">
+					<a href = "#">Learn more</a>
+				</div>
 		    </div>
 		    <img src = "/img/placeholder-image-2.png">
 		</div>

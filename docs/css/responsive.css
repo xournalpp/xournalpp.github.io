@@ -26,7 +26,6 @@
 	
 	.feature-text {
 		box-sizing: border-box;
-		margin-bottom: 20px;
 	}
 	
 	.feature-right .feature-text {
@@ -47,6 +46,10 @@
 	.feature-description p {
 		font-size: 28px;
 		margin-bottom: 20px;
+	}
+	
+	.feature-link {
+		font-size: 22px;
 	}
 	
 	.download-hyperlink a{
@@ -142,7 +145,6 @@
 		margin-bottom: 5px;
 	}
 	
-	
 	.bottom-button {
 		margin: 100px 0px;
 	}
@@ -174,6 +176,10 @@
 	
 	.feature-description p {
 		font-size: 18px;
+	}
+	
+	.feature-link {
+		font-size: 15px;
 	}
 	
 }
@@ -248,6 +254,10 @@
 	.feature-description p {
 		font-size: 12px;
 		margin-bottom: 0px;
+	}
+	
+	.feature-link {
+		font-size: 10px;
 	}
 	
 	.download-hyperlink a{

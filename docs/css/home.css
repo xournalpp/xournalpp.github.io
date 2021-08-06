@@ -3,7 +3,8 @@
 .md-typeset p,
 .md-typeset ul,
 .md-typeset li,
-.md-typeset a {
+.md-typeset a,
+.md-typeset span {
 	margin: 0;
 	padding: 0;
 }
@@ -142,6 +143,20 @@
 	font-weight: medium;
 	font-size: 21px;
 	margin-bottom: 20px;
+}
+
+.feature-link {
+	/*display: none;*/
+	font-size: 18px;
+}
+
+.feature-link a {
+	color: var(--md-accent-fg-color);
+	transition: all 0.2s;
+}
+
+.feature-link a:hover{
+	color: #c53d13;
 }
 
 .feature-text .last-description, .last-feature {
