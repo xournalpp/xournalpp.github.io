@@ -58,10 +58,19 @@
 	text-align: left;
 }
 
-.Xournal h1 {
-	font-weight: bold;
-	font-size: 60px;
+.title {
 	margin-bottom: 30px;
+}
+
+.title h1 {
+	font-size: 60px;
+	font-weight: bold;
+}
+
+.title h2 {
+	color: rgba(0, 0, 0, 0.70);
+	font-size: 35px;
+	font-weight: 600;
 }
 
 .Xournal p {

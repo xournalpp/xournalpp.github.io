@@ -4,8 +4,12 @@
 		max-width: none;
 	}
 	
-	.Xournal h1 {
+	.title h1 {
 		font-size: 80px;
+	}
+	
+	.title h2 {
+		font-size: 45px;
 	}
 	
 	.Xournal p {
@@ -65,8 +69,12 @@
 		max-width: 975px;
 	}
 	
-	.Xournal h1 {
+	.title h1 {
 		font-size: 48px;
+	}
+	
+	.title h2 {
+		font-size: 29px;
 	}
 	
 	.Xournal p {
@@ -81,13 +89,11 @@
 
 @media (max-width: 1219px){
 	
-	.Xournal h1 {
-		font-size: 54px;
+	.Xournal {
 		margin-bottom: 5px;
 	}
 	
 	.Xournal p {
-		font-size: 27px;
 		margin-bottom: 25px;
 	}
 	
@@ -148,8 +154,12 @@
 		padding: 0px 10px;
 	}
 	
-	.Xournal h1 {
+	.title h1 {
 		font-size: 42px;
+	}
+	
+	.title h2 {
+		font-size: 26px;
 	}
 	
 	.Xournal p {
@@ -170,8 +180,12 @@
 
 @media (max-width: 800px){
 	
-	.Xournal h1 {
+	.title h1 {
 		font-size: 36px;
+	}
+	
+	.title h2 {
+		font-size: 23px;
 	}
 	
 	.Xournal p {
@@ -198,8 +212,12 @@
 		padding: 0px 5px;
 	}
 	
-	.Xournal h1 {
+	.title h1 {
 		font-size: 28px;
+	}
+	
+	.title h2 {
+		font-size: 19px;
 	}
 	
 	.Xournal {
