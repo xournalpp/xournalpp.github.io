@@ -1,6 +1,12 @@
 {% extends "base.html" %}
 {% block tabs %}
 {{ super() }}
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width">
+
 <style>
 	
 	.home h1,
@@ -63,6 +69,10 @@
     	margin-bottom: 225px;
     	max-width: 1300px;
     	text-align: left;
+    }
+    
+    .Xournal img {
+    	width: 100%;
     }
     
     .title {
@@ -254,12 +264,15 @@
 		
 		.home {
 			max-width: none;
-			padding: 0px 10px;
+			padding-right: 10px;
+			padding-left: 10px;
 			width: 100%;
 		}
 		
 		.Xournal {
 			margin-bottom: 150px;
+			margin-left: auto;
+			margin-right: auto;
 			max-width: 975px;
 		}
 		
@@ -282,10 +295,6 @@
 	}
 	
 	@media (max-width: 1219px){
-		
-		.Xournal {
-			margin-bottom: 5px;
-		}
 		
 		.Xournal p {
 			margin-bottom: 25px;
@@ -344,7 +353,7 @@
 	
 	@media (max-width: 1050px){
 		.home {
-			padding: 0px 10px;
+			padding-top: 25px;
 		}
 		
 		.title h1 {
@@ -406,7 +415,8 @@
 	
 	@media (max-width: 670px){
 		.home {
-			padding: 0px 5px;
+			padding-left: 5px;
+			padding-right: 5px;
 		}
 		
 		.title h1 {
