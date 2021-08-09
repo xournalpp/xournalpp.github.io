@@ -15,6 +15,12 @@
 	.Xournal p {
 		font-size: 30px;
 	}
+
+	.download-hyperlink h2{
+		font-size: 45px;
+		margin-bottom: 30px;
+	}
+
 	/* Change layout of features from here*/
 	.feature {
 		display: block;
@@ -88,6 +94,16 @@
 		font-size: 21px;
 	}
 	
+	.download-hyperlink h2{
+		font-size: 30px;
+		margin-bottom: 30px;
+	}
+
+	.upper-button a {
+		font-size: 24px;
+		padding: 7px 16px;
+	}
+
 	.bottom-button {
 		margin: 150px 0px 50px 0px;
 	}
@@ -200,6 +216,10 @@
 		font-size: 23px;
 	}
 	
+	.download-hyperlink h2{
+		margin-bottom: 20px;
+	}
+
 	.feature-text h2 {
 		font-size: 32px;
 	}
@@ -218,6 +238,16 @@
 	.home {
 		padding-left: 7px;
 		padding-right: 7px;
+	}
+
+	.download-hyperlink h2{
+		font-size: 24px;
+		margin-bottom: 20px;
+	}
+
+	.upper-button a {
+		font-size: 20px;
+		padding: 7px 16px;
 	}
 	
 	.download-hyperlink a {

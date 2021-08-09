@@ -45,12 +45,7 @@
 	list-style: none;
 }
     
-.download-hyperlink {
-	text-align: center;
-}
-    
 .upper-button {
-	display: none;
 	margin-top: 100px;
 }
     
@@ -92,7 +87,28 @@
 .Xournal .Xournal-link:hover {
 	color: var(--md-accent-fg-color);
 }
+
     
+.download-hyperlink {
+	text-align: center;
+}
+
+.download-hyperlink h2{
+	font-size: 35px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+ 
+.upper-button a {
+	border: solid 2px black;
+	display: inline-block;
+	font-weight: medium;
+	font-size: 30px;
+	padding: 10px 20px;
+	text-align: center;
+	transition: all 0.2s;
+}
+
 .feature {
 	display: inline-flex;
 	margin-bottom: 225px;
@@ -172,7 +188,7 @@
 	margin: 100px 0px;
 }
     
-.download-hyperlink a {
+.lower-button a {
 	border: solid 2px black;
 	display: inline-block;
 	font-weight: medium;
