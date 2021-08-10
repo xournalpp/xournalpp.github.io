@@ -137,7 +137,7 @@
 	/* Change layout of features from here*/
 	
 	.feature {
-		display: block;
+		flex-direction: column;
 		margin-bottom: 100px;
 	}
 	
@@ -165,16 +165,16 @@
 		margin-bottom: 10px;
 	}
 	
-	.feature-description p{
-		font-size: 21px;
-	}
-
 	.feature-description {
 		margin-bottom: 5px;
 	}
 
 	.feature-description:last-child {
 		margin-bottom: 0px;
+	}
+
+	.feature-description p{
+		font-size: 21px;
 	}
 
 	.feature-link {
