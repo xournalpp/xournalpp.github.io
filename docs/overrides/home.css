@@ -115,7 +115,7 @@
 }
     
 .feature-left {
-	direction: rtl;
+	flex-direction: row-reverse;
 }
     
 .feature img {
