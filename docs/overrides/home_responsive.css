@@ -56,10 +56,6 @@
 	.feature-description p {
 		font-size: 28px;
 	}
-
-	.feature-description {
-		margin-bottom: 20px;
-	}
 	
 	.feature-link {
 		font-size: 22px;
@@ -173,8 +169,12 @@
 		font-size: 21px;
 	}
 
-	.feature-description {
+	.feature-description-container {
 		margin-bottom: 5px;
+	}
+
+	.last-description {
+		margin-bottom: 0px;
 	}
 
 	.feature-link {
