@@ -44,6 +44,10 @@
 	
 	/* to here*/
 	
+	.feature-link .documentation-link {
+		margin-bottom: 10px;
+	}
+
 	.feature-text h2 {
 		font-size: 56px;
 		margin-bottom: 30px;
@@ -51,11 +55,15 @@
 	
 	.feature-description p {
 		font-size: 28px;
+	}
+
+	.feature-description {
 		margin-bottom: 20px;
 	}
 	
 	.feature-link {
 		font-size: 22px;
+		margin-top: 25px;
 	}
 	
 	.download-hyperlink a{
@@ -161,9 +169,16 @@
 		margin-bottom: 10px;
 	}
 	
-	.feature-description p {
+	.feature-description p{
 		font-size: 21px;
+	}
+
+	.feature-description {
 		margin-bottom: 5px;
+	}
+
+	.feature-link {
+		margin-top: 15px;
 	}
 	
 	.bottom-button {
@@ -192,12 +207,17 @@
 		margin-bottom: 7px;
 	}
 	
-	.feature-description p {
+	.feature-description p{
 		font-size: 18px;
 	}
 	
 	.feature-link {
 		font-size: 15px;
+		margin-top: 10px;
+	}
+
+	.feature-link .documentation-link {
+		margin-bottom: 5px;
 	}
 	
 	.download-hyperlink a {
@@ -222,10 +242,6 @@
 
 	.feature-text h2 {
 		font-size: 32px;
-	}
-	
-	.feature-description p {
-		font-size: 18px;
 	}
 	
 	.bottom-button {

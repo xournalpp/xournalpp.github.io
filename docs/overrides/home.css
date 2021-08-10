@@ -163,24 +163,36 @@
 	display: inline-block;
 	font-weight: medium;
 	font-size: 21px;
+}
+
+.feature-description {
 	margin-bottom: 20px;
+}
+
+.feature-description:last-child {
+	margin-bottom: 0px;
 }
     
 .feature-link {
-	display: none;
 	font-size: 18px;
+	margin-top: 20px;
 }
     
 .feature-link a {
 	color: var(--md-accent-fg-color);
+	display: block;
 	transition: all 0.2s;
+}
+
+.feature-link .documentation-link {
+	margin-bottom: 7px;
 }
     
 .feature-link a:hover{
 	color: #c53d13;
 }
-    
-.feature-text .last-description, .last-feature {
+
+.feature:last-child {
 	margin-bottom: 0px;
 }
     
