@@ -147,11 +147,17 @@
 }
 
 .feature-description-container {
-	display: block;
+	display: flex;
+	flex-direction: column;
 }
 
 .feature-description {
 	display: inline-flex;
+	margin-bottom: 20px;
+}
+
+.feature-description:last-child {
+	margin-bottom: 0px;
 }
     
 .feature-description .bullet-point {
@@ -164,15 +170,6 @@
 	display: inline-block;
 	font-weight: medium;
 	font-size: 21px;
-}
-
-.feature-description-container {
-	display: block;
-	margin-bottom: 20px;
-}
-
-.last-description {
-	margin-bottom: 0px;
 }
     
 .feature-link {

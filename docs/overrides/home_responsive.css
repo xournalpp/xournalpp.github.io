@@ -169,11 +169,11 @@
 		font-size: 21px;
 	}
 
-	.feature-description-container {
+	.feature-description {
 		margin-bottom: 5px;
 	}
 
-	.last-description {
+	.feature-description:last-child {
 		margin-bottom: 0px;
 	}
 
