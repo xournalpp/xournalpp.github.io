@@ -31,13 +31,14 @@ nav:
 #Theme config
 theme: 
   name: material
+  custom_dir: docs/overrides
   favicon: img/favicon.ico
   logo: img/favicon.ico
   icon:
     repo: fontawesome/brands/github
   palette:
     scheme: default
-    primary: indigo
+    primary: black
     accent: deep orange
   features:
     - navigation.tabs

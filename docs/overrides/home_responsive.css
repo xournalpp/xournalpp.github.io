@@ -1,0 +1,272 @@
+@media (min-width: 1921px){
+	
+	.Xournal {
+		max-width: none;
+	}
+	
+	.title h1 {
+		font-size: 80px;
+	}
+	
+	.title h2 {
+		font-size: 45px;
+	}
+	
+	.Xournal p {
+		font-size: 30px;
+	}
+
+	.download-hyperlink h2{
+		font-size: 45px;
+		margin-bottom: 30px;
+	}
+
+	/* Change layout of features from here*/
+	.feature {
+		display: block;
+	}
+	
+	.feature-text, .feature img {
+		width: 100%;
+	}
+	
+	.feature-text {
+		box-sizing: border-box;
+	}
+	
+	.feature-right .feature-text {
+		padding-right: 0px;
+	}
+	
+	.feature-left .feature-text {
+		padding-left: 0px;
+	}
+	
+	/* to here*/
+	
+	.feature-link .documentation-link {
+		margin-bottom: 10px;
+	}
+
+	.feature-text h2 {
+		font-size: 56px;
+		margin-bottom: 30px;
+	}
+	
+	.feature-description p {
+		font-size: 28px;
+	}
+	
+	.feature-link {
+		font-size: 22px;
+		margin-top: 25px;
+	}
+	
+	.download-hyperlink a{
+		border: solid 2px black;
+		font-size: 40px;
+		padding: 10px 20px;
+	}
+}
+	
+@media (max-width: 1367px){
+	
+	.home {
+		max-width: none;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 25px;
+		width: 100%;
+	}
+	
+	.Xournal {
+		margin-bottom: 150px;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 975px;
+	}
+	
+	.title h1 {
+		font-size: 48px;
+	}
+	
+	.title h2 {
+		font-size: 29px;
+	}
+	
+	.Xournal p {
+		font-size: 21px;
+	}
+	
+	.download-hyperlink h2{
+		font-size: 30px;
+		margin-bottom: 30px;
+	}
+
+	.upper-button a {
+		font-size: 24px;
+		padding: 7px 16px;
+	}
+
+	.bottom-button {
+		margin: 150px 0px 50px 0px;
+	}
+	
+}
+	
+@media (max-width: 1219px){
+	
+	.home {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	
+	.Xournal p {
+		margin-bottom: 25px;
+	}
+	
+	.Xournal {
+		margin-bottom: 100px;
+	}
+	
+	.upper-button {
+		display: block;
+		margin-top: 50px;
+	}
+	
+	/* Change layout of features from here*/
+	
+	.feature {
+		flex-direction: column;
+		margin-bottom: 100px;
+	}
+	
+	.feature-text, .feature img {
+		width: 100%;
+	}
+	
+	.feature-text {
+		box-sizing: border-box;
+		margin-bottom: 20px;
+	}
+	
+	.feature-right .feature-text {
+		padding-right: 0px;
+	}
+	
+	.feature-left .feature-text {
+		padding-left: 0px;
+	}
+	
+	/* to here */
+	
+	.feature-text h2 {
+		font-size: 42px;
+		margin-bottom: 10px;
+	}
+	
+	.feature-description {
+		margin-bottom: 5px;
+	}
+
+	.feature-description:last-child {
+		margin-bottom: 0px;
+	}
+
+	.feature-description p{
+		font-size: 21px;
+	}
+
+	.feature-link {
+		margin-top: 15px;
+	}
+	
+	.bottom-button {
+		margin: 100px 0px 50px 0px;
+	}
+	
+}
+	
+@media (max-width: 1050px){
+	
+	.title h1 {
+		font-size: 42px;
+	}
+	
+	.title h2 {
+		font-size: 26px;
+	}
+	
+	.Xournal p {
+		font-size: 18px;
+		margin-bottom: 25px;
+	}
+	
+	.feature-text h2 {
+		font-size: 36px;
+		margin-bottom: 7px;
+	}
+	
+	.feature-description p{
+		font-size: 18px;
+	}
+	
+	.feature-link {
+		font-size: 15px;
+		margin-top: 10px;
+	}
+
+	.feature-link .documentation-link {
+		margin-bottom: 5px;
+	}
+	
+	.download-hyperlink a {
+		font-size: 26px;
+	}
+	
+}
+	
+@media (max-width: 800px){
+	
+	.title h1 {
+		font-size: 36px;
+	}
+	
+	.title h2 {
+		font-size: 23px;
+	}
+	
+	.download-hyperlink h2{
+		margin-bottom: 20px;
+	}
+
+	.feature-text h2 {
+		font-size: 32px;
+	}
+	
+	.bottom-button {
+		margin: 50px 0px 50px 0px;
+	}
+	
+}
+	
+@media (max-width: 670px){
+	.home {
+		padding-left: 7px;
+		padding-right: 7px;
+	}
+
+	.download-hyperlink h2{
+		font-size: 24px;
+		margin-bottom: 20px;
+	}
+
+	.upper-button a {
+		font-size: 20px;
+		padding: 7px 16px;
+	}
+	
+	.download-hyperlink a {
+		font-size: 21px;
+	}
+}
