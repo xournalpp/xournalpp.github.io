@@ -51,23 +51,9 @@ extra_css:
 #Enable macros
 plugins:
   - search
-  - macros    
+  - macros   
 
 extra:
-  downloads:
-    default: "https://github.com/xournalpp/xournalpp/releases"
-    allVersions: "https://github.com/xournalpp/xournalpp/tags"
-    nightly: "https://github.com/xournalpp/xournalpp/releases/tag/nightly"
-    windows:
-      stable: "https://github.com/xournalpp/xournalpp/releases/download/1.1.0/xournalpp-1.1.0-windows.zip"
-    macos:
-      stable: "https://github.com/xournalpp/xournalpp/releases/download/1.1.0/xournalpp-1.1.0-macos.zip"
-    linux:
-      flatpak: "https://flathub.org/apps/details/com.github.xournalpp.xournalpp"
-      appimage: "https://github.com/xournalpp/xournalpp/releases/download/1.1.0/xournalpp-1.1.0-x86_64.AppImage"
-      snap: "https://snapcraft.io/xournalpp"
-      debianStable: "https://github.com/xournalpp/xournalpp/releases/tag/1.1.0"
-      ubuntuStable: "https://github.com/xournalpp/xournalpp/releases/tag/1.1.0"
   version:
     latest_stable: "1.1.0"
     latest_unstable: "1.1.0+dev"
@@ -76,5 +62,6 @@ extra:
 markdown_extensions:
   - pymdownx.highlight
   - pymdownx.superfences
+  - pymdownx.tabbed
   - toc:
       permalink: true

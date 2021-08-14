@@ -1,5 +1,5 @@
 ---
-template: home.html
+template: home/home.html
 title: Xournal++
 ---
 {newline}
