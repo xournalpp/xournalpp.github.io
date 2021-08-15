@@ -28,99 +28,77 @@
 	
 	<div class="feature-list">
 		{% import 'feature-template.md' as feature_template %}
-		{{feature_template.feature_showcase("Handwrite your notes", "right", ["Support for pressure-sensitive stylus and drawing tablets (Wacom, Huion, XP-Pen, etc.)", "Robust and customizable pen, highlighter and eraser tools, allowing you to write how you want to write"], "Handwritten.png", "#", "#")}}
-		
-		<div class="feature feature-left">
-		    <div class="feature-text">
-		        <h2>Keep your work organized</h2>
-		        <div class="feature-description-container">
-		        	<div class="feature-description">
-		        		<p class="bullet-point">|</p><p>Use layers to make complex notes that are still pleasant to work with</p>
-		        	</div>
-		        	<div class="feature-description">
-						<p class="bullet-point">|</p><p>Keep track of the notes by using page previews</p>
-	        		</div>
-	        	</div>
-	        	<div class="feature-link">
-					<a href="#" class="documentation-link">Learn more</a>
-					<a href="#" class="video-link">Watch demonstration video</a>
-				</div>
-		    </div>
-		    <img src = "/img/Layers.gif">
-		</div>
-		
-		<div class="feature feature-right">
-		    <div class="feature-text">
-		        <h2>Enhance and accelerate your note-taking</h2>
-		        <div class="feature-description-container">
-		        	<div class="feature-description">
-						<p class="bullet-point">|</p><p>Add images and create various shapes, from circles to splines to axis</p>
-					</div>
-					<div class="feature-description last-description">
-	        			<p class="bullet-point">|</p><p>Snap objects to rectangular grid or degrees of rotation</p>
-	        		</div>
-	        	</div>
-	        	<div class="feature-link">
-					<a href="#" class="documentation-link">Learn more</a>
-					<a href="#" class="video-link">Watch demonstration video</a>
-				</div>
-		    </div>
-		    <img src="/img/Create Shape.png">
-		</div>
-		
-		<div class="feature feature-left">
-		    <div class="feature-text">
-		        <h2>Get scientific</h2>
-		        <div class="feature-description-container">
-		        	<div class="feature-description">
-	        			<p class="bullet-point">|</p><p>Create anything from differential equations to electrical circuits or the structural formula of molecules using our built-in LaTeX editor</p>
-	        		</div>
-	        	</div>
-	        	<div class="feature-link">
-					<a href="#" class="documentation-link">Learn more</a>
-					<a href="#" class="video-link">Watch demonstration video</a>
-				</div>
-		    </div>
-		    <img src="/img/Latex.png">
-		</div>
-		
-		<div class="feature feature-right">
-		    <div class="feature-text">
-		        <h2>Your notes, your way</h2>
-		        <div class="feature-description-container">
-		        	<div class="feature-description">
-	        			<p class="bullet-point">|</p><p>Customize your toolbar to create a new layout, tailor-made for you</p>
-	        		</div>
-		        	<div class="feature-description">
-	        			<p class="bullet-point">|</p><p>Use a plugin or create your own via the Lua programming language</p>
-	        		</div>
-	        	</div>
-	        	<div class="feature-link">
-					<a href="#" class="documentation-link">Learn more</a>
-					<a href="#" class="video-link">Watch demonstration video</a>
-				</div>
-		    </div>
-		    <img src="/img/Customize Toolbars.png">
-		</div>
-		
-		<div class="feature feature-left">
-		    <div class="feature-text">
-		        <h2>Explain every stroke</h2>
-		        <div class="feature-description-container">
-		        	<div class="feature-description">
-		        		<p class="bullet-point">|</p><p>Record audio while you write and insert the recording to any object in your note</p>
-		        	</div>
-	        		<div class="feature-description">
-						<p class="bullet-point">|</p><p>Listen to the recorded audio with the 'play object' tool</p>
-	        		</div>
-	        	</div>
-	        	<div class="feature-link">
-					<a href="#" class="documentation-link">Learn more</a>
-					<a href="#" class="video-link">Watch demonstration video</a>
-				</div>
-		    </div>
-		    <img src="/img/Audio Note.png">
-		</div>
+		{{feature_template.feature_showcase(
+			"Handwrite your notes",
+			"right",
+			[
+				"Support for pressure-sensitive stylus and drawing tablets (Wacom, Huion, XP-Pen, etc.)",
+				"Robust and customizable pen, highlighter and eraser tools, allowing you to write how you want to write"
+			], 
+			"Handwritten.png", 
+			"#", 
+			"#")
+		}}
+		{{feature_template.feature_showcase(
+			"Keep your work organized",
+			"left",
+			[
+				"Use layers to make complex notes that are still pleasant to work with",
+				"Keep track of the notes by using page previews"
+			], 
+			"Layers.gif", 
+			"#", 
+			"#")
+		}}
+
+		{{feature_template.feature_showcase(
+			"Enhance and accelerate your note-taking",
+			"right",
+			[
+				"Add images and create various shapes, from circles to splines to axis",
+				"Snap objects to rectangular grid or degrees of rotation"
+			], 
+			"Create Shape.png", 
+			"#", 
+			"#")
+		}}
+
+		{{feature_template.feature_showcase(
+			"Get scientific",
+			"left",
+			[
+				"Create anything from differential equations to electrical circuits or the structural formula of molecules using our built-in LaTeX editor"
+			], 
+			"Latex.png", 
+			"#", 
+			"#")
+		}}
+
+		{{feature_template.feature_showcase(
+			"Your notes, your way",
+			"right",
+			[
+				"Customize your toolbar to create a new layout, tailor-made for you",
+				"Use a plugin or create your own via the Lua programming language"
+
+			], 
+			"Customize Toolbars.png", 
+			"#", 
+			"#")
+		}}
+
+		{{feature_template.feature_showcase(
+			"Your notes, your way",
+			"left",
+			[
+				"Record audio while you write and insert the recording to any object in your note",
+				"Listen to the recorded audio with the 'play object' tool"
+
+			], 
+			"Audio Note.png", 
+			"#", 
+			"#")
+		}}
 	</div>
 	<div class="download-hyperlink bottom-button">
 		<a href="{{ 'installation/' | url }}">Get it now</a>
