@@ -27,24 +27,8 @@
 	</div>
 	
 	<div class="feature-list">
-		<div class="feature feature-right">
-		    <div class="feature-text">
-		        <h2>Handwrite your notes</h2>
-		        <div class="feature-description-container">
-		        	<div class="feature-description">
-		        		<p class="bullet-point">|</p><p>Support for pressure-sensitive stylus and drawing tablets (Wacom, Huion, XP-Pen, etc.)</p>
-		        	</div>
-		        	<div class="feature-description last-description">
-						<p class="bullet-point">|</p><p>Robust and customizable pen, highlighter and eraser tools, allowing you to write how you want to write</p>
-					</div>
-				</div>
-				<div class="feature-link">
-					<a href="#" class="documentation-link">Learn more</a>
-					<a href="#" class="video-link">Watch demonstration video</a>
-				</div>
-		    </div>
-		    <img src="/img/Handwritten.png">
-		</div>
+		{% import 'feature-template.md' as feature_template %}
+		{{feature_template.feature_showcase("Handwrite your notes", "right", ["Support for pressure-sensitive stylus and drawing tablets (Wacom, Huion, XP-Pen, etc.)", "Robust and customizable pen, highlighter and eraser tools, allowing you to write how you want to write"], "Handwritten.png", "#", "#")}}
 		
 		<div class="feature feature-left">
 		    <div class="feature-text">
