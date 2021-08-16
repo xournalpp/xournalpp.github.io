@@ -27,78 +27,7 @@
 	</div>
 	
 	<div class="feature-list">
-		{% import 'feature-template.md' as feature_template %}
-		{{feature_template.feature_showcase(
-			"Handwrite your notes",
-			"right",
-			[
-				"Support for pressure-sensitive stylus and drawing tablets (Wacom, Huion, XP-Pen, etc.)",
-				"Robust and customizable pen, highlighter and eraser tools, allowing you to write how you want to write"
-			], 
-			"Handwritten.png", 
-			"#", 
-			"#")
-		}}
-		{{feature_template.feature_showcase(
-			"Keep your work organized",
-			"left",
-			[
-				"Use layers to make complex notes that are still pleasant to work with",
-				"Keep track of the notes by using page previews"
-			], 
-			"Layers.gif", 
-			"#", 
-			"#")
-		}}
-
-		{{feature_template.feature_showcase(
-			"Enhance and accelerate your note-taking",
-			"right",
-			[
-				"Add images and create various shapes, from circles to splines to axis",
-				"Snap objects to rectangular grid or degrees of rotation"
-			], 
-			"Create Shape.png", 
-			"#", 
-			"#")
-		}}
-
-		{{feature_template.feature_showcase(
-			"Get scientific",
-			"left",
-			[
-				"Create anything from differential equations to electrical circuits or the structural formula of molecules using our built-in LaTeX editor"
-			], 
-			"Latex.png", 
-			"#", 
-			"#")
-		}}
-
-		{{feature_template.feature_showcase(
-			"Your notes, your way",
-			"right",
-			[
-				"Customize your toolbar to create a new layout, tailor-made for you",
-				"Use a plugin or create your own via the Lua programming language"
-
-			], 
-			"Customize Toolbars.png", 
-			"#", 
-			"#")
-		}}
-
-		{{feature_template.feature_showcase(
-			"Your notes, your way",
-			"left",
-			[
-				"Record audio while you write and insert the recording to any object in your note",
-				"Listen to the recorded audio with the 'play object' tool"
-
-			], 
-			"Audio Note.png", 
-			"#", 
-			"#")
-		}}
+		{% include 'feature-showcase-content.md' %}
 	</div>
 	<div class="download-hyperlink bottom-button">
 		<a href="{{ 'installation/' | url }}">Get it now</a>
