@@ -29,7 +29,7 @@ would prefer to invest in coding and improving the documentation. Issues that ar
 
 ## Gitter and Matrix channels
 
-If you want to discuss some topic related to Xournal++ in chat mode, you may find someone to talk with in the [Gitter channel](https://gitter.im/xournalpp/xournalpp) or in the [Matrix channel](https://matrix.to/#/#xournalpp-xournalpp:matrix.org).
+If you want to discuss some topic related to Xournal++ in chat mode, you may find someone to talk with in the [Gitter channel](https://gitter.im/xournalpp/xournalpp) or in the [Matrix channel](https://matrix.to/#/#xournalpp_xournalpp:gitter.im).
 
 ## The Crowdin project
 
