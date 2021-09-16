@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block tabs %}
+{{ super() }}
+
+{% block extrahead %}
+<link rel="stylesheet" href="{{base_url}}/installation/installation.css">
+<link rel="stylesheet" href="{{base_url}}/installation/installation_responsive.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+{% endblock %}
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width">
+
+<div class="installation">
+    <div class="OS-selection">
+        <div class="title-container">
+            <h1 class="title">Choose Your OS</h1>
+        </div>
+        <div class="OS-option-container">
+            <a class="OS-option button" href="windows/">Windows</a>
+            <a class="OS-option button" href="linux/">Linux</a>
+            <a class="OS-option button" href="macos/">MacOS</a>
+        </div>
+    </div>
+    <div class="mobile">
+        <div class="title-container">
+            <h2 class="title">Xournal++ for Mobile is now available in Beta!</h2>
+        </div>
+        <div class="mobile-button-container">
+            <a class="mobile-option button" href="https://github.com/xournalpp/xournalpp_mobile/">Xournal++ Mobile</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block content %}{% endblock %}
+{% block footer %}
+{% endblock %}
