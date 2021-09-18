@@ -1,60 +1,15 @@
-{% extends "base.html" %}
-{% block tabs %}
-{{ super() }}
+{% extends "installation/installation.html" %}
 
 {% block extrahead %}
-<link rel="stylesheet" href="{{base_url}}/installation/installation.css">
-<link rel="stylesheet" href="{{base_url}}/installation/installation_responsive.css">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+{{ super() }}
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
 {% endblock %}
 
-{% import 'installation/download-links.md' as downloads %}
-
-<meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width">
-<div class="installation">
-    <div class="OS-option-container">
-        <a class="OS-option button" href="../windows/">Windows</a>
-        <a class="OS-option button" href="../linux/">Linux</a>
-        <a class="OS-option button clicked" href="#">MacOS</a>
-    </div>
-    <div class="version-selection">
-        <div class="title-container">
-            <h1 class="title">Choose Your Version</h1>
-        </div>
-        <div class="version-option-container">
-            <div class="version version-windows-macos">
-                <p class="version-name">Stable</p>
-                <p class="version-subtitle">(Recommended)</p>
-                <p class="version-description">Suits most users with its focus on stability.</p>
-                <div class="spacer"></div>
-                <a class="download button download-mac-windows" href="{{downloads.windows.stable}}">Download</a>
-            </div>
-            <div class="version version-windows-macos">
-                <p class="version-name">Nightly</p>
-                <p class="version-subtitle">(Unstable)</p>
-                <p class="version-description">Get new features as soon as they're implemented, in exchange for stability.</p>
-                <div class="spacer"></div>
-                <a class="download button download-mac-windows" href="{{downloads.nightly}}">Download</a>
-            </div>
-        </div>
-        <div class="other-version-link">
-            <a href="{{downloads.allVersions}}">Other Version</a>
-        </div>
-    </div>
-    <div class="installation-guide">
-        <p>Installing Xournal++ is really easy</p>
-            <div class="step-container">
-                <p>1. Unzip the downloaded archive</p>
-                <p>2. Run the installation executable</p>
-                <p>3. Success!</p>
-            </div>
-    </div>
-    <div class="compiling-guide-link">
-        <p>As a free and open-source software, Xournal++ can also be compiled from source. If you prefer to do so, follow <span><a class="guide-link" href="https://github.com/xournalpp/xournalpp/blob/master/readme/MacBuild.md">this guide</a></span> in our Github page.</p>
+{% block installpage %}
+<div class="installation-guide">
+    <p>Installing Xournal++ is really easy</p>
+    <div class="step-container">
+        {{ page.content }}
     </div>
 </div>
-{% endblock %}
-{% block content %}{% endblock %}
-{% block footer %}
 {% endblock %}

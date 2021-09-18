@@ -4,6 +4,7 @@ title: Installation
 hide:
   - navigation
   - toc
+os_button: null
 ---
 
 {{newline}}

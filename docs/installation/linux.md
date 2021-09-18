@@ -4,6 +4,85 @@ title: Linux Installation
 hide:
   - navigation
   - toc
+os_button: linux
+compile_guide: https://github.com/xournalpp/xournalpp/blob/master/readme/LinuxBuild.md
+
+version_class: linux
+versions:
+  - name: Stable
+    subtitle: (Recommended)
+    description: Suits most users with its focus on stability.
+    links: 
+    - label: AppImage
+      attr: linux.appimage
+    - label: Flatpak
+      attr: linux.flatpak
+    - label: Snap
+      attr: linux.snap
+    - label: ".deb"
+      attr: linux.debianStable
+  - name: Nightly
+    subtitle: (Unstable)
+    description: Get new features as soon as they're implemented, in exchange for stability.
+    links:
+    - label: AppImage
+      attr: nightly
+    - label: ".deb"
+      attr: nightly
 ---
 
-{{newline}}
+=== "Ubuntu and derivatives"
+
+    Install the latest stable release from the following unofficial ppa
+    ```bash
+    sudo add-apt-repository ppa:apandada1/xournalpp-stable
+    sudo apt update
+    sudo apt install xournalpp
+    ```
+    
+    Install the latest unstable nightly release from the following unofficial ppa
+    ```bash
+    sudo add-apt-repository ppa:apandada1/xournalpp-master
+    sudo apt update
+    sudo apt install xournalpp
+    ```
+    
+    Both of these can be easily upgraded via
+    ```bash
+    sudo apt update && sudo apt upgrade
+    ```
+
+=== "Fedora"
+    
+    Install the latest stable release via
+    ```bash
+    dnf install xournalpp
+    ```
+
+=== "Solus"
+    
+    Install the latest stable release via
+    ```bash
+    sudo eopkg it xournalpp
+    ```
+
+=== "openSUSE"
+    
+    Install the latest stable release via
+    ```bash
+    zypper in xournalpp
+    ```
+
+=== "NixOS / Nix"
+
+    Install the latest stable release via
+    ```bash
+    nix-env -iA nixpkgs.xournalpp
+    ```
+
+=== "Arch"
+
+    Install the latest stable release via
+    ```bash
+    pacman -S xournalpp
+    ```

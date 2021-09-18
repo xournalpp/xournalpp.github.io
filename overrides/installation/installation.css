@@ -174,7 +174,7 @@ a.mobile-option {
 	font-size: 18px;
 }
 
-.version .download-mac-windows {
+.version .download-windows-macos {
     margin: 0 auto;
     align-self: flex-end;
     padding: 7px;
@@ -211,19 +211,12 @@ a.mobile-option {
     margin-top: 7px;
 }
 
-.step-container p {
+.step-container p, .step-container li {
     font-size: 18px;
 }
 
 .installation-guide ol > * {
     list-style-type: decimal;
-}
-
-.installation-guide span {
-    background-color: #f5f5f5;
-    font-family: "Roboto Mono" , monospace;
-    font-size: 16px;
-    font-weight: 400;
 }
 
 .installation-guide {
@@ -310,12 +303,16 @@ a.mobile-option {
     margin-bottom: 0;
 }
 
-.code-instruction {
+.distro-list div.highlight {
     background-color: #f5f5f5;
     padding: 10px 15px;
 }
 
-.code-instruction code {
+.distro-list pre {
+    margin: 0;
+}
+
+.distro-list code {
     font-size: 16px;
     line-height: 20px;
 }

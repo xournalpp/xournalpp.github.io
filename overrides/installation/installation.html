@@ -1,25 +1,88 @@
 {% extends "base.html" %}
-{% block tabs %}
-{{ super() }}
 
 {% block extrahead %}
 <link rel="stylesheet" href="{{base_url}}/installation/installation.css">
 <link rel="stylesheet" href="{{base_url}}/installation/installation_responsive.css">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!--
+     <meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width">
+-->
 {% endblock %}
-<meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width">
+
+{% block tabs %}
+
+{{ super() }}
+
+{% import 'installation/download-links.md' as downloads %}
 
 <div class="installation">
     <div class="OS-selection">
+        {% if page.meta.os_button is none %}
         <div class="title-container">
             <h1 class="title">Choose Your OS</h1>
         </div>
+        {% endif %}
         <div class="OS-option-container">
-            <a class="OS-option button" href="windows/">Windows</a>
-            <a class="OS-option button" href="linux/">Linux</a>
-            <a class="OS-option button" href="macos/">MacOS</a>
+            <a class="OS-option button {% if page.meta.os_button == 'windows' %} clicked {% endif %}"
+               href="{{ base_url + '/installation/windows' | url }}">
+                Windows</a>
+            <a class="OS-option button {% if page.meta.os_button == 'linux' %} clicked {% endif %}"
+               href="{{ base_url + '/installation/linux' | url }}">
+                Linux</a>
+            <a class="OS-option button {% if page.meta.os_button == 'macos' %} clicked {% endif %}"
+               href="{{ base_url + '/installation/macos' | url }}">
+                MacOS</a>
         </div>
     </div>
+
+    {% if page.meta.os_button is not none %}
+    <div class="version-selection">
+        <div class="title-container">
+            <h1 class="title">Choose Your Version</h1>
+        </div>
+        <div class="version-option-container">
+            {% for ver in page.meta.versions %}
+            <div class="version version-{{page.meta.version_class}}">
+                <p class="version-name">{{ ver.name }}</p>
+                <p class="version-subtitle">{{ ver.subtitle }}</p>
+                <p class="version-description">{{ ver.description }}</p>
+                <div class="spacer"></div>
+
+                {% set lnks = namespace(btns=[], container=None) %}
+
+                {% if ver.links is string %}
+                {% set _ = lnks.btns.append(namespace(attr=ver.links, label='Download')) %}
+                {% elif page.meta.version_class == 'linux' %}
+                {% for lnk in ver.links %}
+                {% set _ = lnks.btns.append(namespace(attr=lnk.attr, label=lnk.label)) %}
+                {% set lnks.container = 'download-linux-container' %}
+                {% endfor %}
+                {% endif %}
+
+                {% if lnks.container is not none %}
+                <div class="{{lnks.container}}">
+                {% endif %}
+
+                {% for lnk in lnks.btns %}
+                {% set ns = namespace(ref=downloads) %}
+                {% for a in lnk.attr.split('.') %} {% set ns.ref = ns.ref[a] %} {% endfor %}
+                <a class="download button download-{{page.meta.version_class}} {{extra_class}}" href="{{ns.ref}}">{{lnk.label}}</a>
+                {% endfor %}
+
+                {% if lnks.container is not none %}
+                </div>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        <div class="other-version-link">
+            <a href="{{downloads.allVersions}}">Other Versions</a>
+        </div>
+    </div>
+    {% endif %}
+
+    {% block installpage %}
+    {% if page.meta.os_button is none %}
     <div class="mobile">
         <div class="title-container">
             <h2 class="title">Xournal++ for Mobile is now available in Beta!</h2>
@@ -28,8 +91,16 @@
             <a class="mobile-option button" href="https://github.com/xournalpp/xournalpp_mobile/">Xournal++ Mobile</a>
         </div>
     </div>
+    {% endif %}
+    {% endblock %}
+
+    {% if page.compile_guide is not none %}
+    <div class="compiling-guide-link">
+        <p>As a free and open-source software, Xournal++ can also be compiled from source. If you prefer to do so, follow <span><a class="guide-link" href="{{ page.meta.compile_guide }}">this guide</a></span> in our Github page.</p>
+    </div>
+    {% endif %}
 </div>
 {% endblock %}
+
 {% block content %}{% endblock %}
-{% block footer %}
-{% endblock %}
+{% block footer %}{% endblock %}

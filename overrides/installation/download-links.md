@@ -1,6 +1,6 @@
 {% set default = "https://github.com/xournalpp/xournalpp/releases" %}
 {% set allVersions = "https://github.com/xournalpp/xournalpp/releases" %}
-{% set nightly = "https://github.com/xournalpp/xournalpp/releases" %}
+{% set nightly = "https://github.com/xournalpp/xournalpp/releases/tag/nightly" %}
 {% set windows = 
     ({
         "stable" : "https://github.com/xournalpp/xournalpp/releases/download/1.1.0/xournalpp-1.1.0-windows.zip"
