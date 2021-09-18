@@ -32,8 +32,8 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 1000px;
-    padding-top: 50px;
     width: 80%;
+    line-height: initial;
 }
 
 .installation > * {
@@ -42,9 +42,7 @@
     margin-bottom: 30px;
 }
 
-.OS-selection {
-    margin-bottom: 40px;
-}
+/* "Choose Your Version" */
 
 .title-container {
     text-align: center;
@@ -62,16 +60,20 @@
     font-weight: 500;
 }
 
+.installation .subtitle {
+    font-size: 18px;
+}
+
+/* container for Windows, Linux, MacOS buttons */
+
 .OS-selection .title {
     font-size: 36px;
 }
 
+/* container for download buttons */
+
 .version-selection .title {
     font-size: 42px;
-}
-
-.installation .subtitle {
-    font-size: 18px;
 }
 
 .installation .mobile-button-container, .installation .OS-option-container{
@@ -127,6 +129,8 @@ a.mobile-option {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* styles for individual "versions" */
 
 .version {
     /* border: solid 2px black;
@@ -203,6 +207,8 @@ a.mobile-option {
     font-size: 18px;
 }
 
+/* installation instructions */
+
 .installation-guide p{
     font-size: 24px;
 }
@@ -223,6 +229,8 @@ a.mobile-option {
     margin-bottom: 20px;
 }
 
+/* Linux distro tab styles */
+
 .distro-specific-installation .title {
     font-size: 32px;
 }
@@ -236,53 +244,18 @@ a.mobile-option {
 }
 
 .tabbed-set {
-    display: flex;
-    flex-grow: 1;
-    flex-wrap: wrap;
     justify-content: center;
-    position: relative;
     width: 100%;
+    line-height: 1;
 }
 
-.tabbed-set {
-    display: flex;
-    position: relative;
-    flex-wrap: wrap;
-}
-  
-.tabbed-set .highlight {
-    background: #ddd;
-}
-  
-.tabbed-set .tabbed-content {
-    display: none;
-    order: 99;
-    width: 100%;
-}
-  
 .tabbed-set label {
-    color: #7e8087;
-    cursor: pointer;
-    font-size: 120%;
     margin: 0 0.5em;
-    padding: 10px 20px;
-    transition: all 0.2s;
-    width: auto;
-}
-  
-.tabbed-set input {
-    position: absolute;
-    opacity: 0;
 }
 
 .tabbed-set input:nth-child(n+1):checked + label {
-    color: var(--md-accent-fg-color);
     border-bottom: solid 3px var(--md-accent-fg-color);
     padding-bottom: 7px;
-}
-  
-.tabbed-set input:nth-child(n+1):checked + label + .tabbed-content {
-    display: block;
 }
 
 .tabbed-content {
@@ -292,36 +265,14 @@ a.mobile-option {
 
 .tabbed-content p {
     font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.instruction {
-    margin-bottom: 20px;
-}
-
-.instruction:last-child {
-    margin-bottom: 0;
-}
-
-.distro-list div.highlight {
-    background-color: #f5f5f5;
-    padding: 10px 15px;
-}
-
-.distro-list pre {
-    margin: 0;
-}
-
-.distro-list code {
-    font-size: 16px;
-    line-height: 20px;
 }
 
 .distro-list .tabbed-set label {
     font-size: 18px;
     font-weight: 500;
-    width: auto;
 }
+
+/* Link style */
 
 .compiling-guide-link {
     font-size: 22px;
@@ -334,8 +285,3 @@ a.mobile-option {
 .guide-link, .other-version-link a {
     transition: all 0.2s;
 }
-
-.guide-link:hover, .other-version-link a:hover {
-    color: var(--md-accent-fg-color);
-}
-

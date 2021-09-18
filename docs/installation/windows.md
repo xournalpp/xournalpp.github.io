@@ -20,6 +20,6 @@ versions:
 ---
 
 1. Unzip archive which should be named something like `xournalpp-{version}-windows.zip`
-2. Run the setup program contained in `xournalpp-{version}-windows.zip`.
+2. Run the setup program contained in `xournalpp-{version}-windows.zip`
 3. Follow the installation steps
 4. Success!

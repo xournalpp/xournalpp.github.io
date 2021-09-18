@@ -7,6 +7,8 @@ hide:
 os_button: linux
 compile_guide: https://github.com/xournalpp/xournalpp/blob/master/readme/LinuxBuild.md
 
+choose_subtitle: "Pre-built packages are available for Debian, Ubuntu and derivatives, and most distros"
+
 version_class: linux
 versions:
   - name: Stable
@@ -33,14 +35,14 @@ versions:
 
 === "Ubuntu and derivatives"
 
-    Install the latest stable release from the following unofficial ppa
+    Install the latest stable release from the following unofficial PPA
     ```bash
     sudo add-apt-repository ppa:apandada1/xournalpp-stable
     sudo apt update
     sudo apt install xournalpp
     ```
     
-    Install the latest unstable nightly release from the following unofficial ppa
+    Install the latest unstable nightly release from the following unofficial PPA
     ```bash
     sudo add-apt-repository ppa:apandada1/xournalpp-master
     sudo apt update

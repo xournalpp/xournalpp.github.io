@@ -9,9 +9,7 @@
 -->
 {% endblock %}
 
-{% block tabs %}
-
-{{ super() }}
+{% block content %}
 
 {% import 'installation/download-links.md' as downloads %}
 
@@ -39,6 +37,9 @@
     <div class="version-selection">
         <div class="title-container">
             <h1 class="title">Choose Your Version</h1>
+            {% if page.choose_subtitle is not none %}
+            <p>{{ page.meta.choose_subtitle }}</p>
+            {% endif %}
         </div>
         <div class="version-option-container">
             {% for ver in page.meta.versions %}
@@ -102,5 +103,4 @@
 </div>
 {% endblock %}
 
-{% block content %}{% endblock %}
 {% block footer %}{% endblock %}
