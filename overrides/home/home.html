@@ -27,9 +27,29 @@
 			<a href="{{ 'installation/' | url }}">Download Xournal++</a>
 		</div>
 	</div>
-	
+
 	<div class="feature-list">
-		{% include 'home/feature-showcase-content.md' %}
+        {% for feat in page.meta.features %}
+        {% set chirality = "left" if loop.index % 2 == 0 else "right" %}
+        <div class="feature feature-{{chirality}}">
+            <div class="feature-text">
+                <h2>{{ feat.title }}</h2>
+                <div class="feature-description-container">
+                    {% for description in feat.bullets %}
+                    <div class="feature-description">
+                        <p class="bullet-point">|</p><p>{{description}}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="feature-link">
+                    <a href="{{feat.doc_link | default('#') }}" class="documentation-link">Learn more</a>
+                    <a href="{{feat.video_link | default('#') }}" class="video-link">Watch demonstration video</a>
+                </div>
+            </div>
+            <img src="/img/{{feat.image}}" />
+        </div>
+        {% endfor %}
+		{# include 'home/feature-showcase-content.md' #}
 	</div>
 	<div class="download-hyperlink bottom-button">
 		<a href="{{ 'installation/' | url }}">Get it now</a>
