@@ -88,3 +88,5 @@ versions:
     ```bash
     pacman -S xournalpp
     ```
+    
+    There is also a development package `xournalpp-git` available at https://aur.archlinux.org/packages/xournalpp-git/
