@@ -44,7 +44,7 @@ versions:
     
     Install the latest unstable nightly release from the following unofficial PPA
     ```bash
-    sudo add-apt-repository ppa:apandada1/xournalpp-master
+    sudo add-apt-repository ppa:andreasbutti/xournalpp-master
     sudo apt update
     sudo apt install xournalpp
     ```
