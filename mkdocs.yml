@@ -12,7 +12,8 @@ nav:
       - Linux: installation/linux.md
   - Guide:
       - Overview: guide/overview.md
-      - Configuration: guide/config.md
+      - Configuration:
+         - Preferences: guide/config/preferences.md
       - Tools and Editing:
          - Pen and Highlighter tools: guide/tools/pen.md
          - Eraser tool: guide/tools/eraser.md
