@@ -14,6 +14,7 @@ nav:
       - Overview: guide/overview.md
       - Configuration:
          - Preferences: guide/config/preferences.md
+         - Toolbar Colors: guide/config/toolbar-colors.md
       - Tools and Editing:
          - Pen and Highlighter tools: guide/tools/pen.md
          - Eraser tool: guide/tools/eraser.md
@@ -66,3 +67,4 @@ markdown_extensions:
   - pymdownx.tabbed
   - toc:
       permalink: true
+  - admonition
