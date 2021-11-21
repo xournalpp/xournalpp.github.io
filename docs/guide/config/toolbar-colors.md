@@ -35,25 +35,25 @@ in in your toolbar configuration.
 In this method, the color palette is set up by editing a GIMP color palette
 file.
 
-The easiest way to get started with this is to let Xournal++ create the default palette file for you.
-You can then use this as a template to adjust it to your needs.
+The palette will be loaded from a file named `palette.gpl` contained in the
+[config folder](../file-locations.md). On the first run, Xournal++ will create
+this file for you with the default color palette. Thus, the easiest way to get
+started is to adjust this default file.
 
-Prerequisite: Xournal++ ran at least once with the new version
-
- 1. Open `palette.gpl` in the [config file location](../file-locations.md)
- 2. Edit the `palette.gpl` to your needs
- 3. Restart Xournal++
+1. Edit the `palette.gpl` file located in the [config folder](../file-locations.md).
+2. Restart Xournal++
 
 ### .gpl File Format
 
 !!! note
 
-    The `.gpl` file format is not authoritatively defined anywhere.
-    Hence the below definition might only be valid for Xournal++.
-    However, we are trying to be compatible with `.gpl` files as used in other Software.
-    In case you find a case where the `.gpl` file is not parsable by Xournal++ but you think it should be parsable since for example GIMP accepts it, please file a bug report.
+    The `.gpl` file format is not authoritatively defined anywhere, so the file
+    format described below may be specific to Xournal++. However, Xournal++
+    tries to be compatible with `.gpl` files used with other software such as
+    GIMP. If you find a `.gpl` file that works in other software but does _not_
+    work with Xournal++, [please file a bug report](https://github.com/xournalpp/xournalpp/issues).
 
-Lets start with an example:
+As an example, the default color palette of Xournal++ is shown below.
 
 ```
 GIMP Palette
@@ -72,54 +72,60 @@ Name: Xournal Default Palette
 255 255 255 White
 ```
 
-This is the default color palette of Xournal++, which is created if no palette is found.
+If no existing `palette.gpl` is found, `palette.gpl` will be created with the
+above contents.
 
-It consists of several Parts:
+The palette file consists of several parts:
 
- 1. Header: `GIMP Palette` any file not having exactly this string at the first line will not be accepted as `.gpl` file
- 2. A list of attributes separated by `:`.
- 3. An optional comment line as separator.
- 4. The colors of the palette as space separated `RGB` values together with a name
-
-The parser checks each line apart from the first line in the following order:
-
- 1. Can line be parsed as **comment** (i.e. first character is `#`)
- 2. Can line be parsed as **attribute** (i.e. two string separated by `:`)
- 3. Can line be parsed as **color** (i.e. `RRR GGG BBB Name`)
- 4. Otherwise abort parsing
-
-In case Xournal++ cannot parse the palette file (i.e. it cannot parse a line), it loads the default palette.
-If this happens there are two ways to get your palette file to load.
-
-Option 1, Debugging:
-
- - run `xournalpp` from command line 
- - check the error message (it tells you which line was not parsable)
- - fix line in your `palette.gpl`
- - retry
-
-Option 2, Fresh Start:
-
- - remove the `palette.gpl` file
- - start `xournalpp` (this will create a new default `palette.gpl` file)
- - adjust `palett.gpl` to your needs
+ 1. **Header**: every palette file must begin with the line `GIMP Palette`,
+    otherwise the file will not be a valid `.gpl` file.
+ 2. A list of **attributes** of the form `Key: Value`, one per line. These
+    attributes are metadata that describe the palette.
+ 3. Lines beginning with `#` are **comments**, which are ignored by the file
+    parser. The comment used above is to distinguish the attributes from the
+    colors of the palette.
+ 4. The **colors** of the palette, one per line, in the format `RRR GGG BBB Name`.
+    The `RRR`, `GGG`, and `BBB` correspond to the RGB format of the color,
+    specified as base-10 integers in the range `0-255`. To find the right
+    numbers, you can use an online RGB color picker tool such as [this one][mdn
+    color picker].
 
 !!! note
-    
-    It's recommended to have at least 11 colors in your palette as the default toolbar has 11 ColorItems.
-    In case your palette has less, Xournal++ will show a warning in the CLI and just cycle through the palette.
+
+    It's recommended to have at least 11 colors in a palette, as the default
+    toolbar has 11 Color Items. If your palette has fewer colors, a warning
+    will be displayed in the console, and the extra Color Items will cycle
+    through the palette.
+
+If Xournal++ cannot parse the palette file (i.e., the palette file is invalid),
+it will load the default palette. If this happens, there are two ways to get
+your palette file to load.
+
+**Option 1: Debugging**: run `xournalpp` from the command line and check for an
+error message explaining why the palette file is invalid. Then, fix your
+`palette.gpl` file, restart Xournal++, and check if the palette loaded
+correctly. If not, repeat this debugging step.
+
+**Option 2: Fresh Start**: delete `palette.gpl`, restart Xournal++ to create
+a new default `palette.gpl` file, and edit again.
 
 ### Palette Resources/Tips
 
 #### Creating your own palette
 
- - [MDN color picker](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool)
- - [Gpick](http://www.gpick.org/)
+ - Find RGB values to use in palettes with the [MDN color picker][mdn color
+   picker]
+ - Use a palette editor such as [Gpick](http://www.gpick.org/) to create a `.gpl`
+   file
 
-#### Getting complete palettes
+#### Reusing existing palettes
 
- - [lospec](https://lospec.com/palette-list)
- - `locate '.gpl'` on your machine in case you have krita, inkscape, or GIMP installed
-      - e.g. `/usr/share/gimp/2.0/palettes/`
-      - e.g. `/usr/share/inkscape/palettes/`
-      - e.g. `/usr/share/krita/palettes/`
+ - "The [Lospec Palette List](https://lospec.com/palette-list) is a database of
+   palettes for pixel art" (directly quoted from their website). Palettes can be
+   exported to `.gpl` format.
+ - You can reuse `.gpl` files from other software compatible with `.gpl`
+   palettes, such as Krita, Inkscape, or GIMP. For example, Linux users may be
+   able to find existing palettes in locations such as
+   `/usr/share/gimp/2.0/palettes` or `/usr/share/krita/palettes`.
+
+[mdn color picker]: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool
