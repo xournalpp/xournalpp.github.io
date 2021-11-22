@@ -5,9 +5,9 @@ Xournal ++ has multiple options that can be configured and customized. Most of t
 
 ## Load / Save
 
-### Autosaving 
+### Autosaving
 
-Enable or disable automatic saving and set the time interval in which it will be done. If the document was previously saved in any folder, the autosave document will be in the same location as a hidden file. Otherwise the file will be saved in the path **~/.xournalpp/autosave**.
+Enable or disable automatic saving and set the time interval in which it will be done. If the document was previously saved in any folder, the autosave document will be in the same location as a hidden file. Otherwise the file will be saved in **$XDG_CACHE_HOME/.xournalpp/autosave** or if not set in **$HOME/.cache/.xournalpp/autosave**. If XDG_CACHE_HOME is not set on Windows systems there are multiple directories possible. Check the [gtk docs](https://docs.gtk.org/glib/func.get_user_cache_dir.html).
 
 ### Default Save Name
 
