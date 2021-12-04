@@ -7,13 +7,12 @@ Xournal ++ has multiple options that can be configured and customized. Most of t
 
 ### Autosaving
 
-Enable or disable automatic saving and set the time interval in which it will be done. If the document was previously saved in any folder, the autosave document will be in the same location as a hidden file. Otherwise the file will be saved in **$XDG_CONFIG_HOME/xournalpp/autosave** or if XDG_CONFIG_HOME is not set in **~/.config/xournalpp/autosave**. TODO: Windows
+Enable or disable automatic saving and set the time interval in which it will be done. If the document was previously saved in any folder, the autosave document will be in the same location as a hidden file. Otherwise the file will be saved in your [Config folder](/guide/file-locations#config-folder) in the subfolder `autosave`.
 
 !!! note
 
     The autosave path is about to change in release 1.2.0 and has already been changed in Xournal++ nightly builds.<br>
-    Linux: **$XDG_CACHE_HOME/xournalpp/autosaves** or if XDG_CACHE_HOME is not set **~/.cache/xournalpp/autosaves**.<br>
-    Windows: TODO. See the documentation for [FOLDERID_InternetCache](https://docs.microsoft.com/en-us/windows/win32/shell/knownfolderid#FOLDERID_InternetCache).
+    Autosaves are now in your [Cache folder](/guide/file-locations#cache-folder) in the subfolder `autosaves`.
 
 ### Default Save Name
 

@@ -43,13 +43,15 @@ The localizations folder contains the translations of Xournal++ in all supported
 The config folder contains configuration files like
 
 - the `settings.xml` file, which stores Xournal++ settings
-- `autosave` subfolder for documents that have not been stored previously
 - `metadata` subfolder, which contains metadata of previously opened files
 - the `colornames.ini` file, which allows to configure colors
 
 ## Cache folder
 
-The cache folder contains the `errorlogs` subfolder, which stores crash logs.
+The cache folder contains the following subfolders:
+
+- `errorlogs` which stores crash logs
+- `autosaves` which stores autosaves of new non-saved documents
 
 ## Temporary folder
 
