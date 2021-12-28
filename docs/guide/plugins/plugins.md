@@ -110,6 +110,10 @@ Currently the list contains the following functions:
 - `app.setBackgroundName` sets the name of the background layer
 - `app.scaleTextElements` scales all text elements of the current layer by the given scale factor
 - `app.getDisplayDpi` returns the configured display DPI
+- `app.addStrokes` draws strokes on the canvas given a set of coordinates
+- `app.addSplines` draws strokes on the canvas given a set of splines. The function rasterizes it, then uses the resulting series of coordinates to place the stroke on the canvas
+- `app.refreshPage` notifies Xournal++ of changes done by the `addStrokes` and `addSplines` functions, causing the strokes to appear on the canvas.
+- `app.getFilePath` opens a "Open File" dialogue and returns the chosen file path by the user
 
 All those functions are documented in the same file [`luapi_application.h`](https://github.com/xournalpp/xournalpp/blob/9d1277dee22bb095c2db047bb04f89cc837aee3c/src/plugin/luapi_application.h), including example usage. Future progress on the Plugin API will be reported here. Help is always welcome.
 
