@@ -46,7 +46,6 @@ The following lists highlight the differences between the latest development ver
 - Input via Xinput (which gives better strokes on some devices)
 - One page mode (useful in presentations)
 - A complete [documentation](http://xournal.sourceforge.net/manual.html) and a [well documented file format](http://xournal.sourceforge.net/manual.html#file-format)
-- Inlusion in the official Debian repository
 
 ### Known issues/bugs/inconveniences of Xournal, resolved in Xournal++
 
