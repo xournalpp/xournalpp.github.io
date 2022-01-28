@@ -1,11 +1,17 @@
 # Tips
 
-## GNOME Files/Nautilus: Convert notes to PDF from context menu
+## Convert Xournal++ files to PDF from context menu
 
-To be able to select and convert Xournal++ files to PDF from the context menu in Nautilus (GNOME Files),
-one can save [this script](../resources/xopp-to-pdf) as
-`$HOME/.local/share/nautilus/scripts/xopp-to-pdf` and make it executable.
+![Screenshot-of-Nautilus-context-menu-to-convert-selected-xopp-files-to-pdf](../img/xopp-to-pdf_context-menu.png)
 
-![screenshot-Nautilus-action-convert-xopp-to-pdf](../img/xopp-to-pdf_context-menu.png)
+There is a script that adds an option to the context menu to convert selected files from `.xopp` to `.pdf`.
+It is available for the file managers `GNOME Files`/`Nautilus` and `Nemo`.
 
-If `libnotify` is installed, one will get a notification once the conversion is done.
+To use it, save [the script](../resources/xopp-to-pdf) under
+
+- `~/.local/share/nautilus/scripts/xopp-to-pdf` (for `GNOME Files`/`Nautilus`)
+- `~/.local/share/nemo/scripts/xopp-to-pdf` (for `Nemo`)
+
+and make it executable:
+
+- `chmod +x <script-path>`
