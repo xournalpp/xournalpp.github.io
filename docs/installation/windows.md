@@ -13,10 +13,12 @@ versions:
     subtitle: (Recommended)
     description: Suits most users with its focus on stability.
     links: windows.stable
+    extras_ver: latest_stable
   - name: Nightly
     subtitle: (Unstable)
     description: Get new features as soon as they're implemented, in exchange for stability.
     links: nightly
+    extras_ver: latest_unstable
 ---
 
 1. Unzip archive which should be named something like `xournalpp-{version}-windows.zip`

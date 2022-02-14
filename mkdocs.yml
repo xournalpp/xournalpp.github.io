@@ -58,8 +58,10 @@ plugins:
 
 extra:
   version:
-    latest_stable: "1.1.0"
-    latest_unstable: "1.1.0+dev"
+    # TODO: build the download links from these instead of hardcoding them in
+    # overrides/installation/download-links.md
+    latest_stable: "1.1.1"
+    latest_unstable: "1.1.1+dev"
 
 #code highlighting
 markdown_extensions:

@@ -14,6 +14,7 @@ versions:
   - name: Stable
     subtitle: (Recommended)
     description: Suits most users with its focus on stability.
+    extras_ver: latest_stable
     links: 
     - label: AppImage
       attr: linux.appimage
@@ -26,6 +27,7 @@ versions:
   - name: Nightly
     subtitle: (Unstable)
     description: Get new features as soon as they're implemented, in exchange for stability.
+    extras_ver: latest_unstable
     links:
     - label: AppImage
       attr: nightly

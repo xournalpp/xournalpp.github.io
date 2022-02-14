@@ -45,6 +45,9 @@
             {% for ver in page.meta.versions %}
             <div class="version version-{{page.meta.version_class}}">
                 <p class="version-name">{{ ver.name }}</p>
+                {% if ver.extras_ver is not none %}
+                <p class="version-subtitle"><code>v{{ config.extra.version[ver.extras_ver] }}</code></p>
+                {% endif %}
                 <p class="version-subtitle">{{ ver.subtitle }}</p>
                 <p class="version-description">{{ ver.description }}</p>
                 <div class="spacer"></div>
