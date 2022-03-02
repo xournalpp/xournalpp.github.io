@@ -10,8 +10,13 @@ This section explains where files get stored automatically either during install
 | [Shared resources folder](#shared-resources-folder) | `/usr/share/xournalpp`           | `Xournal++.app/Resources`              | `C:\Programs\Xournal++\share\xournalpp`                                    |
 | [Localizations folder](#localizations-folder)       | `/usr/share/locale`              | `Xournal++.app/Resources/share/locale` | `C:\Programs\Xournal++\share\locale`                                       |
 | [Config folder](#config-folder)                     | `/home/<user>/.config/xournalpp` | `/Users/<user>/.config/xournalpp`      | `C:\Users\<user>\AppData\Local\xournalpp`                                  |
-| [Cache folder](#cache-folder)                       | `/home/<user>/.cache/xournalpp`  | `/Users/<user>/.cache/xournalpp`       | `C:\Documents and Settings\<user>\Local Settings\Temporary Internet Files` |
+| [Cache folder](#cache-folder)                       | `/home/<user>/.cache/xournalpp`  | `/Users/<user>/.cache/xournalpp`       | `C:\Users\<user>\AppData\Local\Microsoft\Windows\INetCache\xournalpp` |
 | [Temporary folder](#temporary-folder)               | `/tmp`                           | `/tmp`                                 | `C:\Users\<user>\AppData\Local\Temp`                                       |
+
+!!! note
+    On Windows, the cache folder is hidden by default. You will either need to
+    [set hidden items as visible in File Explorer](https://support.microsoft.com/en-us/windows/view-hidden-files-and-folders-in-windows-97fbc472-c603-9d90-91d0-1166d1d9f4b5)
+    or copy & paste the location manually into the File Explorer search bar (with modifications for your username).
 
 In accordance with the [XDG Base Directory Specification](https://specifications.freedesktop.org/basedir-spec/latest/ar01s02.html) the *Config Folder* and *Cache Folder* can be defined by the environment
 variables **$XDG_CONFIG_HOME** and **$XDG_CACHE_HOME**, respectively. The *Temporary folder* can be defined by **$TMPDIR** on Linux/MacOS or **$TEMP$** on MS Windows.
