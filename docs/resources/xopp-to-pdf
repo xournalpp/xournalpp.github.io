@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
+#
+# Convert xopp to pdf
+#
+# @author Daniel Langbein <daniel@systemli.org>
+# @license MIT License
+#
 
 SCRIPT_TITLE='Convert *.xopp to *.pdf'
 depends=(xournalpp)
