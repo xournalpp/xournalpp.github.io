@@ -26,6 +26,7 @@ nav:
          - Notable plugins: guide/plugins/notable.md
       - File locations: guide/file-locations.md
       - Tips: guide/tips.md
+      - File Format: guide/file-format.md
   - Community: 
       - Getting help & helping out: community/help.md
       - Xournal++ & other software: community/other-software.md
@@ -68,6 +69,7 @@ markdown_extensions:
   - pymdownx.highlight
   - pymdownx.superfences
   - pymdownx.tabbed
+  - admonition
   - toc:
       permalink: true
   - admonition
