@@ -1,11 +1,44 @@
 # LaTeX tool
 
 Using the LaTeX tool you can insert LaTeX formulas into a Xournal++ document. In order to use this tool you must have LaTeX installed on your system.
-The feature needs to be able to call pdflatex. In addition, the LaTeX `standalone` package needs to be installed, which typically requires installation of `texlive-latex-extra` or `texlive-standalone`. On Ubuntu or similar Linux systems this means
 
-`sudo apt-get install texlive-latex-extra`
+## Setup
 
-For other operating systems you will need to consult your LaTeX installation manual on how to add the standalone LaTeX package.
+The LaTeX tool requires a TeX distribution to be installed on your computer. See
+[this link](https://www.latex-project.org/get/) for a guide on how to install
+one. Some distributions that have worked for users include
+[MikTeX](https://miktex.org/) on Windows, [MacTeX](https://www.tug.org/mactex/)
+on macOS, and [TeX Live](https://www.tug.org/texlive/) on Linux.
+
+Once you have installed a TeX distribution, you can check if it works correctly
+from the Preferences window. This can be done by accessing `Edit > Preferences`
+from the menu and clicking on the `Test configuration` button in the LaTeX tab.
+
+### Frequently encountered setup problems
+
+* **pdflatex or kpsewhich cannot be found**: make sure that a TeX distribution
+  is installed on your computer, and check that you are able to run LaTeX
+  outside of Xournal++. If you have just installed MikTeX on Windows, you may
+  need to run MikTeX at least once to install the necessary programs.
+  
+* **The package `standalone` cannot be found**: Xournal++ uses the TeX package
+  `standalone` in order to render formulas. Please make sure the TeX
+  distribution that you are using has the `standalone` package installed (if you
+  are using TeX Live, you may need to install the extra packages to get
+  `standalone`).
+  
+* **The LaTeX tool doesn't work with the Flatpak installation**: The Flatpak version
+  requires the Flathub TeX Live extension, which can be installed with the command:
+  ```
+  flatpak install flathub org.freedesktop.Sdk.Extension.texlive//21.08
+  ```
+  
+* **I still get an error even when `pdflatex` and `standalone` are installed**:
+  The default template makes use of the `scontents` package, which may not be
+  included with your TeX distribution. Try [changing the template
+  file](#template) to the `legacy_template.tex` that is in the same location as
+  `default_template.tex`, which should not use the `scontents` package. If you
+  have any further issues, feel free to [ask for help](../../community/help.md).
 
 ## Basic LaTeX formulas
 
@@ -19,16 +52,17 @@ $\huge$ x^2
 
 will use the command `\huge` to increase the font size, which cannot be done in math mode.
 
-## Enhanced LaTeX tool in Xournal++ 1.1.0+dev
+## Customization of the template {: #template }
 
-The LaTeX tool has recently been extended making it much more configurable. Most importantly a customizable template has been implemented, where you can load packages and define macros. Moreover a LaTeX settings panel has been added, where you choose the template, specify the LaTeX generation command and test your LaTeX configuration. The extension is only available in version 1.1.0+dev.
+The LaTeX formulas are rendered by substituting the user-provided formula (along
+with other information like tool color) into a _template file_. The template
+file to use can be changed in the LaTeX tab of the Preferences window.
 
-## Customization of the template
-
-A default LaTeX template is provided under the name `default_template.tex`. By default it is pre-selected in the LaTeX settings panel. Clicking on it, you will find its location in your file system. On Linux systems it will typically be stored in
+A default LaTeX template is provided under the name `default_template.tex`. Clicking on it, you will find its location in your file system. On Linux systems it will typically be stored in
 `/usr/share/xournalpp/resources`.
 
-To generate a custom LaTeX template, make a copy of the default template, save it under a different name and start customizing it by adding packages and macros. Some suggestions are listed here:
+To generate a custom LaTeX template, make a copy of the default template, save
+it under a different name, and custommize it. Some suggestions are listed here:
 
 - Include the [**graphicx** package](https://ctan.org/pkg/graphicx) by adding `\usepackage{graphicx}` to your template file. As an example this will give you the possibility to add rotated text via a LaTeX formula like
 
