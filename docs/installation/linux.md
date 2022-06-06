@@ -37,21 +37,30 @@ versions:
 
 === "Ubuntu and derivatives"
 
-    Install the latest stable release from the following unofficial PPA
+    **(Ubuntu 22.04 and newer only or Debian testing)**: Install the latest
+    stable release of Xournal++ from the official repositories:
+    ```bash
+    sudo apt update
+    sudo apt install xournalpp
+    ```
+
+    **(Ubuntu-based distros only)**: Install the latest stable release from the
+    following unofficial PPA
     ```bash
     sudo add-apt-repository ppa:apandada1/xournalpp-stable
     sudo apt update
     sudo apt install xournalpp
     ```
     
-    Install the latest unstable nightly release from the following unofficial PPA
+    **(Ubuntu-based distros only)**: Install the latest unstable nightly
+    release from the following unofficial PPA
     ```bash
     sudo add-apt-repository ppa:andreasbutti/xournalpp-master
     sudo apt update
     sudo apt install xournalpp
     ```
     
-    Both of these can be easily upgraded via
+    All of these can be easily upgraded via
     ```bash
     sudo apt update && sudo apt upgrade
     ```
@@ -79,9 +88,34 @@ versions:
 
 === "NixOS / Nix"
 
-    Install the latest stable release via
+    The latest stable release is available in nixpkgs as `xournalpp`, e.g.
     ```bash
-    nix-env -iA nixpkgs.xournalpp
+    nix-shell -p xournalpp --run xournalpp
+    ```
+
+    To create a derivation for a development version, you can use
+    [overlays](https://nixos.wiki/wiki/Overlays). Example overlay:
+    ```nix
+    self: super:
+    {
+      xournalpp = super.xournalpp.overrideAttrs (old: {
+        # Override src with the version you want
+        src = super.fetchFromGitHub {
+          owner = "xournalpp";
+          repo = "xournalpp";
+
+          # Replace with the tag or commit hash you want
+          rev = "v1.1.1";
+
+          # Find the sha256 with:
+          #   nix-prefetch-url --unpack --type sha256 <url of github tar gz>
+          #
+          # Example for 1.1.1:
+          #   nix-prefetch-url --unpack --type sha256 https://github.com/xournalpp/xournalpp/archive/v1.1.1.tar.gz
+          sha256 = "16pf50x1ps8dcynnvw5lz7ggl0jg7qvzv6gkd30xg3hkcxff8ch3";
+        };
+      });
+    }
     ```
 
 === "Arch"
