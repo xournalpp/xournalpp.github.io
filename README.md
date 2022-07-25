@@ -14,12 +14,23 @@ GitHub and click the edit button; this will allow you to submit a pull request
 (PR). Once you've submitted a PR, a maintainer will look over it and then merge
 it after reviewing it and giving some feedback.
 
+### Setting up local web server
+
 If you're editing multiple pages, it might be more useful to preview the site
-locally. To do this, make sure to install [MkDocs][mkdocs],
-the [material theme](https://squidfunk.github.io/mkdocs-material/getting-started/)
-and [macros plugin](https://mkdocs-macros-plugin.readthedocs.io/en/latest/#mkdocs-macros),
-and clone this repository. Then, you can run `mkdocs serve` to start up a webserver
-that hosts your local version of the website, which you can access from
-`https://localhost:8080`.
+locally. To do so, follow the steps below:
+
+1. Clone this repository and navigate inside.
+2. If you haven't create a virtualenv, do so by running: `python3 -m venv venv`
+3. Activate the virtualenv: `source venv/bin/activate`
+4. If you just created the virtualenv, install the dependencies:
+   `pip install -r requirements.txt`
+5. Run `mkdocs serve` to start up a webserver that hosts your local version of
+   the website, which you can access from `https://localhost:8080`
+
+While developing the website, you may want to refer to the documentation of the dependencies we use:
+
+* [MkDocs][mkdocs]
+* [material theme](https://squidfunk.github.io/mkdocs-material/getting-started/)
+* [macros plugin](https://mkdocs-macros-plugin.readthedocs.io/en/latest/#mkdocs-macros)
 
 [mkdocs]: https://mkdocs.org
