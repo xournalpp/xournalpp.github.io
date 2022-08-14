@@ -22,6 +22,7 @@ nav:
          - Selection and Snapping tools: guide/tools/selecsnap.md
          - LaTeX tool: guide/tools/latex.md
          - PDF tools: guide/tools/pdf_tools.md
+         - Geometry tools: guide/tools/geometry.md
       - Working With PDF Files: guide/pdfs.md
       - Plugins: 
          - Building plugins: guide/plugins/plugins.md
