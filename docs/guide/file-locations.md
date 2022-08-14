@@ -4,14 +4,14 @@ When you download and install Xournal++ you may wonder where all the files get s
 Typically you would store them somewhere in your user folder. Autosave files get stored at the same location, just with a `.xopp~`-ending, once the `xopp-file` has been stored. So `abc.xopp` will be autosaved under `abc.xopp~`.  
 This section explains where files get stored automatically either during installation or while using Xournal++. The following table provides an overwiew, detailing typical file locations:
 
-|                                                     | Linux (.deb installer)           | MacOS (.app-bundle)                    | MS Windows (.exe installer)                                                |
-|-----------------------------------------------------|----------------------------------|----------------------------------------|----------------------------------------------------------------------------|
-| [Binary folder](#binary-folder)                     | `/usr/share/bin`                 | `Xournal++.app/MacOS`                  | `C:\Programs\Xournal++\bin`                                                |
-| [Shared resources folder](#shared-resources-folder) | `/usr/share/xournalpp`           | `Xournal++.app/Resources`              | `C:\Programs\Xournal++\share\xournalpp`                                    |
-| [Localizations folder](#localizations-folder)       | `/usr/share/locale`              | `Xournal++.app/Resources/share/locale` | `C:\Programs\Xournal++\share\locale`                                       |
-| [Config folder](#config-folder)                     | `/home/<user>/.config/xournalpp` | `/Users/<user>/.config/xournalpp`      | `C:\Users\<user>\AppData\Local\xournalpp`                                  |
-| [Cache folder](#cache-folder)                       | `/home/<user>/.cache/xournalpp`  | `/Users/<user>/.cache/xournalpp`       | `C:\Users\<user>\AppData\Local\Microsoft\Windows\INetCache\xournalpp` |
-| [Temporary folder](#temporary-folder)               | `/tmp`                           | `/tmp`                                 | `C:\Users\<user>\AppData\Local\Temp`                                       |
+|                                                     | Linux (.deb installer)           | MacOS (.app-bundle)                             | MS Windows (.exe installer)                                                |
+|-----------------------------------------------------|----------------------------------|-------------------------------------------------|----------------------------------------------------------------------------|
+| [Binary folder](#binary-folder)                     | `/usr/share/bin`                 | `Xournal++.app/Contents/MacOS`                  | `C:\Programs\Xournal++\bin`                                                |
+| [Shared resources folder](#shared-resources-folder) | `/usr/share/xournalpp`           | `Xournal++.app/Contents/Resources`              | `C:\Programs\Xournal++\share\xournalpp`                                    |
+| [Localizations folder](#localizations-folder)       | `/usr/share/locale`              | `Xournal++.app/Contents/Resources/share/locale` | `C:\Programs\Xournal++\share\locale`                                       |
+| [Config folder](#config-folder)                     | `/home/<user>/.config/xournalpp` | `/Users/<user>/.config/xournalpp`               | `C:\Users\<user>\AppData\Local\xournalpp`                                  |
+| [Cache folder](#cache-folder)                       | `/home/<user>/.cache/xournalpp`  | `/Users/<user>/.cache/xournalpp`                | `C:\Users\<user>\AppData\Local\Microsoft\Windows\INetCache\xournalpp` |
+| [Temporary folder](#temporary-folder)               | `/tmp`                           | `/tmp`                                          | `C:\Users\<user>\AppData\Local\Temp`                                       |
 
 !!! note
     On Windows, the cache folder is hidden by default. You will either need to
