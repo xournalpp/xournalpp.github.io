@@ -5,9 +5,12 @@ In order to use this tool you must have LaTeX installed on your system.
 
 ![LaTeX-Tool-Overview](../../img/guide/LaTeX_tool_overview.png)
 
-In the latest development version, the preview dialog is resizable, there is word
-wrap, auto-indentation, syntax highlighting and a separate `Command Output` tab,
-where the feedback of your LaTeX generator (e.g. `pdflatex`) is displayed.
+!!! note
+    The screenshots on this page show the latest nightly version.
+    In the latest nightly version, the preview dialog has a resizable
+    window, word wrap, auto-indentation, and syntax highlighting.
+    It also has a separate `Command Output` tab that displays the output from
+    the LaTeX generator command (e.g. `pdflatex`).
 
 ## Setup
 
@@ -103,8 +106,8 @@ it under a different name, and customize it. Some suggestions are listed here:
 
 ![LaTeX-TikZ-Table](../../img/guide/LaTeX_grid.png)
 
-- Include alongside TikZ the [**PGFPlots** package](https://www.ctan.org/pkg/pgfplots) via `\usepackage{pgfplots}` 
-for plotting function graphs. Using a macro you will be able to plot function graphs nicely and very quickly. 
+- With TikZ included, also include the [**PGFPlots** package](https://www.ctan.org/pkg/pgfplots) via `\usepackage{pgfplots}`
+for plotting function graphs. Using a macro, you will be able to plot function graphs nicely and very quickly.
 For example, add the following lines to your template:
 
 ```teX
