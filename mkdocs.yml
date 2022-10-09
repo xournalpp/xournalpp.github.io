@@ -21,10 +21,12 @@ nav:
          - Eraser tool: guide/tools/eraser.md
          - Selection and Snapping tools: guide/tools/selecsnap.md
          - LaTeX tool: guide/tools/latex.md
+         - PDF tools: guide/tools/pdf_tools.md
+      - Working With PDF Files: guide/pdfs.md
       - Plugins: 
          - Building plugins: guide/plugins/plugins.md
          - Notable plugins: guide/plugins/notable.md
-      - File locations: guide/file-locations.md
+      - File Locations: guide/file-locations.md
       - Tips: guide/tips.md
   - Community: 
       - Getting help & helping out: community/help.md
