@@ -84,4 +84,5 @@ a.downloadButton:before {
 
 .tool-label > img {
     vertical-align: middle;
+    height: 1rem;
 }
