@@ -82,6 +82,18 @@ For more extensive examples of plugins, you can check out the code of the plugin
 
 ## Plugin API
 
+### Error-handling
+
+Functions of the xounalpp lua-Api will return lua errors which can be handled by
+calling the function with
+[`pcall`](https://www.lua.org/manual/5.4/manual.html#pdf-pcall)  when something
+*unexpected happens* (like wrong arguments passed). In rare cases
+`nil, errorMessage` might be returned to silently throwing an error. This is
+reserved for *expected things* (like the resource is unavailable). You may make
+such errors to lua errors by wrapping with [`assert`](https://www.lua.org/manual/5.4/manual.html#pdf-assert).
+
+### Functions
+
 The Lua Plugin can execute a number of Xournal++ functions to interact with Xournal++. Those are defined in the
 [Plugin API](https://github.com/xournalpp/xournalpp/blob/7b6d84956d6bbe8615b2123c64dd0cac80afb81a/src/core/plugin/luapi_application.h#L1723-L1750).
 
