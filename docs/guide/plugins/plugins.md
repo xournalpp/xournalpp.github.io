@@ -112,6 +112,9 @@ Currently the list contains the following functions:
 - `app.getDisplayDpi` returns the configured display DPI
 - `app.export` exports the current document in pdf, svg or png format
 **(only available in [nightly release][nightly-release] as of v1.1.3)**
+- `app.getStrokes` returns a list of strokes on the current layer / the current
+  selection
+**(only available in [nightly release][nightly-release] as of v1.1.3)**
 - `app.addStrokes` draws strokes on the canvas given a set of coordinates
 **(only available in [nightly release][nightly-release] as of v1.1.3)**
 - `app.addSplines` draws strokes on the canvas given a set of splines. The function rasterizes it, then uses the resulting series of coordinates to place the stroke on the canvas
