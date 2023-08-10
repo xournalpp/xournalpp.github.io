@@ -20,7 +20,7 @@ The shape modes can be used as follows:
 
 ## Splines
 
-The **Spline** shape is only available in version **1.1.0+dev**. With this shape you can draw polygon courses and smooth curves. Technically these curves are splines consisting of Bezier curve segments of degree at most 3.
+With the spline shape you can draw polygon courses and smooth curves. Technically these curves are splines consisting of Bezier curve segments of degree at most 3.
 
 In order to draw a **polygon course** you simply click (and immediately release) on the locations where you want the vertices of your polygon course. For drawing a **smooth curve** you should always drag the mouse/stylus a little after clicking on the locations through which the curve shall pass. The curve will be tangent to the direction you drag out at the chosen points though which the curve passes. You can also combine linear spline segments with curved segments.
 The points where you click are called **anchor points** (or knots). They will be displayed with little red circles while editing the spline. The directions you drag out will be displayed as **tangents** in green color. Technically the two ends of the tangent are control points of the spline.
