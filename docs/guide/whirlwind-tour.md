@@ -36,7 +36,7 @@ such as pen strokes, shapes, images, etc.
 To allow users to create, view, and edit journals, Xournal++ provides a
 graphical application (shown in the image below).
 
-![Image demonstrating the Xournal++ GUI](/img/guide/main_window.jpg)
+![Image demonstrating the Xournal++ GUI](../img/guide/main_window.jpg)
 
 The application is divided into the following sections:
 
