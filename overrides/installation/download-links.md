@@ -1,22 +1,22 @@
 {% set default = "https://github.com/xournalpp/xournalpp/releases" %}
 {% set allVersions = "https://github.com/xournalpp/xournalpp/releases" %}
 {% set nightly = "https://github.com/xournalpp/xournalpp/releases/tag/nightly" %}
-{% set windows = 
+{% set windows =
     ({
-        "stable" : "https://github.com/xournalpp/xournalpp/releases/download/v1.2.0/xournalpp-1.2.0-windows.zip"
+        "stable" : "https://github.com/xournalpp/xournalpp/releases/download/v1.2.1/xournalpp-1.2.1-windows.zip"
     })
 %}
-{% set macos = 
+{% set macos =
     ({
-        "stable" : "https://github.com/xournalpp/xournalpp/releases/download/v1.2.0/xournalpp-1.2.0-macos.zip"
+        "stable" : "https://github.com/xournalpp/xournalpp/releases/download/v1.2.1/xournalpp-1.2.1-macos.zip"
     })
 %}
-{% set linux = 
+{% set linux =
     ({
         "flatpak": "https://flathub.org/apps/details/com.github.xournalpp.xournalpp",
-        "appimage": "https://github.com/xournalpp/xournalpp/releases/download/v1.2.0/xournalpp-1.2.0-x86_64.AppImage",
+        "appimage": "https://github.com/xournalpp/xournalpp/releases/download/v1.2.1/xournalpp-1.2.1-x86_64.AppImage",
         "snap": "https://snapcraft.io/xournalpp",
-        "debianStable": "https://github.com/xournalpp/xournalpp/releases/tag/v1.2.0",
-        "ubuntuStable": "https://github.com/xournalpp/xournalpp/releases/tag/v1.2.0"
+        "debianStable": "https://github.com/xournalpp/xournalpp/releases/tag/v1.2.1",
+        "ubuntuStable": "https://github.com/xournalpp/xournalpp/releases/tag/v1.2.1"
     })
 %}
