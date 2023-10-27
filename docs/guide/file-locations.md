@@ -1,7 +1,8 @@
 # Where to find Xournal++ files
 
 When you download and install Xournal++ you may wonder where all the files get stored. Note that you can store your own Xournal++ documents (`.xopp`-files) wherever you like (up to file permissions).
-Typically you would store them somewhere in your user folder. Autosave files get stored at the same location, just with a `.xopp~`-ending, once the `xopp-file` has been stored. So `abc.xopp` will be autosaved under `abc.xopp~`.  
+Typically you would store them somewhere in your user folder. Autosave files get stored in the same folder, just with a `.` at the beginning and with a `autosave.xopp`-ending, once the `xopp-file` has been stored. 
+So `foo.xopp` will be autosaved under `.foo.autosave.xopp`. If the document has not been stored yet, it will be autosaved in the cache folder, see below.
 This section explains where files get stored automatically either during installation or while using Xournal++. The following table provides an overwiew, detailing typical file locations:
 
 |                                                     | Linux (.deb installer)           | MacOS (.app-bundle)                             | MS Windows (.exe installer)                                                |
