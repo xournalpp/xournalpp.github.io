@@ -28,10 +28,6 @@ in in your toolbar configuration.
 
 ## Toolbar Palette Files
 
-!!! note
-
-    This feature is only available on Xournal++ nightly builds.
-
 In this method, the color palette is set up by editing a GIMP color palette
 file.
 
