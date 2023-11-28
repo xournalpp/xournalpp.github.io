@@ -23,14 +23,18 @@ The following lists highlight the differences between the latest development ver
 - Lua plugins
 - Pen pressure support
 - Sidebar with page and layer previews
+- PDF text selection tool (copy, highlight, underline and strike through text)
+- Ability fo tollow PDF hyperlinks and links to URLs
 - Page layout in multiple rows/columns
 - Grid and rotation snapping
 - Select object tool
 - Rectangle, Circle, Arrow, Coordinate system and Spline drawing types
+- Set-square and compass tools for measurements or as a guide for drawing
 - Flexible remapping of input devices
 - Zoom gestures
 - Drawing modifiers by drawing direction
-- Export to .png and .svg, and various export options
+- Export to `.png` and `.svg`, and various export options
+- Document creation and export from command line
 - Periodic autosave and auto-backup tool
 - Staves and Isodotted page backgrounds
 - More cursor icon options
@@ -38,6 +42,8 @@ The following lists highlight the differences between the latest development ver
 - Configurable toolbars
 - Language selectable in the GUI
 - Option to easily append new pdf pages
+- Custom color palette support using the .gpl format
+- Optional input stabilization
 - More distribution options on Linux (PPA, flatpak, appimage and snap packages)
 - Translations in more languages
 
