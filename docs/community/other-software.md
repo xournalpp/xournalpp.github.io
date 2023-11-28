@@ -59,8 +59,18 @@ TODO
 
 Xournal++ lacks the option to be used on mobile devices other than Linux phones. [Xournal++ mobile](https://gitlab.com/TheOneWithTheBraid/xournalpp_mobile) tries
 to fill this gap. It ports the main features of Xournal++ to various Flutter platforms like Android, iOS and the Web. It uses the same `.xopp` file format as Xournal++ does.
-The two teams work closely together. Xournal++ Mobile is currently still in early development. Don't expect a fully featured app, but rather a modern looking app to edit
-basic `.xopp`-files on the mobile phone or the Web. Strokes, images and LaTeX formulas can be rendered, PDF backgrounds not yet. Stay tuned for more to come.
+Xournal++ Mobile is currently still in early development. Don't expect a fully featured app, but rather a modern looking app to edit basic `.xopp`-files on the mobile phone or the Web. Strokes, images and LaTeX formulas can be rendered, PDF backgrounds not yet.
+
+!!! note
+    Currently Xournal++ mobile is unmaintained and no new features have been added since March 2021. If anyone is interested in taking over maintanance, let us know.
+
+## Linwood Butterfly
+
+If you are looking for a maintained and great looking open source note-taking app with mobile device support comparable to Xournal++ mobile, there is [Linwood Butterfly](https://docs.butterfly.linwood.dev/). It has recently added an importer for Xournal++'s `.xopp`-files and is working on an exporter, too, according to the developer of this app. Like Xournal++ mobile, the app is Flutter-based and available for Android, Windows, Linux, and in the Web. So Linwood Butterfly is to be tried if you want to work with `.xopp`-files on a mobile device/on the web or if you simply prefer a more minimalistic app.
+
+## Rnote
+
+Xournal++ is still working on its port to Gtk 4. Meanwhile [Rnote](https://rnote.flxzt.net/) is already built from scratch for Gtk 4. Look no further if you are seeking for a modern looking and featureful Gnome/Libadwaita based app with mostly the same purpose as Xournal++, but centered around an infinity canvas instead of page-based view. Rnote uses its own file format, yet offers import from and export to Xournal++'s `.xopp`-format. 
 
 ## Mr Writer
 
