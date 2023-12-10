@@ -9,7 +9,7 @@ it on the clipboard or save it into a user specified file
 provides a shortcut for toggling between "grid background with snapping to grid" and
 "plain background without snapping to grid"
 - The [ColorCycle plugin](https://github.com/xournalpp/xournalpp/tree/master/plugins/ColorCycle)
-lets you cycle through a list of colors for the current tool by using the same accelerator repeatedly
+lets you cycle through a list of colors for the current tool by using the same accelerator repeatedly, namely INSERT ACCELERATOR HERE
 - The [LayerActions plugin](https://github.com/xournalpp/xournalpp/tree/master/plugins/LayerActions)
 provides shortcuts for cloning non-background layers to the next page, hiding all non-background layers
 except the footer layers and adding a new top layer on each page.
