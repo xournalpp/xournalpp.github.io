@@ -8,7 +8,8 @@
 %}
 {% set macos =
     ({
-        "stable" : "https://github.com/xournalpp/xournalpp/releases/download/v1.2.4/xournalpp-1.2.4-macos.zip"
+        "stable" : "https://github.com/xournalpp/xournalpp/releases/download/v1.2.4/xournalpp-1.2.4-macos.zip",
+        "stable-arm" : "https://github.com/xournalpp/xournalpp/releases/download/v1.2.4/xournalpp-1.2.4-macos-arm.dmg"
     })
 %}
 {% set linux =
