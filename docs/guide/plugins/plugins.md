@@ -118,7 +118,7 @@ app.uiAction({ action = "ACTION_RULER" })
 to activate the ruler (for drawing line segments) or
 
 ```lua
-app.uiAction({ action = "ACTION_TOOL_FILL", enabled = false})
+app.uiAction({ action = "ACTION_TOOL_FILL", enabled = false })
 ```
 
 to turn off filling of shapes.
@@ -129,29 +129,29 @@ The `app.getDocumentStructure` function yields a Lua table of the following shap
 
 ```lua
 {
-  "pages" = {
+  pages = {
     {
-      "pageWidth" = number,
-      "pageHeight" = number,
-      "isAnnoated" = bool,
-      "pageTypeFormat" = string,
-      "pdfBackgroundPageNo" = integer (0, if there is no pdf background page),
-      "layers" = {
+      pageWidth = number,
+      pageHeight = number,
+      isAnnoated = bool,
+      pageTypeFormat = string,
+      pdfBackgroundPageNo = integer (0, if there is no pdf background page),
+      layers = {
         [0] = {
-          "isVisible" = bool
+          isVisible = bool
         },
         [1] = {
-          "isVisible" = bool,
-          "isAnnotated" = bool
+          isVisible = bool,
+          isAnnotated = bool
         },
         ...
       },
-      "currentLayer" = integer
+      currentLayer = integer
     },
   ...
   }
-  "currentPage" = integer,
-  "pdfBackgroundFilename" = string (empty if there is none)
+  currentPage = integer,
+  pdfBackgroundFilename = string (empty if there is none)
 }
 ```
 
