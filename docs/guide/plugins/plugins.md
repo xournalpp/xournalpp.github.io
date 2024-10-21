@@ -84,53 +84,21 @@ For more extensive examples of plugins, you can check out the code of the plugin
 
 ### Error-handling
 
-Functions of the xounalpp lua-Api will return lua errors which can be handled by
+Functions of the xounalpp Lua-Api will return Lua errors which can be handled by
 calling the function with
-[`pcall`](https://www.lua.org/manual/5.4/manual.html#pdf-pcall)  when something
-*unexpected happens* (like wrong arguments passed). In rare cases
+[`pcall`](https://www.lua.org/manual/5.4/manual.html#pdf-pcall) when something
+_unexpected happens_ (like wrong arguments passed). In rare cases
 `nil, errorMessage` might be returned to silently throwing an error. This is
-reserved for *expected things* (like the resource is unavailable). You may make
-such errors to lua errors by wrapping with [`assert`](https://www.lua.org/manual/5.4/manual.html#pdf-assert).
+reserved for _expected things_ (like the resource is unavailable). You may make
+such errors to Lua errors by wrapping with [`assert`](https://www.lua.org/manual/5.4/manual.html#pdf-assert).
 
 ### Functions
 
-The Lua Plugin can execute a number of Xournal++ functions to interact with Xournal++. Those are defined in the
-[Plugin API](https://github.com/xournalpp/xournalpp/blob/7b6d84956d6bbe8615b2123c64dd0cac80afb81a/src/core/plugin/luapi_application.h#L1723-L1750).
-
-Currently the list contains the following functions:
-
-- `app.msgbox` displays a message box with the specified buttons and returns the button clicked by the user
-- `app.glib_rename` renames a file in the file system using glib's rename function
-- `app.saveAs` opens a "save as" dialog and returns the chosen file path by the user (doesn't actually save anything)
-- `app.registerUi` registers menu items for the plugin (used in the `initUi`-function)
-- `app.uiAction` simulates a toolbar/menubar click starting some action
-- `app.uiActionSelected` notifies action listeners about selected options
-- `app.sidebarAction` executes actions accessible in the sidebar
-- `app.layerAction` executes actions accessible in the layer controller
-- `app.changeToolColor` changes the color of any tool with color capabilities
-- `app.changeCurrentPageBackground` changes the background [type](https://github.com/xournalpp/xournalpp/blob/9d1277dee22bb095c2db047bb04f89cc837aee3c/src/control/pagetype/PageTypeHandler.cpp#L98-L133) and [config](https://github.com/xournalpp/xournalpp/issues/2137#issuecomment-799956788) of the current page
-- `app.changeBackgroundPdfPageNr` changes the page number of the background PDF of the current page
-- [`app.getToolInfo`](https://github.com/xournalpp/xournalpp/commit/eb3b7eb292e51e2e5adb2741cbba669eb02a199b) returns all properties of a specific or the active tool
-- `app.getDocumentStructure` returns lots of useful info on the document, also used for applying operations on all/selected pages
-- `app.scrollToPage` scrolls relatively or absolutely to a page
-- `app.scrollToPos` scrolls relatively or absolutely to a new position on the same page
-- `app.setCurrentPage` sets the given page as new current page
-- `app.setPageSize` sets the width and height of the current page
-- `app.setCurrentLayer` sets the given layer as the new current layer, and updates visibility if specified
-- `app.setLayerVisibility` sets the visibility of the current layer
-- `app.setCurrentLayerName` sets the name of the current layer
-- `app.setBackgroundName` sets the name of the background layer
-- `app.scaleTextElements` scales all text elements of the current layer by the given scale factor
-- `app.getDisplayDpi` returns the configured display DPI
-- `app.export` exports the current document in pdf, svg or png format
-- `app.getStrokes` returns a list of strokes on the current layer / the current
-  selection
-- `app.addStrokes` draws strokes on the canvas given a set of coordinates
-- `app.addSplines` draws strokes on the canvas given a set of splines. The function rasterizes it, then uses the resulting series of coordinates to place the stroke on the canvas
-- `app.getFilePath` opens a "Open File" dialogue and returns the chosen file path by the user
-- `app.refreshPage` notifies Xournal++ of changes done by the `addStrokes` and `addSplines` functions, causing the strokes to appear on the canvas.
-
-All those functions are documented in the same file [`luapi_application.h`](https://github.com/xournalpp/xournalpp/blob/7b6d84956d6bbe8615b2123c64dd0cac80afb81a/src/core/plugin/luapi_application.h), including example usage. Future progress on the Plugin API will be reported here. Help is always welcome.
+Any Lua Plugin can execute a number of Xournal++ functions to interact with Xournal++.Those are defined in the Plugin API as seen in the
+[definition file](https://github.com/xournalpp/xournalpp/blob/master/plugins/luapi_application.def.lua). That file shows the list of all Xournal++ functions, its function parameters, return values and example usage. Moreover it can be used with the [Lua language server](https://luals.github.io/) to get code completion, hover tooltips, jump-to-definition, find-references, and more. For writing plugins using
+one of the many [code editors](https://microsoft.github.io/language-server-protocol/implementors/tools/) that support the Lua language server is advisable. If you need
+more information how these Xournal++ functions are defined, see the file
+[luapi_application.h](https://github.com/xournalpp/xournalpp/blob/master/src/core/plugin/luapi_application.h).
 
 ### Using plugins to define shortcuts for ui actions
 
@@ -223,7 +191,7 @@ end
 
 More complex Plugins will require Lua modules for certain operations. For instance if your Plugin needs
 a more sophisticated GUI or wants to repeat tasks in predefined time intervals, you may want to use the
-`lgi`-module via ```require("lgi")```.
+`lgi`-module via `require("lgi")`.
 
 The Lua package path by default contains the root folder of the plugin and the system Lua package path.
 In case you need other folders in the package path, use the package.path key to add them.
