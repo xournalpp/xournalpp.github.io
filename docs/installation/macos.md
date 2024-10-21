@@ -9,10 +9,15 @@ compile_guide: https://github.com/xournalpp/xournalpp/blob/master/readme/MacBuil
 
 version_class: windows-macos
 versions:
-  - name: Stable
-    subtitle: (Recommended)
-    description: Suits most users with its focus on stability.
+  - name: Stable Intel
+    subtitle: (Recommended for MacOS Intel users)
+    description: Suits most users of older MacOS devices.
     links: macos.stable
+    extras_ver: latest_stable
+  - name: Stable ARM
+    subtitle: (Recommended for MacOS ARM users)
+    description: Suits most users with newer MacOS devices (M1, M2, M3).
+    links: macos.stable-arm
     extras_ver: latest_stable
   - name: Nightly
     subtitle: (Unstable)
@@ -21,16 +26,17 @@ versions:
     extras_ver: latest_unstable
 ---
 
-1. Download the zip file.
-2. Copy the Xournal++ program contained in the zip file to the Applications
+1. Download the zip or dmg file.
+2. Copy the Xournal++ program contained in the zip/dmg file to the Applications
    folder.
-3. Two-finger click (or right-click) the Xournal++ program and choose "Open"
+3. In case of the dmg file run `xattr -d com.apple.quarantine /Applications/Xournal++.app` to remove quarantine.
+4. Two-finger click (or right-click) the Xournal++ program and choose "Open"
    from the menu that appears.
-4. Read the prompt and confirm that you want to open the program. If there is no
+5. Read the prompt and confirm that you want to open the program. If there is no
    button to open the program, choose "Cancel" and try again from the previous
    step. The "Open" button should appear on the second attempt.
-5. Run Xournal++ like any other program.
-6. Success!
+6. Run Xournal++ like any other program.
+7. Success!
 
 For a video demonstration of how to install Xournal++, see
 [this comment on GitHub][video-demo].
