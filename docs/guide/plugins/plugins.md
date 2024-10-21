@@ -106,20 +106,19 @@ Currently Xournal++ does not have shortcuts/keybindings configurable in the pref
 
 The function `app.uiAction` used for simulating a toolbar/menubar click can be used for lots of different actions.
 This command accepts a Lua table with keys
-`"action"`, `"group"` and `"enabled"`
-as its argument. The `"group"` key is only used for displaying warnings, so you can omit it. The `"enabled"` key is set to `true` by default, so you can often omit it as well. The `"action"` key accepts
-one of the action strings listed in the [`Control::actionPerformed` method](https://github.com/xournalpp/xournalpp/blob/c07654780933929a92e9187ad0dc44a80fb04cc7/src/core/control/Control.cpp#L360-L950) in the source code. Note that the list of actions will change when new functionality is added to Xournal++.
+`"action"` and `"enabled"` as its argument. The `"enabled"` key is set to `true` by default, so you can often omit it. The `"action"` key accepts
+one of the action strings listed in the source file [ActionBackwardCompatibilityLayer.cpp](https://github.com/xournalpp/xournalpp/blob/master/src/core/plugin/ActionBackwardCompatibilityLayer.cpp). Note that the list of actions will change when new functionality is added to Xournal++.
 
 For example use:
 
 ```lua
-app.uiAction({["action"]="ACTION_RULER"})
+app.uiAction({ action = "ACTION_RULER" })
 ```
 
 to activate the ruler (for drawing line segments) or
 
 ```lua
-app.uiAction({["action"]="ACTION_TOOL_FILL", ["enabled"]=false})
+app.uiAction({ action = "ACTION_TOOL_FILL", enabled = false})
 ```
 
 to turn off filling of shapes.
@@ -160,16 +159,16 @@ So for example to get the number of all pages, the page number of the current pa
 
 ```lua
 local docStructure = app.getDocumentStructure()
-local numPages = #docStructure["pages"]
-local currPage = docStructure["currentPage"]
-local currLayer = docStructure["pages"][currPage]["currentLayer"]
+local numPages = #docStructure.pages
+local currPage = docStructure.currentPage
+local currLayer = docStructure.pages[currPage].currentLayer
 ```
 
 You can iterate through all pages by using the lines
 
 ```lua
 local docStructure = app.getDocumentStructure()
-local numPages = #docStructure["pages"]
+local numPages = #docStructure.pages
 for i=1, numPages do
   -- ADD CODE TO EXECUTE FOR PAGE i
 end
@@ -180,8 +179,8 @@ Similarly you can run through all layers of a page. In case of the current page 
 
 ```lua
 local docStructure = app.getDocumentStructure()
-local page = docStructure["currentPage"]
-local numLayers = #docStructure["pages"][page]["layers"]
+local page = docStructure.currentPage
+local numLayers = #docStructure.pages[page].layers
 for i=1, numLayers do
   -- ADD CODE TO EXECUTE FOR LAYER i
 end
