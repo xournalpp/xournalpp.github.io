@@ -29,14 +29,13 @@ versions:
 1. Download the zip or dmg file.
 2. Copy the Xournal++ program contained in the zip/dmg file to the Applications
    folder.
-3. In case of the dmg file run `xattr -d com.apple.quarantine /Applications/Xournal++.app` to remove quarantine.
-4. Two-finger click (or right-click) the Xournal++ program and choose "Open"
+3. Two-finger click (or right-click) the Xournal++ program and choose "Open"
    from the menu that appears.
-5. Read the prompt and confirm that you want to open the program. If there is no
+4. Read the prompt and confirm that you want to open the program. If there is no
    button to open the program, choose "Cancel" and try again from the previous
    step. The "Open" button should appear on the second attempt.
-6. Run Xournal++ like any other program.
-7. Success!
+5. Run Xournal++ like any other program.
+6. Success!
 
 For a video demonstration of how to install Xournal++, see
 [this comment on GitHub][video-demo].
