@@ -63,8 +63,8 @@ extra:
   version:
     # TODO: build the download links from these instead of hardcoding them in
     # overrides/installation/download-links.md
-    latest_stable: "1.2.4"
-    latest_unstable: "1.2.4+dev"
+    latest_stable: "1.2.5"
+    latest_unstable: "1.2.5+dev"
 
 #code highlighting
 markdown_extensions:
