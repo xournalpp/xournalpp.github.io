@@ -98,7 +98,7 @@
     {% endif %}
     {% endblock %}
 
-    {% if page.compile_guide is not none %}
+    {% if page.compile_guide is defined %}
     <div class="compiling-guide-link">
         <p>As a free and open-source software, Xournal++ can also be compiled from source. If you prefer to do so, follow <span><a class="guide-link" href="{{ page.meta.compile_guide }}">this guide</a></span> in our Github page.</p>
     </div>
