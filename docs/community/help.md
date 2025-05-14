@@ -2,7 +2,7 @@
 
 ## Website documentation and user manual
 
-This website is intended to describe Xournal++ and its features reasonably well and complete, so that the average user can find out how Xournal++ works. We are working on
+This website is intended to describe Xournal++ and its features reasonably well and completely, so that the average user can find out how Xournal++ works. We are working on
 completing its content. The website will replace the (rather incomplete) [User manual](https://github.com/xournalpp/xournalpp/wiki/User-Manual) on the Github repository.
 More technical questions (like how to build Xournal++ from source, or how to check out a pull request) that are relevant for technically more advanced users will still be
 presented in the [Github wiki](https://github.com/xournalpp/xournalpp/wiki).
