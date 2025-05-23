@@ -97,8 +97,12 @@ such errors to Lua errors by wrapping with [`assert`](https://www.lua.org/manual
 Any Lua Plugin can execute a number of Xournal++ functions to interact with Xournal++.Those are defined in the Plugin API as seen in the
 [definition file](https://github.com/xournalpp/xournalpp/blob/master/plugins/luapi_application.def.lua). That file shows the list of all Xournal++ functions, its function parameters, return values and example usage. Moreover it can be used with the [Lua language server](https://luals.github.io/) to get code completion, hover tooltips, jump-to-definition, find-references, and more. For writing plugins using
 one of the many [code editors](https://microsoft.github.io/language-server-protocol/implementors/tools/) that support the Lua language server is advisable. If you need
-more information how these Xournal++ functions are defined, see the file
-[luapi_application.h](https://github.com/xournalpp/xournalpp/blob/master/src/core/plugin/luapi_application.h).
+more information how these Xournal++ functions are defined, see the
+`luapi_application.h` file which is relevant to your version of xournalpp:
+
+* [1.1.x series](https://github.com/xournalpp/xournalpp/blob/release-1.1/src/plugin/luapi_application.h)
+* [1.2.x series](https://github.com/xournalpp/xournalpp/blob/release-1.2/src/core/plugin/luapi_application.h)
+* [nightly builds](https://github.com/xournalpp/xournalpp/blob/master/src/core/plugin/luapi_application.h)
 
 ### Using plugins to define shortcuts for ui actions
 
