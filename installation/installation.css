@@ -1,0 +1,287 @@
+.installation h1,
+.installation h2,
+.installation p,
+.installation ul,
+.installation li,
+.installation a,
+.installation span {
+	color: #000;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+@media only screen and (min-width: 76.25em) {
+	.md-main__inner {
+		max-width: 100%;
+	}
+	.md-sidebar--primary {
+		left: 0;
+	}
+	.md-sidebar--secondary {
+		right: 0;
+		margin-left: 0;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+.installation {
+    font-family: 'Montserrat';
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    width: 80%;
+    line-height: initial;
+}
+
+.installation > * {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+/* "Choose Your Version" */
+
+.title-container {
+    text-align: center;
+}
+
+.title-container > *  {
+    text-align: center;
+}
+
+.installation .title-container {
+    margin-bottom: 20px;
+}
+
+.title-container .title {
+    font-weight: 500;
+}
+
+.installation .subtitle {
+    font-size: 18px;
+}
+
+/* container for Windows, Linux, MacOS buttons */
+
+.OS-selection .title {
+    font-size: 36px;
+}
+
+/* container for download buttons */
+
+.version-selection .title {
+    font-size: 42px;
+}
+
+.installation .mobile-button-container, .installation .OS-option-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.installation .OS-option-container {
+    max-width: 550px;
+}
+
+a.button {
+	border: solid 2px black;
+	display: inline-block;
+	text-align: center;
+	transition: all 0.2s;
+}
+
+a.button:hover, a.clicked{
+    background-color: black;
+	color: var(--md-accent-fg-color);
+}
+
+a.OS-option, a.mobile-option {
+    font-weight: 500;
+	font-size: 22px;
+}
+
+a.OS-option {
+    padding: 5px 0px;
+    width: 150px;
+}
+
+.mobile .title {
+    font-size: 27px;
+}
+
+a.mobile-option {
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.installation .version-option-container {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.installation .version-option-container > * {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* styles for individual "versions" */
+
+.version {
+    /* border: solid 2px black;
+    border-radius: 10px; */
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    text-align: center;
+}
+
+.version-linux {
+    max-height: 300px;
+}
+
+.version-windows-macos {
+    max-height: 250px;
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
+.version > * {
+    text-align: center;
+}
+
+.version .version-name {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.version .version-subtitle {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.version .version-description {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.version .download {
+    font-weight: 500;
+	font-size: 18px;
+}
+
+.version .download-windows-macos {
+    margin: 0 auto;
+    align-self: flex-end;
+    padding: 7px;
+}
+
+.version .download-linux-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 15px 0px;
+}
+
+.version .download-linux {
+    line-height: 35px;
+    height: 35px;
+    margin: 0 auto;
+    width: 120px;
+}
+
+.other-version-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.other-version-link a {
+    border-bottom: dashed 1px black;
+    font-size: 18px;
+}
+
+/* installation instructions */
+
+.installation-guide p{
+    font-size: 24px;
+}
+
+.step-container {
+    margin-top: 7px;
+}
+
+.step-container p, .step-container li {
+    font-size: 18px;
+}
+
+.installation-guide ol > * {
+    list-style-type: decimal;
+}
+
+.installation-guide {
+    margin-bottom: 20px;
+}
+
+/* Linux distro tab styles */
+
+.distro-specific-installation .title {
+    font-size: 32px;
+}
+
+.distro-specific-installation .title-container {
+    margin-bottom: 0px;
+}
+
+.distro-list {
+    margin-top: 20px;
+}
+
+.tabbed-set {
+    justify-content: center;
+    width: 100%;
+    line-height: 1;
+}
+
+.tabbed-set label {
+    margin: 0 0.5em;
+}
+
+.tabbed-set input:nth-child(n+1):checked + label {
+    border-bottom: solid 3px var(--md-accent-fg-color);
+    padding-bottom: 7px;
+}
+
+.tabbed-content {
+    border-top: solid 1px #d4d4d4;
+    padding-top: 15px;
+}
+
+.tabbed-content p {
+    font-size: 18px;
+}
+
+.distro-list .tabbed-set label {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Link style */
+
+.compiling-guide-link {
+    font-size: 22px;
+}
+
+.compiling-guide-link .guide-link {
+    border-bottom: dashed 2px #8c8c8c ;
+}
+
+.guide-link, .other-version-link a {
+    transition: all 0.2s;
+}
