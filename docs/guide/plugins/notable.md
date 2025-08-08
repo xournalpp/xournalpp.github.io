@@ -13,8 +13,6 @@ lets you cycle through a list of colors for the current tool by using the same a
 - The [LayerActions plugin](https://github.com/xournalpp/xournalpp/tree/master/plugins/LayerActions)
 provides shortcuts for cloning non-background layers to the next page, hiding all non-background layers
 except the footer layers and adding a new top layer on each page.
-- The [MigrateFontSizes plugin](https://github.com/xournalpp/xournalpp/tree/master/plugins/MigrateFontSizes)
-allows to scale font sizes across the document, both via the GUI and directly from the menu.
 - The [HighlightPosition plugin](https://github.com/xournalpp/xournalpp/tree/master/plugins/HighlightPosition)
 adds a shortcut for highlighting the current position.
 - The [Export plugin](https://github.com/xournalpp/xournalpp/tree/master/plugins/Export)
@@ -22,12 +20,12 @@ lets the user export the current document to pdf, svg or png-format via a shortc
 
 ## Work in Progress
 
-- The [HandwritingRecognition plugin](https://github.com/xournalpp/xournalpp/pull/2176) uses cloud-based
-handwriting recognition to recognize handwritten text from a selection or page layer in a user-specified language.
 - The [FunctionPlotter plugin](https://github.com/xournalpp/xournalpp/pull/3811) allows plotting graphs of
 ordinary functions and parametric functions.
 - The [Notability plugin](https://github.com/xournalpp/xournalpp/pull/3830) allows importing notes from a
 Notability `.note` file.
+- The [Shape Library plugin](https://github.com/xournalpp/xournalpp/pull/6020) allows managing a library
+of shapes and adding them to the document.
 
 ## Notable Third Party Plugins
 
