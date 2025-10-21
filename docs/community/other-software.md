@@ -24,7 +24,7 @@ The following lists highlight the differences between the latest development ver
 - Pen pressure support
 - Sidebar with page and layer previews
 - PDF text selection tool (copy, highlight, underline and strike through text)
-- Ability fo tollow PDF hyperlinks and links to URLs
+- Ability to follow PDF hyperlinks and links to URLs
 - Page layout in multiple rows/columns
 - Grid and rotation snapping
 - Select object tool
