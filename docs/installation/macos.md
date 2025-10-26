@@ -26,16 +26,12 @@ versions:
     extras_ver: latest_unstable
 ---
 
-1. Download the zip or dmg file.
-2. Copy the Xournal++ program contained in the zip/dmg file to the Applications
-   folder.
-3. Two-finger click (or right-click) the Xournal++ program and choose "Open"
-   from the menu that appears.
-4. Read the prompt and confirm that you want to open the program. If there is no
-   button to open the program, choose "Cancel" and try again from the previous
-   step. The "Open" button should appear on the second attempt.
-5. Run Xournal++ like any other program.
-6. Success!
+1. Download the dmg file.
+2. Copy the Xournal++ program contained in the dmg file to the Applications
+   folder by opening the dmg file and dragging the Xournal++ icon.
+3. Open the Terminal and run `xattr -c /Applications/Xournal++.app` to remove quarantine. 
+4. Run Xournal++ like any other program.
+5. Success!
 
 For a video demonstration of how to install Xournal++, see
 [this comment on GitHub][video-demo].
