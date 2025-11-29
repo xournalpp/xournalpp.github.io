@@ -9,10 +9,15 @@ compile_guide: https://github.com/xournalpp/xournalpp/blob/master/readme/Windows
 
 version_class: windows-macos
 versions:
-  - name: Stable
-    subtitle: (Recommended)
+  - name: Stable Intel
+    subtitle: (Recommended - for Intel processors)
     description: Suits most users with its focus on stability.
     links: windows.stable
+    extras_ver: latest_stable
+  - name: Stable ARM
+    subtitle: (Recommended - for ARM processors)
+    description: Suits most users with its focus on stability.
+    links: windows.stable-arm
     extras_ver: latest_stable
   - name: Nightly
     subtitle: (Unstable)

@@ -3,21 +3,22 @@
 {% set nightly = "https://github.com/xournalpp/xournalpp/releases/tag/nightly" %}
 {% set windows =
     ({
-        "stable" : "https://github.com/xournalpp/xournalpp/releases/download/v1.2.7/xournalpp-1.2.7-windows-setup-x86_64.exe"
+        "stable" : "https://github.com/xournalpp/xournalpp/releases/download/v1.2.8/xournalpp-1.2.8-windows-setup-AMD64.exe",
+        "stable-arm" : "https://github.com/xournalpp/xournalpp/releases/download/v1.2.8/xournalpp-1.2.8-windows-setup-ARM64.exe"
     })
 %}
 {% set macos =
     ({
-        "stable" : "https://github.com/xournalpp/xournalpp/releases/download/v1.2.7/xournalpp-1.2.7-macOS-X64.dmg",
-        "stable-arm" : "https://github.com/xournalpp/xournalpp/releases/download/v1.2.7/xournalpp-1.2.7-macOS-ARM64.dmg"
+        "stable" : "https://github.com/xournalpp/xournalpp/releases/download/v1.2.8/xournalpp-1.2.8-macOS-X64.dmg",
+        "stable-arm" : "https://github.com/xournalpp/xournalpp/releases/download/v1.2.8/xournalpp-1.2.8-macOS-ARM64.dmg"
     })
 %}
 {% set linux =
     ({
         "flatpak": "https://flathub.org/apps/details/com.github.xournalpp.xournalpp",
-        "appimage": "https://github.com/xournalpp/xournalpp/releases/download/v1.2.7/xournalpp-1.2.7-x86_64.AppImage",
+        "appimage": "https://github.com/xournalpp/xournalpp/releases/download/v1.2.8/xournalpp-1.2.8-x86_64.AppImage",
         "snap": "https://snapcraft.io/xournalpp",
-        "debianStable": "https://github.com/xournalpp/xournalpp/releases/tag/v1.2.7",
-        "ubuntuStable": "https://github.com/xournalpp/xournalpp/releases/tag/v1.2.7"
+        "debianStable": "https://github.com/xournalpp/xournalpp/releases/tag/v1.2.8",
+        "ubuntuStable": "https://github.com/xournalpp/xournalpp/releases/tag/v1.2.8"
     })
 %}

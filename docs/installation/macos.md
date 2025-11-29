@@ -16,7 +16,7 @@ versions:
     extras_ver: latest_stable
   - name: Stable ARM
     subtitle: (Recommended for MacOS ARM users)
-    description: Suits most users with newer MacOS devices (M1, M2, M3).
+    description: Suits most users with newer MacOS devices (M1, M2, ...).
     links: macos.stable-arm
     extras_ver: latest_stable
   - name: Nightly
