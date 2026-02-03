@@ -1,0 +1,1186 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-8.2.6">
+    
+    
+      
+        <title>Geometry tools - Xournal++</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.9d5733d3.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../css/buttons.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="deep-orange">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#geometry-tools" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-component="outdated" hidden>
+        <aside class="md-banner md-banner--warning">
+          
+        </aside>
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Xournal++" class="md-header__button md-logo" aria-label="Xournal++" data-md-component="logo">
+      
+  <img src="../../../img/favicon.ico" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Xournal++
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Geometry tools
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/xournalpp/xournalpp/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    xournalpp/xournalpp
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../installation/" class="md-tabs__link">
+        Installation
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../overview/" class="md-tabs__link md-tabs__link--active">
+        Guide
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../community/help/" class="md-tabs__link">
+        Community
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="https://github.com/xournalpp/xournalpp/issues" class="md-tabs__link">
+      Report a bug
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Xournal++" class="md-nav__button md-logo" aria-label="Xournal++" data-md-component="logo">
+      
+  <img src="../../../img/favicon.ico" alt="logo">
+
+    </a>
+    Xournal++
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/xournalpp/xournalpp/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    xournalpp/xournalpp
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Installation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Installation" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Installation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../installation/" class="md-nav__link">
+        OS selection
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../installation/windows/" class="md-nav__link">
+        Windows
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../installation/macos/" class="md-nav__link">
+        MacOS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../installation/linux/" class="md-nav__link">
+        Linux
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Guide" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Guide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../whirlwind-tour/" class="md-nav__link">
+        Whirlwind Tour
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3">
+          Configuration
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Configuration" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Configuration
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../config/preferences/" class="md-nav__link">
+        Preferences
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../config/toolbar-colors/" class="md-nav__link">
+        Toolbar Colors
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_4">
+          Tools and Editing
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Tools and Editing" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Tools and Editing
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pen/" class="md-nav__link">
+        Pen and Highlighter tools
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../eraser/" class="md-nav__link">
+        Eraser tool
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../selecsnap/" class="md-nav__link">
+        Selection and Snapping tools
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../latex/" class="md-nav__link">
+        LaTeX tool
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pdf_tools/" class="md-nav__link">
+        PDF tools
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Geometry tools
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Geometry tools
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#setsquare-overview" class="md-nav__link">
+    Setsquare overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compass-overview" class="md-nav__link">
+    Compass overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#units-distinguished-point-and-axis" class="md-nav__link">
+    Units, distinguished point and axis
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup-and-activation" class="md-nav__link">
+    Setup and activation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keyboard-control" class="md-nav__link">
+    Keyboard control
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#touch-control" class="md-nav__link">
+    Touch control
+  </a>
+  
+    <nav class="md-nav" aria-label="Touch control">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#one-finger-touch" class="md-nav__link">
+    One finger touch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#two-fingers-touch" class="md-nav__link">
+    Two fingers touch
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interaction-with-other-tools" class="md-nav__link">
+    Interaction with other tools
+  </a>
+  
+    <nav class="md-nav" aria-label="Interaction with other tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interaction-with-the-penhighlighter" class="md-nav__link">
+    Interaction with the Pen/Highlighter
+  </a>
+  
+    <nav class="md-nav" aria-label="Interaction with the Pen/Highlighter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setsquare" class="md-nav__link">
+    Setsquare
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compass" class="md-nav__link">
+    Compass
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interaction-with-the-hand-tool" class="md-nav__link">
+    Interaction with the Hand tool
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pdfs/" class="md-nav__link">
+        Working With PDF Files
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_6" type="checkbox" id="__nav_3_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_6">
+          Plugins
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Plugins" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_6">
+          <span class="md-nav__icon md-icon"></span>
+          Plugins
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugins/plugins/" class="md-nav__link">
+        Building plugins
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugins/notable/" class="md-nav__link">
+        Notable plugins
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../file-locations/" class="md-nav__link">
+        File Locations
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tips/" class="md-nav__link">
+        Tips
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Community
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Community" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Community
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../community/help/" class="md-nav__link">
+        Getting help & helping out
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../community/other-software/" class="md-nav__link">
+        Xournal++ & other software
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/xournalpp/xournalpp/issues" class="md-nav__link">
+        Report a bug
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+<a href="https://github.com/xournalpp/xournalpp.github.io/edit/site/docs/guide/tools/geometry.md" title="Edit this page" class="md-content__button md-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+</a>
+
+
+
+<h1 id="geometry-tools">Geometry tools<a class="headerlink" href="#geometry-tools" title="Permanent link">&para;</a></h1>
+<p>Xournal++ contains two geometry tools, a setsquare tool and a compass. They can be used for
+measuring lengths of elements in the document and as a guide for drawing straight lines,
+circles or parts thereof. You can even do geometric constructions with them. Both geometry
+tools can be manipulated via touch on a touchscreen or via the keyboard. Drawing happens
+through the mouse, stylus, or touchscreen.</p>
+<h2 id="setsquare-overview">Setsquare overview<a class="headerlink" href="#setsquare-overview" title="Permanent link">&para;</a></h2>
+<p>The setsquare is a ruler-like tool that is used to measure distances and angles and draw straight lines.
+The setsquare is shaped like an isosceles triangle.</p>
+<p><img alt="Setsquare-Overview" src="../../../img/guide/setsquare_overview.png" /></p>
+<p>The longest side of the setsquare is used for measuring elements of the document and drawing
+straight lines aligned to it.
+There are marks (in green) parallel to the longest side of the setsquare, that allow
+measuring distances from that side.</p>
+<p>Angular marks (in purple) help measuring angles.
+The current rotation of the setsquare (in tenth of degrees) will be shown in a circular display, near the angle made by the two shorter sides of the setsquare.
+In the picture above, this angle is 10.0 degrees.</p>
+<p>The shorter two sides of the setsquare can be used to drawing lines from the middle point of the longest side of the setsquare.
+This can be activated by clicking/touching near the two shorter sides of the setsquare.</p>
+<h2 id="compass-overview">Compass overview<a class="headerlink" href="#compass-overview" title="Permanent link">&para;</a></h2>
+<p>The compass is a wheel-shaped tool used to measure angles and draw circles/arcs/sectors.</p>
+<p><img alt="Compass-Overview" src="../../../img/guide/compass_overview.png" /></p>
+<p>The compass can be used for drawing circles, arcs, and (when "fill" is enabled)
+circular sectors.
+To activate this feature, draw near the edge of the compass (but inside it).</p>
+<p>Lines can also be drawn along the axis marked with measuring marks. The radius of the
+compass/drawn circles can be seen from the last displayed measuring mark.</p>
+<p>Angular marks (in purple) help measuring angles. Like for the setsquare, there is a display of the
+current rotation of the compass.</p>
+<h2 id="units-distinguished-point-and-axis">Units, distinguished point and axis<a class="headerlink" href="#units-distinguished-point-and-axis" title="Permanent link">&para;</a></h2>
+<p>For all geometry tools, lengths are measured in centimeters and angles are measured in degrees.</p>
+<p>Each geometry tool has a distinguished point and a distinguished axis through that point.
+The distinguished point is used as a rotation and scaling center when rotating/scaling via keyboard.
+Angles are measured between horizontal axis and distinguished axis.</p>
+<ul>
+<li><strong>Setsquare</strong>: The distinguished axis and point are the longest side of the setsquare and its
+  midpoint, respectively.</li>
+<li><strong>Compass</strong>: Its distinguished point is the center of the compass wheel. The distinguished axis
+  is a radius that carries measuring marks and can be used to draw a radius or part of it.</li>
+</ul>
+<h2 id="setup-and-activation">Setup and activation<a class="headerlink" href="#setup-and-activation" title="Permanent link">&para;</a></h2>
+<p>In order to setup the geometry tools, check your Display DPI Calibration in the Zoom panel of menu
+<code>Edit &gt; Preferences</code> to ensure that the length on your screen matches the physical length. Set
+the zoom to 100% to profit from the calibration.</p>
+<p>Switch one geometry tool on/off either from menu <code>Tools</code> or via the toolbar (setsquare/compass symbol).
+Only one geometry tool can be used at once. When a geometry tool is switched on while another one
+is active, the latter one is switched off.
+A geometry tool is always attached to one particular page of the document. If you need it on a
+different page of the document, deactivate it on the old one and activate it on the new one.
+This can be achieved by clicking twice on the corresponding symbol on the toolbar.</p>
+<p>The geometry tools are designed to be used either with touch (one hand) and stylus/mouse
+(other hand) or with keyboard (one hand) and stylus/mouse (other hand).</p>
+<ul>
+<li><strong>Keyboard and Touch</strong> are used to move the geometry tool (and the page) around, to rotate
+  it and change its size. All geometry tools react in the same way to keyboard and touch input.</li>
+<li><strong>Stylus/Mouse</strong> are used to draw/annotate. Different geometry tools react differently to
+  stylus/mouse input.</li>
+</ul>
+<h2 id="keyboard-control">Keyboard control<a class="headerlink" href="#keyboard-control" title="Permanent link">&para;</a></h2>
+<p>Several keys can be used to move, rotate and scale the geometry tool. The <code>Alt</code> modifier can
+be used to get smaller steps.</p>
+<ul>
+<li><code>arrow keys</code> for moving around. Steps are 0.25 cm (big) and 0.25 mm (small). Use the shift
+  key to make the geometry tool move parallel or perpendicular to the longest side of the
+  setsquare.</li>
+<li><code>r/R</code> for rotation (countclockwise/clockwise) around the distinguished point. Steps are 5
+  degrees (big) and 0.2 degrees (small)</li>
+<li><code>s/S</code> for scaling (up/down) centered at the distinguished point. Steps for scaling up are
+  10% (big) and 1% (small). Scaling down has the opposite effect.</li>
+<li><code>m</code> for marking the distinguished point by adding a small "x" to the page.</li>
+</ul>
+<h2 id="touch-control">Touch control<a class="headerlink" href="#touch-control" title="Permanent link">&para;</a></h2>
+<p>Touch can be used with one finger or two fingers. Gestures with more fingers are not handled.</p>
+<h3 id="one-finger-touch">One finger touch<a class="headerlink" href="#one-finger-touch" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Touch the geometry tool and move your finger around to move the geometry tool.
+  If you move the distinguished point close to some line segment, the geometry tool will get
+  rotation snapped to it, if its distinguished axis is at most 3 degrees from the line segment
+  (or of a perpendicular line). This is useful for drawing a perpendicular line or a line in a
+  specific angle from an existing line and for measuring angles between line segments.</li>
+<li>Touch the page outside the geometry tool and move your finger around to move the whole
+  page including the geometry tool. When "Touch drawing" is enabled in the preferences, the
+  page will not be moved. Instead usual touch drawing happens outside the geometry tool.</li>
+</ul>
+<h3 id="two-fingers-touch">Two fingers touch<a class="headerlink" href="#two-fingers-touch" title="Permanent link">&para;</a></h3>
+<p>The rotation and scaling centers are the midpoint between the two fingers. The action depend
+on where you put your first finger and partly also where you put the second finger.</p>
+<ul>
+<li>A touch sequence with two fingers, where the first finger touching the screen is outside
+  the geometry tool, acts in the usual way (for zooming and scrolling the whole page)</li>
+<li>A touch sequence with two fingers, where both fingers are placed inside the geometry tool
+  is used for simultaneous scrolling/rotating/resizing. Currently the zoom gesture preferences
+  from the Touchscreen panel in menu <code>Edit &gt; Preferences</code> are also applied for the resizing
+  operation. Setting the percentage to something like 50% helps avoiding unintended resizing.</li>
+<li>A touch sequence with two fingers, where the first finger touching the screen inside the
+  geometry tool and the second finger outside the geometry tool leads to scrolling/resizing
+  without rotation (and also no rotation snapping).</li>
+</ul>
+<h2 id="interaction-with-other-tools">Interaction with other tools<a class="headerlink" href="#interaction-with-other-tools" title="Permanent link">&para;</a></h2>
+<p>When a geometry tool is activated, there are special <strong>Stylus/Mouse</strong> interactions with the
+Pen, Highlighter and Hand tool.</p>
+<h3 id="interaction-with-the-penhighlighter">Interaction with the Pen/Highlighter<a class="headerlink" href="#interaction-with-the-penhighlighter" title="Permanent link">&para;</a></h3>
+<h4 id="setsquare">Setsquare<a class="headerlink" href="#setsquare" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Start a stroke inside the setsquare, not further than 0.5 cm from its longest side, to draw
+  a line aligned to the longest side of the setsquare. It doesn't matter what drawing type you
+  use.</li>
+<li>Start a stroke inside the setsquare, not further than 0.5 cm from one of the shorter
+  sides, but outside the above mentioned region, to get a line from the chosen point to the
+  midpoint of the longest side of the setsquare. Note that you can move the end point of that
+  radial line around to get the desired length and angle. When the end point passes the
+  semicircle with the measuring marks, the angle gets locked, so you have the chance to draw
+  small radii without losing the precision for the angle in which it is drawn.</li>
+<li>Start a stroke outside the two regions described above to get normal drawing. This can be
+  used for annotation.</li>
+</ul>
+<h4 id="compass">Compass<a class="headerlink" href="#compass" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Start a stroke inside the compass, not further than 0.5 cm from its border, to draw a
+  circle arc aligned to the border. It doesn't matter what drawing type you use.</li>
+<li>Start a stroke near the distinguished axis with the measuring marks to draw a radial segment.</li>
+<li>Start a stroke outside the two regions described above to get normal drawing, used for
+  annotation.</li>
+</ul>
+<h3 id="interaction-with-the-hand-tool">Interaction with the Hand tool<a class="headerlink" href="#interaction-with-the-hand-tool" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Use it in the inside of the geometry tool to move the geometry tool only.</li>
+<li>Use it on the outside of the geometry tool to move the whole page along with the geometry
+  tool.</li>
+</ul>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../pdf_tools/" class="md-footer__link md-footer__link--prev" aria-label="Previous: PDF tools" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              PDF tools
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../pdfs/" class="md-footer__link md-footer__link--next" aria-label="Next: Working With PDF Files" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Working With PDF Files
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.5e67fbfe.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"latest_stable": "1.3.2", "latest_unstable": "1.3.2+dev"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.e87a5f81.min.js"></script>
+      
+    
+  </body>
+</html>

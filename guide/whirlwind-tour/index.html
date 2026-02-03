@@ -1,0 +1,1182 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-8.2.6">
+    
+    
+      
+        <title>Whirlwind Tour - Xournal++</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.9d5733d3.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/buttons.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="deep-orange">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#how-xournal-works" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-component="outdated" hidden>
+        <aside class="md-banner md-banner--warning">
+          
+        </aside>
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Xournal++" class="md-header__button md-logo" aria-label="Xournal++" data-md-component="logo">
+      
+  <img src="../../img/favicon.ico" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Xournal++
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Whirlwind Tour
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/xournalpp/xournalpp/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    xournalpp/xournalpp
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../installation/" class="md-tabs__link">
+        Installation
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../overview/" class="md-tabs__link md-tabs__link--active">
+        Guide
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../community/help/" class="md-tabs__link">
+        Community
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="https://github.com/xournalpp/xournalpp/issues" class="md-tabs__link">
+      Report a bug
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Xournal++" class="md-nav__button md-logo" aria-label="Xournal++" data-md-component="logo">
+      
+  <img src="../../img/favicon.ico" alt="logo">
+
+    </a>
+    Xournal++
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/xournalpp/xournalpp/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    xournalpp/xournalpp
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Installation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Installation" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Installation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation/" class="md-nav__link">
+        OS selection
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation/windows/" class="md-nav__link">
+        Windows
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation/macos/" class="md-nav__link">
+        MacOS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation/linux/" class="md-nav__link">
+        Linux
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Guide" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Guide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Whirlwind Tour
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Whirlwind Tour
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-xournal-works" class="md-nav__link">
+    How Xournal++ works
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#first-time-setup" class="md-nav__link">
+    First time setup
+  </a>
+  
+    <nav class="md-nav" aria-label="First time setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#input-device-setup" class="md-nav__link">
+    Input device setup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#temporary-tool-button-bindings" class="md-nav__link">
+    Temporary tool button bindings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#touchscreen" class="md-nav__link">
+    Touchscreen
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-your-first-document" class="md-nav__link">
+    Creating your first document
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-tools-to-create-and-manipulate-elements" class="md-nav__link">
+    Using tools to create and manipulate elements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#annotating-pdf-files" class="md-nav__link">
+    Annotating PDF files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exporting-journals-to-other-formats" class="md-nav__link">
+    Exporting journals to other formats
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3">
+          Configuration
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Configuration" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Configuration
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../config/preferences/" class="md-nav__link">
+        Preferences
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../config/toolbar-colors/" class="md-nav__link">
+        Toolbar Colors
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_4">
+          Tools and Editing
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Tools and Editing" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Tools and Editing
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools/pen/" class="md-nav__link">
+        Pen and Highlighter tools
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools/eraser/" class="md-nav__link">
+        Eraser tool
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools/selecsnap/" class="md-nav__link">
+        Selection and Snapping tools
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools/latex/" class="md-nav__link">
+        LaTeX tool
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools/pdf_tools/" class="md-nav__link">
+        PDF tools
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools/geometry/" class="md-nav__link">
+        Geometry tools
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pdfs/" class="md-nav__link">
+        Working With PDF Files
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_6" type="checkbox" id="__nav_3_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_6">
+          Plugins
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Plugins" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_6">
+          <span class="md-nav__icon md-icon"></span>
+          Plugins
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugins/plugins/" class="md-nav__link">
+        Building plugins
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugins/notable/" class="md-nav__link">
+        Notable plugins
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../file-locations/" class="md-nav__link">
+        File Locations
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tips/" class="md-nav__link">
+        Tips
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Community
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Community" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Community
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../community/help/" class="md-nav__link">
+        Getting help & helping out
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../community/other-software/" class="md-nav__link">
+        Xournal++ & other software
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/xournalpp/xournalpp/issues" class="md-nav__link">
+        Report a bug
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+<a href="https://github.com/xournalpp/xournalpp.github.io/edit/site/docs/guide/whirlwind-tour.md" title="Edit this page" class="md-content__button md-icon">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+</a>
+
+
+
+  <h1>Whirlwind Tour</h1>
+
+<p>This is a quick tutorial for beginners that will demonstrate:</p>
+<ol>
+<li>How to set up Xournal++ for the first time</li>
+<li>How to create a basic Xournal++ journal file</li>
+<li>The functionality of some common tools</li>
+<li>How to annotate a PDF file</li>
+<li>How to export a Xournal++ journal file to other file formats</li>
+</ol>
+<p>We assume that the reader has already downloaded and installed Xournal++. If
+not, <a href="../../installation/">instructions can be found here</a>.</p>
+<h2 id="how-xournal-works">How Xournal++ works<a class="headerlink" href="#how-xournal-works" title="Permanent link">&para;</a></h2>
+<p>Xournal++ is a note-taking tool focused on handwritten notes and digital
+tablet/stylus input. To this end, notes are stored in files called <strong>Journals</strong>
+(<code>.xopp</code> format). A journal can be thought of as a collection of pages of
+different formats and sizes. The pages themselves contain visual <strong>elements</strong>
+such as pen strokes, shapes, images, etc.</p>
+<p>To allow users to create, view, and edit journals, Xournal++ provides a
+graphical application (shown in the image below).</p>
+<p><img alt="Image demonstrating the Xournal++ GUI" src="../../img/guide/main_window.jpg" /></p>
+<p>The application is divided into the following sections:</p>
+<ol>
+<li>The <strong>canvas</strong> displays the currently loaded journal and allows the user to
+   create, delete, or edit elements.</li>
+<li>The <strong>toolbars</strong> allow the user to select <strong>tools</strong>, which are used to create
+   and modify elements. For example, the   <span class="tool-label"><strong>Pen Tool</strong> <img alt="Pen Tool icon" src="https://raw.githubusercontent.com/xournalpp/xournalpp/1.1.0/ui/iconsColor-dark/hicolor/scalable/actions/xopp-tool-pencil.svg" /></span>  can be used to
+   draw/write strokes. The   <span class="tool-label"><strong>Select Object Tool</strong> <img alt="Select Object Tool icon" src="https://raw.githubusercontent.com/xournalpp/xournalpp/1.1.0/ui/iconsColor-dark/hicolor/scalable/actions/xopp-object-select.svg" /></span>  can be used to move, resize,
+   and scale elements. One tool may be designated as the "currently activated
+   tool" at any time.</li>
+<li>The <strong>sidebar</strong> is used to preview parts of the journal, including the pages
+   and layers (see the section below). Furthermore, buttons at the bottom of the
+   sidebar allow the user to create pages.</li>
+<li>The <strong>menubar</strong> contains a list of menus that provide access to less
+   frequently used features, such as the Preferences window and the Plugin
+   Manager.</li>
+</ol>
+<p>This is roughly all the information that the reader needs to know to get started
+with Xournal++. For example, suppose we want to create a stroke. To do this,
+select the   <span class="tool-label"><strong>Pen Tool</strong> <img alt="Pen Tool icon" src="https://raw.githubusercontent.com/xournalpp/xournalpp/1.1.0/ui/iconsColor-dark/hicolor/scalable/actions/xopp-tool-pencil.svg" /></span>  with a mouse, and then hold the left mouse button
+down across some portion of the canvas.</p>
+<h2 id="first-time-setup">First time setup<a class="headerlink" href="#first-time-setup" title="Permanent link">&para;</a></h2>
+<p>Due to the wide variety of input devices that exist, the default input device
+settings in Xournal++ may not be appropriate for your system. Here, we briefly
+highlight the settings that may need to be changed in order for Xournal++ to
+work correctly for you. Settings may be changed by accessing the <code>Edit &gt;
+Preferences</code> button in the menu.</p>
+<h3 id="input-device-setup">Input device setup<a class="headerlink" href="#input-device-setup" title="Permanent link">&para;</a></h3>
+<p>If you are unable to draw strokes or type characters in the Text Tool, check out
+the <code>Input System</code> tab. This will list the input devices that Xournal++ detects,
+as well as the default device class assigned to each device. If the device class
+is incorrect, you can override the device class using the drop down menu to the
+right.</p>
+<p>For example:</p>
+<ul>
+<li>If you are using a combined wireless USB mouse/keyboard device, you may need
+  to switch the input device from <code>Mouse</code> or <code>Keyboard</code> to <code>Mouse+Keyboard
+  Combo</code>.</li>
+<li>A drawing tablet stylus may be detected as a mouse, which means that pressure
+  sensitivity will not work. To fix this, you may need to override the device as
+  a <code>Stylus</code>.</li>
+</ul>
+<h3 id="temporary-tool-button-bindings">Temporary tool button bindings<a class="headerlink" href="#temporary-tool-button-bindings" title="Permanent link">&para;</a></h3>
+<p>The primary "button" of each input device, such as the left mouse button or the
+stylus tip, will activate the currently selected tool when pressed. However, it
+is also possible to configure the input devices so that pressing a secondary
+button will temporarily activate a different tool. For example, the right mouse
+and middle mouse buttons are set to temporarily activate the <code>Eraser</code> and <code>Hand</code>
+tools (respectively) by default.</p>
+<h3 id="touchscreen">Touchscreen<a class="headerlink" href="#touchscreen" title="Permanent link">&para;</a></h3>
+<p>By default, touch motions on touchscreen devices will pan or scroll the canvas.
+An alternate mode, called "Touch Drawing", causes touch motions to invoke the
+selected tool instead. This allows strokes to be drawn directly with touch
+motions.</p>
+<h2 id="creating-your-first-document">Creating your first document<a class="headerlink" href="#creating-your-first-document" title="Permanent link">&para;</a></h2>
+<p>Now that we've set up the default settings, we are ready to start exploring how
+Xournal++ might actually be used.</p>
+<ol>
+<li>The typical workflow begins with creating a new journal or loading an
+   existing one. The former can be achieved using the <code>File &gt; New</code> menu item (or
+   by clicking the   <span class="tool-label"><strong>New Document Button</strong> <img alt="New Document button" src="https://raw.githubusercontent.com/xournalpp/xournalpp/1.1.0/ui/iconsColor-dark/hicolor/scalable/actions/xopp-document-new.svg" /></span>  on the toolbar), and the latter can be done
+   by using one of the <code>File &gt; Open</code> options (or by clicking the
+     <span class="tool-label"><strong>Open File Button</strong> <img alt="Open File button" src="https://raw.githubusercontent.com/xournalpp/xournalpp/1.1.0/ui/iconsColor-dark/hicolor/scalable/actions/xopp-document-open.svg" /></span>  on the toolbar).</li>
+<li>To create a stroke, select the   <span class="tool-label"><strong>Pen Tool</strong> <img alt="Pen Tool icon" src="https://raw.githubusercontent.com/xournalpp/xournalpp/1.1.0/ui/iconsColor-dark/hicolor/scalable/actions/xopp-tool-pencil.svg" /></span>  from the toolbar. Hold down
+   your stylus or mouse on the screen to initiate a stroke, drag it to draw the
+   stroke, and then lift it to end the stroke. You can change stroke attributes
+   such as shape, color, and fill using some of the toggle buttons and drop down
+   menus in the toolbar.</li>
+<li>Add a new page by clicking the   <span class="tool-label"><strong>Insert Page Button</strong> <img alt="Insert Page button" src="https://raw.githubusercontent.com/xournalpp/xournalpp/1.1.0/ui/iconsColor-dark/hicolor/scalable/actions/xopp-page-add.svg" /></span>  or using one of the
+   <code>Journal &gt; New Page</code> menu buttons.</li>
+<li>Save the journal to <code>.xopp</code> format using <code>File &gt; Safe</code> or by clicking the
+     <span class="tool-label"><strong>Save Button</strong> <img alt="Save button" src="https://raw.githubusercontent.com/xournalpp/xournalpp/1.1.0/ui/iconsColor-dark/hicolor/scalable/actions/xopp-document-save.svg" /></span> .</li>
+</ol>
+<h2 id="using-tools-to-create-and-manipulate-elements">Using tools to create and manipulate elements<a class="headerlink" href="#using-tools-to-create-and-manipulate-elements" title="Permanent link">&para;</a></h2>
+<p>The main way to create and manipulate visual elements is to use a set of
+<strong>tools</strong> that are built into the application. We've seen one such example
+above: the   <span class="tool-label"><strong>Pen Tool</strong> <img alt="Pen Tool icon" src="https://raw.githubusercontent.com/xournalpp/xournalpp/1.1.0/ui/iconsColor-dark/hicolor/scalable/actions/xopp-tool-pencil.svg" /></span> . Exactly one tool is marked "selected" at any given
+time, and the selected tool can be changed by pressing one of the tool buttons
+on the toolbar. Here is a list of some other commonly used tools:</p>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Functionality</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="tool-label"><strong>Eraser Tool</strong> <img alt="Eraser Tool icon" src="https://raw.githubusercontent.com/xournalpp/xournalpp/1.1.0/ui/iconsColor-dark/hicolor/scalable/actions/xopp-tool-eraser.svg" /></span></td>
+<td>removes strokes</td>
+</tr>
+<tr>
+<td><span class="tool-label"><strong>Highlighter Tool</strong> <img alt="Highlighter Tool icon" src="https://raw.githubusercontent.com/xournalpp/xournalpp/1.1.0/ui/iconsColor-dark/hicolor/scalable/actions/xopp-tool-highlighter.svg" /></span></td>
+<td>like the   <span class="tool-label"><strong>Pen Tool</strong> <img alt="Pen Tool icon" src="https://raw.githubusercontent.com/xournalpp/xournalpp/1.1.0/ui/iconsColor-dark/hicolor/scalable/actions/xopp-tool-pencil.svg" /></span>  but with transparent strokes (like a highlighter)</td>
+</tr>
+<tr>
+<td><span class="tool-label"><strong>Text Tool</strong> <img alt="Text Tool icon" src="https://raw.githubusercontent.com/xournalpp/xournalpp/1.1.0/ui/iconsColor-dark/hicolor/scalable/actions/xopp-tool-text.svg" /></span></td>
+<td>insert typed text (color and font are selectable)</td>
+</tr>
+<tr>
+<td><span class="tool-label"><strong>LaTeX Tool</strong> <img alt="LaTeX Tool icon" src="https://raw.githubusercontent.com/xournalpp/xournalpp/1.1.0/ui/iconsColor-dark/hicolor/scalable/actions/xopp-tool-math-tex.svg" /></span></td>
+<td>insert LaTeX formula or diagrams</td>
+</tr>
+<tr>
+<td><span class="tool-label"><strong>Select Object Tool</strong> <img alt="Select Object Tool icon" src="https://raw.githubusercontent.com/xournalpp/xournalpp/1.1.0/ui/iconsColor-dark/hicolor/scalable/actions/xopp-object-select.svg" /></span></td>
+<td>selects objects, so they can be moved, scaled, or deleted</td>
+</tr>
+<tr>
+<td><span class="tool-label"><strong>Select Rectangle Tool</strong> <img alt="Select Rectangle Tool icon" src="https://raw.githubusercontent.com/xournalpp/xournalpp/1.1.0/ui/iconsColor-dark/hicolor/scalable/actions/xopp-select-rect.svg" /></span></td>
+<td>select objects in a rectangular region</td>
+</tr>
+</tbody>
+</table>
+<p>Of special note are the family of "select tools" like   <span class="tool-label"><strong>Select Object Tool</strong> <img alt="Select Object Tool icon" src="https://raw.githubusercontent.com/xournalpp/xournalpp/1.1.0/ui/iconsColor-dark/hicolor/scalable/actions/xopp-object-select.svg" /></span> 
+and   <span class="tool-label"><strong>Select Rectangle Tool</strong> <img alt="Select Rectangle Tool icon" src="https://raw.githubusercontent.com/xournalpp/xournalpp/1.1.0/ui/iconsColor-dark/hicolor/scalable/actions/xopp-select-rect.svg" /></span> , which are used to modify existing elements:</p>
+<ul>
+<li>Select one or more elements using   <span class="tool-label"><strong>Select Object Tool</strong> <img alt="Select Object Tool icon" src="https://raw.githubusercontent.com/xournalpp/xournalpp/1.1.0/ui/iconsColor-dark/hicolor/scalable/actions/xopp-object-select.svg" /></span>  or   <span class="tool-label"><strong>Select Rectangle Tool</strong> <img alt="Select Rectangle Tool icon" src="https://raw.githubusercontent.com/xournalpp/xournalpp/1.1.0/ui/iconsColor-dark/hicolor/scalable/actions/xopp-select-rect.svg" /></span> . A pale blue rectangle called the <strong>selection
+  rectangle</strong> will be drawn around them.</li>
+<li>Only one selection can be active at a time. To cancel a selection, press on an
+  empty part of the page with a selection tool, or switch to another tool.</li>
+<li>Move the selected element(s) by pressing and holding them with your left
+  mouse button / stylus.</li>
+<li>Scale the selected elements(s) by dragging one of the eight white boxes around
+  the edges of the selection rectangle. Alternatively, drag an edge of the
+  selection rectangle.</li>
+<li>Duplicate the selected element(s) by pressing the selection rectangle with
+  the right mouse button (or button on stylus mapped to right mouse button).</li>
+<li>Delete the selected element(s) by pressing the red rectangle with a cross.
+  Alternatively, press the <kbd>Del</kbd> button on your keyboard.</li>
+</ul>
+<!-- TODO: we can probably include a "tutorial worksheet" that the user can play with -->
+
+<h2 id="annotating-pdf-files">Annotating PDF files<a class="headerlink" href="#annotating-pdf-files" title="Permanent link">&para;</a></h2>
+<p>In addition to creating journals from scratch, Xournal++ can also be used to
+"annotate" PDF files by creating journals that use a PDF file as a background.</p>
+<ol>
+<li>Use either <code>File &gt; Open</code> or <code>File &gt; Annotate PDF</code> to load a PDF file.</li>
+<li>"Annotate" the PDF pages by using tools such as the   <span class="tool-label"><strong>Highlighter Tool</strong> <img alt="Highlighter Tool icon" src="https://raw.githubusercontent.com/xournalpp/xournalpp/1.1.0/ui/iconsColor-dark/hicolor/scalable/actions/xopp-tool-highlighter.svg" /></span> ,   <span class="tool-label"><strong>Pen Tool</strong> <img alt="Pen Tool icon" src="https://raw.githubusercontent.com/xournalpp/xournalpp/1.1.0/ui/iconsColor-dark/hicolor/scalable/actions/xopp-tool-pencil.svg" /></span> , and   <span class="tool-label"><strong>Text Tool</strong> <img alt="Text Tool icon" src="https://raw.githubusercontent.com/xournalpp/xournalpp/1.1.0/ui/iconsColor-dark/hicolor/scalable/actions/xopp-tool-text.svg" /></span>  to add elements on top of the PDF
+   pages.</li>
+<li>Save the journal to <code>.xopp</code> format using <code>File &gt; Safe</code> or by clicking the
+     <span class="tool-label"><strong>Save Button</strong> <img alt="Save button" src="https://raw.githubusercontent.com/xournalpp/xournalpp/1.1.0/ui/iconsColor-dark/hicolor/scalable/actions/xopp-document-save.svg" /></span> . Note that the <code>.xopp</code> file requires the original PDF to be
+   kept around.</li>
+</ol>
+<h2 id="exporting-journals-to-other-formats">Exporting journals to other formats<a class="headerlink" href="#exporting-journals-to-other-formats" title="Permanent link">&para;</a></h2>
+<p>Xournal++ can export a journal file to many different file formats.</p>
+<ol>
+<li>Open a journal.</li>
+<li>Use <code>File &gt; Export to PDF</code> to generate a PDF file from the journal.</li>
+<li>To export to other file formats such as SVG or PNG, or to set export options
+   such as the specific pages to export, use <code>File &gt; Export As</code> to choose the
+   file format and then set the export options.</li>
+</ol>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../overview/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Overview
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../config/preferences/" class="md-footer__link md-footer__link--next" aria-label="Next: Preferences" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Preferences
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "toc.integrate"], "search": "../../assets/javascripts/workers/search.5e67fbfe.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"latest_stable": "1.3.2", "latest_unstable": "1.3.2+dev"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.e87a5f81.min.js"></script>
+      
+    
+  </body>
+</html>
