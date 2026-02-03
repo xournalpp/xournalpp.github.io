@@ -30,8 +30,9 @@ versions:
 2. Copy the Xournal++ program contained in the dmg file to the Applications
    folder by opening the dmg file and dragging the Xournal++ icon.
 3. Open the Terminal and run `xattr -c /Applications/Xournal++.app` to remove quarantine. 
-4. Run Xournal++ like any other program.
-5. Success!
+4. On MacOS Intel also run `codesign --force --deep --sign - /Applications/Xournal++.app` in the Terminal to self-sign the app. Note the hyphen after `--sign`.
+5. Run Xournal++ like any other program.
+6. Success!
 
 For a video demonstration of how to install Xournal++, see
 [this comment on GitHub][video-demo].
