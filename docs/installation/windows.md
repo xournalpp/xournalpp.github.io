@@ -9,17 +9,21 @@ compile_guide: https://github.com/xournalpp/xournalpp/blob/master/readme/Windows
 
 version_class: windows-macos
 versions:
-  - name: Stable Intel
+  - name: Stable Intel EXE
     subtitle: (Recommended - for Intel processors)
     description: Suits most users with its focus on stability.
     links: windows.stable
     extras_ver: latest_stable
-  - name: Stable ARM
+  - name: Stable ARM EXE
     subtitle: (Recommended - for ARM processors)
     description: Suits most users with its focus on stability.
     links: windows.stable-arm
     extras_ver: latest_stable
-  - name: Nightly
+  - name: Microsoft Store
+  	subtitle: (Recommended - for automatic updates)
+  	description: Suits most users with its focus on automatic updates of stable releases.
+    links: windows.ms-store
+  - name: Nightly EXE
     subtitle: (Unstable)
     description: Get new features as soon as they're implemented, in exchange for stability.
     links: nightly

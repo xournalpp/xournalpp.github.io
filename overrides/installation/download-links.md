@@ -5,6 +5,7 @@
     ({
         "stable" : "https://github.com/xournalpp/xournalpp/releases/download/v1.3.2/xournalpp-1.3.2-windows-setup-AMD64.exe",
         "stable-arm" : "https://github.com/xournalpp/xournalpp/releases/download/v1.3.2/xournalpp-1.3.2-windows-setup-ARM64.exe"
+        "ms-store" : "https://apps.microsoft.com/detail/9nn1hhct0p1x?referrer=appbadge&mode=full"
     })
 %}
 {% set macos =
