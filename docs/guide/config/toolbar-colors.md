@@ -14,7 +14,7 @@ in in your toolbar configuration.
 
 1. In Xournal++, make sure you are using a custom toolbar configuration. If you
    aren't, you can create a new toolbar configuration using the menu item
-   `View > Toolbars > Manage`.
+   `Edit > Toolbars > Manage`.
 2. Using a text editor, open the `toolbar.ini` file contained in the Xournal++
    config folder. See [File locations](../file-locations.md) for the location of
    this folder on your operating system.
@@ -32,11 +32,11 @@ In this method, the color palette is set up by editing a GIMP color palette
 file.
 
 The palette will be loaded from a file named `palette.gpl` contained in the
-[palettes folder](../file-locations.md). On the first run, Xournal++ will create
-this file for you with the default color palette. Thus, the easiest way to get
-started is to adjust the default color palette (scroll down to find it).
+`palettes` folder inside the [Xournal++ config folder](../file-locations.md).
+You need to create this file manually. 
+The easiest way to get started is to adjust the default color palette (scroll down to find it).
 
-1. Place the `palette.gpl` file located in the [palettes folder](../file-locations.md).
+1. Place the `palette.gpl` file located in the `palettes` folder inside [Xournal++ config folder](../file-locations.md).
 2. Restart Xournal++
 3. Open `Edit -> Preferences -> Palette` to switch to the new palette.
 

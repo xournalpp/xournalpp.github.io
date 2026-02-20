@@ -11,7 +11,6 @@ This section explains where files get stored automatically either during install
 | [Shared resources folder](#shared-resources-folder) | `/usr/share/xournalpp`           | `Xournal++.app/Contents/Resources`              | `C:\Programs\Xournal++\share\xournalpp`                                    |
 | [Localizations folder](#localizations-folder)       | `/usr/share/locale`              | `Xournal++.app/Contents/Resources/share/locale` | `C:\Programs\Xournal++\share\locale`                                       |
 | [Config folder](#config-folder)                     | `/home/<user>/.config/xournalpp` | `/Users/<user>/.config/xournalpp`               | `C:\Users\<user>\AppData\Local\xournalpp`                                  |
-| [Palettes folder](#palettes-folder)                                     | `/home/<user>/.config/xournalpp/palettes` | `/Users/<user>/.config/xournalpp/palettes`      | `C:\Users\<user>\AppData\Local\xournalpp\palettes`                         |
 | [Cache folder](#cache-folder)                       | `/home/<user>/.cache/xournalpp`  | `/Users/<user>/.cache/xournalpp`                | `C:\Users\<user>\AppData\Local\Microsoft\Windows\INetCache\xournalpp` |
 | [Temporary folder](#temporary-folder)               | `/tmp`                           | `/tmp`                                          | `C:\Users\<user>\AppData\Local\Temp`                                       |
 
@@ -51,7 +50,6 @@ The config folder contains configuration files like
 
 - the `settings.xml` file, which stores Xournal++ settings
 - `metadata` subfolder, which contains metadata of previously opened files
-- the `colornames.ini` file, which allows to configure colors
 - `palettes` subfolder, which contains custom color palettes
 
 ## Cache folder
