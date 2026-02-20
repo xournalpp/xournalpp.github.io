@@ -32,12 +32,16 @@ In this method, the color palette is set up by editing a GIMP color palette
 file.
 
 The palette will be loaded from a file named `palette.gpl` contained in the
-[config folder](../file-locations.md). On the first run, Xournal++ will create
+[palettes folder](../file-locations.md). On the first run, Xournal++ will create
 this file for you with the default color palette. Thus, the easiest way to get
-started is to adjust this default file.
+started is to adjust the default color palette (scroll down to find it).
 
-1. Edit the `palette.gpl` file located in the [config folder](../file-locations.md).
+1. Place the `palette.gpl` file located in the [palettes folder](../file-locations.md).
 2. Restart Xournal++
+3. Open `Edit -> Preferences -> Palette` to switch to the new palette.
+
+Note: If you are using a version older than v1.3.0, save `palette.gpl` in the
+[config folder](../file-locations.md) instead.
 
 ### .gpl File Format
 
