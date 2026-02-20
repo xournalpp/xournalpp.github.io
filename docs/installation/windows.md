@@ -30,7 +30,24 @@ versions:
     extras_ver: latest_unstable
 ---
 
-1. Unzip archive which should be named something like `xournalpp-{version}-windows.zip`
-2. Run the setup program contained in `xournalpp-{version}-windows.zip`
-3. Follow the installation steps
-4. Success!
+=== "Direct Download"
+
+    1. Unzip archive which should be named something like `xournalpp-{version}-windows.zip`
+    2. Run the setup program contained in `xournalpp-{version}-windows.zip`
+    3. Follow the installation steps
+    4. Success!
+
+=== "Scoop"
+    With Scoop you can download the official release and keep it updated.
+    Open Windows PowerShell and install the latest stable release via
+    ```cmd
+    scoop bucket add extras
+    scoop install extras/xournalpp
+    ```
+
+=== "Winget"
+    With Winget you can download the official release and keep it updated.
+    Open Windows PowerShell and install the latest stable release via
+    ```cmd
+    winget install -e --id Xournal++.Xournal++
+    ```
