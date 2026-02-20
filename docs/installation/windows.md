@@ -23,6 +23,7 @@ versions:
     subtitle: (Recommended - for automatic updates)
     description: Suits most users with its focus on automatic updates of stable releases.
     links: windows.ms-store
+    extras_ver: latest_stable
   - name: Nightly EXE
     subtitle: (Unstable)
     description: Get new features as soon as they're implemented, in exchange for stability.
