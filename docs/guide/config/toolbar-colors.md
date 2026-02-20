@@ -33,7 +33,7 @@ file.
 
 The palette will be loaded from files with `.gpl` extension (e.g. `palette_name.gpl`)
 saved in the `palettes` folder within the [Xournal++ config folder](../file-locations.md).
-You will need to create these files manually. 
+You will need to manually create a `.gpl` file for each custom palette. 
 The easiest way to get started is to adjust the default color palette template (scroll down to find it).
 
 1. For each palette you want to create, place the `palette_name.gpl` file in the `palettes` folder
