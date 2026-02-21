@@ -3,13 +3,20 @@
 .installation p,
 .installation ul,
 .installation li,
-.installation a,
 .installation span {
 	color: #000;
 	list-style: none;
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
+}
+
+.installation a {
+    color: #000;
+}
+
+.installation a:not(.button) {
+    text-decoration: underline;
 }
 
 @media only screen and (min-width: 76.25em) {
@@ -208,9 +215,10 @@ a.mobile-option {
     text-align: center;
 }
 
-.other-version-link a {
+.installation .other-version-link a {
     border-bottom: dashed 1px black;
     font-size: 18px;
+    text-decoration: none;
 }
 
 /* installation instructions */
