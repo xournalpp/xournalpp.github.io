@@ -27,15 +27,16 @@ Please check beforehand if the same bug has already been reported or the same en
 This will make it easier for us to keep everything under control. Duplicates will usually be closed rapidly, but it always takes time to find them, which the develeopers
 would prefer to invest in coding and improving the documentation. Issues that are resolved will be closed as well. Open questions are better discussed on Github discussions.
 
-## Gitter and Matrix channels
+## Matrix channel
 
-If you want to discuss some topic related to Xournal++ in chat mode, you may find someone to talk with in the [Gitter channel](https://gitter.im/xournalpp/xournalpp) or in the [Matrix channel](https://matrix.to/#/#xournalpp_xournalpp:gitter.im).
+If you want to discuss some topic related to Xournal++ in chat mode, you may find someone to talk with in the [Matrix channel](https://matrix.to/#/#xournalpp_xournalpp:gitter.im).
 
 ## The Crowdin project
 
 Our translations are managed in the [Crowdin project](https://crowdin.com/project/xournalpp). If you would like to contribute, create an account and start contributing.
 While some languages like English, German and Italian are basically complete, most other languages still need more work. If you are interested in translating a new language,
-ask the project maintainers on Gitter or create a new issue and they will unlock the language on Crowdin.
+Ask on Matrix channel or create a new issue on GitHub and the project maintainers will unlock the language
+on Crowdin.
 
 ## Github pull requests
 
