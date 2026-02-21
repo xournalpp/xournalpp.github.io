@@ -42,6 +42,12 @@
     margin-bottom: 30px;
 }
 
+.installation .centered-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* "Choose Your Version" */
 
 .title-container {
