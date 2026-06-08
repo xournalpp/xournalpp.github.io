@@ -1,0 +1,104 @@
+@media (max-width: 800px) {
+    .installation {
+        width: 100%;
+        padding: 0px 10px;
+    }
+
+    .installation .OS-option-container {
+        max-width: none;
+    }
+
+    .version {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .version .version-subtitle {
+        margin-bottom: 7px;
+    }
+
+    .version .version-description {
+        margin-bottom: 10px;
+    }
+
+    .other-version-link {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 650px) {
+    .installation > * {
+        margin-bottom: 25px;
+    }
+
+
+}
+
+@media (max-width: 600px) {
+    .installation .OS-option-container{
+        justify-content: space-between;
+        max-width: 400px;
+    }
+
+    a.OS-option:last-child {
+        margin: 20px auto 0px auto;
+    }
+
+
+}
+
+@media (max-width: 425px) {
+
+    .installation .title {
+        font-size: 36px;
+    }
+
+
+    .installation .OS-option-container {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    a.OS-option {
+        margin: 0 auto 25px auto;
+    }
+
+
+    a.OS-option:last-child {
+        margin: 0 auto 0px auto;
+    }
+
+    .mobile .title {
+        font-size: 24px;
+    }
+
+    .installation-guide p{
+        font-size: 20px;
+    }
+    
+    .step-container p {
+        font-size: 16px;
+    }
+    
+    .compiling-guide-link {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 375px) {
+
+    a.OS-option, a.mobile-option {
+        font-size: 20px;
+    }
+
+    a.OS-option {
+        margin: 0 auto 25px auto;
+        padding: 2px 0px;
+        width: 125px;
+    }
+
+    a.mobile-option {
+        padding: 7px 14px;
+    }
+
+}
