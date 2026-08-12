@@ -1,0 +1,104 @@
+#!/usr/bin/env bash
+#
+# Convert xopp to pdf
+#
+# @author Daniel Langbein <daniel@systemli.org>
+# @license MIT License
+#
+
+SCRIPT_TITLE='Convert *.xopp to *.pdf'
+depends=(xournalpp)
+optdepends=(libnotify)
+
+# Uncomment for debugging:
+# exec 1> "${HOME}"/xopp-to-pdf.log 2>&1
+# set -x
+
+#######
+
+function command_exists(){
+  command -v "${1}" > /dev/null
+}
+
+function notify() {
+  # $1: Message summary
+  # $2: Message body
+  # $3-$n: notify-send options
+
+  if command_exists notify-send; then
+    notify-send "$@";
+  else
+    # Write message to stderr
+    printf '%s: %s\n' "${1}" "${2}" 1>&2;
+  fi
+}
+
+function check_depends() {
+  for dep in "${depends[@]}"; do
+    if ! command_exists "${dep}"; then
+      notify "${SCRIPT_TITLE}" "The dependency ${dep} is missing!" --icon=dialog-information;
+      exit 1;
+    fi
+  done
+
+  for dep in "${optdepends[@]}"; do
+    if ! command_exists "${dep}"; then
+      # Inform about missing opt. dependency on /dev/stderr
+      printf 'Info: The optional dependency %s is missing.' "${dep}" 1>&2;
+    fi
+  done
+}
+
+function convert() {
+  # $1: filepath
+
+  local filename
+  filename="$(basename -- "${1}")"
+
+  if [[ "${filename}" != *".xopp" ]] ; then
+    notify "${SCRIPT_TITLE}" "Not a *.xopp file! Skipping conversion of ${filename}" --icon=dialog-information;
+    return 1;
+  fi
+
+  local target
+  target="${1}".pdf;
+
+  if [ -f "${target}" ]; then
+    notify "${SCRIPT_TITLE}" "Skipping conversion as the target $(basename -- "${target}") does already exist!" --icon=dialog-information;
+    return 1;
+  else
+    xournalpp --create-pdf="${target}" "${1}" || notify "${SCRIPT_TITLE}" "Conversion of ${filename} failed!" --icon=dialog-information;
+  fi
+}
+
+check_depends
+
+#
+# Convert files selected by nautilus/GNOME files
+#
+
+# read newline-delimited absolute paths of selected files (on local filesystem)
+echo "${NAUTILUS_SCRIPT_SELECTED_FILE_PATHS}" | while read file; do
+  # If $NAUTILUS_SCRIPT_SELECTED_FILE_PATHS contains a tailing newline,
+  # $file may be the empty string
+  if [ "${file}" = '' ]; then
+    continue;
+  fi
+  convert "${file}"
+done
+
+#
+# Convert files selected by Nemo
+#
+
+# read newline-delimited absolute paths of selected files (on local filesystem)
+echo "${NEMO_SCRIPT_SELECTED_FILE_PATHS}" | while read file; do
+  # If $NEMO_SCRIPT_SELECTED_FILE_PATHS contains a tailing newline,
+  # $file may be the empty string
+  if [ "${file}" = '' ]; then
+    continue;
+  fi
+  convert "${file}"
+done
+
+notify "${SCRIPT_TITLE}" 'Done!' --icon=dialog-information;
