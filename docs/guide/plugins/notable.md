@@ -35,5 +35,7 @@ Xournal++ strokes.
 [Fly-Pie](https://github.com/Schneegans/Fly-Pie) to Xournal++ shortcuts.
 - The [vi-xournalpp plugin](https://github.com/raw-bacon/vi-xournalpp) which allows for vi-style navigation
 between tools in Xournal++.
+- The [InfiniteCanvas plugin](https://github.com/JeanCarlos0112/xournalpp-infinite-canvas) turns a page into a dotted
+canvas that grows to the right and downwards as you write near its edges.
 
 If you build an interesting plugin that you would like to share, feel free to submit your PR!
